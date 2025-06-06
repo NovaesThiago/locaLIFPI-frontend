@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('/imagens/fundo-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.formulario {
+    background: rgba(255, 255, 255, 0.778);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.formulario h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 15px;
+    margin-left: 5px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.formulario input {
+    width: 275px;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: black;
+    color: #545454;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"] {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.formulario input[type="submit"] {
+    background-color: #137516;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
