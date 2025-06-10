@@ -65,3 +65,21 @@ body {
     font-weight: bold;
     margin-top: 20px;
 }
+
+.formulario input[type="submit"]:hover {
+    background-color: #0f5c0e;
+}
+
+.voltar {
+    margin-bottom: 650px;
+    margin-left: 20px;
+}
+
+.voltar a,
+.voltar a:visited {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 2px solid #000000;
+}
