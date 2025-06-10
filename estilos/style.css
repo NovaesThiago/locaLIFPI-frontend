@@ -83,3 +83,16 @@ body {
     font-size: 14px;
     border-bottom: 2px solid #000000;
 }
+
+.cadastrese {
+    margin-top: 20px;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.cadastrese a,
+.cadastrese a:visited {
+    text-decoration: none;
+    color: #011e0c;
+    font-weight: bold;
+}
