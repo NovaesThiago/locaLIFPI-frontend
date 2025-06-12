@@ -1,68 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 body {
-    background-color: #f9f5ed;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
+  background-color: #f9f5ed;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
 }
 
 header {
-    background-color: #1d4e02;
-    height: 75px;
-    display: flex;
+  background-color: #1d4e02;
+  height: 75px;
+  display: flex;
 }
 
 .nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 10px 30px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px 30px;
 }
 
 .nav > h2 {
-    color: white;
-    padding: 0 5px;
+  color: white;
+  padding: 0 5px;
 }
 
-
 input {
-    width: 160px;
-    height: 30px;
-    border-radius: 200px;
-    border: none;
-    padding-left: 10px;
-    margin-top: 15px;
-    margin-left: 15px;
+  width: 160px;
+  height: 30px;
+  border-radius: 200px;
+  border: none;
+  padding-left: 10px;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 .lupa {
-    width: 20px;
-    height: 20px;
-    margin-top: 19px;
-    margin-left: -32px;
-    color: gray;
+  width: 20px;
+  height: 20px;
+  margin-top: 19px;
+  margin-left: -32px;
+  color: gray;
 }
 
 img {
-    width: 29px;
-    height: 40px;
-    margin-top: 7px;
+  width: 29px;
+  height: 40px;
+  margin-top: 7px;
 }
 
 a {
-    font-size: 15px;
-    margin-left: 1100px;
-}
-
-a,
-a:visited {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    border-bottom: 2px solid rgb(255, 255, 255);
+  font-size: 15px;
+  margin-left: 1100px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-bottom: 2px rgb(255, 255, 255);
 }
 
 #campus {
-    width: 1535px;
-    height: 600px;
+  width: 1535px;
+  height: 600px;
+}
+
+.botao-link {
+  color: rgb(255, 255, 255);
+  margin-left: -200px;
 }
