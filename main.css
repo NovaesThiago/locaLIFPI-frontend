@@ -1,69 +1,102 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f9f5ed;
   font-family: "Open Sans", sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 header {
   background-color: #1d4e02;
-  height: 75px;
+  height: 80px;
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 16px;
+  margin-bottom: 10px;
+}
+
+.nav,
+.links-inferiores {
+  width: 100%;
+  max-width: 420px;
 }
 
 .nav {
-  text-decoration: none;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 10px 30px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 420px;
 }
 
-.nav > h2 {
-  color: white;
-  padding: 0 5px;
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  margin-top: px;
 }
 
-input {
-  width: 160px;
-  height: 30px;
-  border-radius: 200px;
-  border: none;
-  padding-left: 10px;
-  margin-top: 15px;
-  margin-left: 15px;
-}
-
-.lupa {
+.logo-titulo img {
   width: 20px;
-  height: 20px;
-  margin-top: 19px;
-  margin-left: -32px;
+  height: 30px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.logo-titulo h2 {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  height: 30px;
+  border-radius: 20px;
+  padding-left: 10px;
+  border: none;
+  width: 140px;
+  margin-top: 15px;
+}
+
+.search-container .lupa {
+  margin-left: -25px;
   color: gray;
+  font-size: 18px;
+  margin-top: 15px;
 }
 
-img {
-  width: 29px;
-  height: 40px;
-  margin-top: 7px;
+
+.links-inferiores {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
 }
 
-a {
-  font-size: 15px;
-  margin-left: 1100px;
+.links-inferiores a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
   font-weight: bold;
-  border-bottom: 2px rgb(255, 255, 255);
 }
 
 #campus {
-  width: 1535px;
-  height: 600px;
+  width: 100%;
+  height: calc(100vh - 80px);
+  object-fit: cover;
 }
 
-.botao-link {
-  color: rgb(255, 255, 255);
-  margin-left: -200px;
-}
