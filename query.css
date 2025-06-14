@@ -1,0 +1,48 @@
+@media only screen and (min-width: 992px) {
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+    header {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .logo-titulo img {
+        width: 30px;
+        height: 40px;
+        margin-top: 15px;
+    }
+
+    .logo-titulo h2 {
+        font-size: 23px;
+        margin-top: 35px;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    .search-container input {
+        width: 300px;
+        margin-left: 200px;
+        margin-top: 20px;
+    }
+
+    .search-container .lupa {
+        margin-top: 20px;
+    }
+
+    .links-inferiores {
+        margin-left: 1200px;
+        margin-top: -35px;
+    }
+
+    .links-inferiores a {
+        font-size: 15px;
+        border-bottom: 2px solid white;
+    }
+
+}
