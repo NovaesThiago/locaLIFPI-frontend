@@ -1,79 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 html,
 body {
   height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
   background-image: url("fundo-1.jpg");
   background-size: cover;
-  font-family: "Open Sans", sans-serif;
-  background-image: url("fundo-1.jpg");
-  background-size: cover;
-  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.inicio {
+  flex-direction: column;
+}
+
+header {
+  margin-bottom: -65px;
 }
 
 #cabeca {
   display: flex;
   justify-content: space-between;
-  margin-left: 30px;
-  margin-right: 30px;
+  align-items: center;
+  margin: 0 30px;
+}
+
+#cabeca img {
+  width: 23px;
+  height: 32px;
+}
+
+#cabeca h2 {
+  font-size: 23px;
+}
+
+#cabeca p a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+main,
+section {
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-#cabeca > h1 {
-  font-size: 23px;
-  font-size: 23px;
-}
-
-#cabeca > p {
-  font-size: 15px;
-  font-size: 15px;
-}
-
-img {
-  margin-top: 12px;
-  width: 23px;
-  height: 32px;
-  margin-top: 12px;
-  width: 23px;
-  height: 32px;
-}
-
-#cabeca a,
-#cabeca a:visited {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  border-bottom: 2px solid black;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  border-bottom: 2px solid black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 160px;
+  text-align: center;
 }
 
-main > h1 {
-  margin-bottom: -15px;
+main h1 {
+  margin-bottom: 5px;
   font-size: 32px;
 }
 
-main > p {
+main p {
   font-size: 17px;
+  margin-top: -3px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -85,11 +79,7 @@ button {
   cursor: pointer;
 }
 
-button > a,
-button > a:visited {
-  text-decoration: none;
-  color: white;
-  font-size: 21px;
+button a {
   text-decoration: none;
   color: white;
   font-size: 21px;
@@ -97,14 +87,42 @@ button > a:visited {
 
 button:hover {
   background-color: #ff4d4d;
-  background-color: #ff4d4d;
+}
+
+section {
+  background-image: url("fundo-1.jpg");
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+}
+
+section img {
+  width: 250px;
+  height: 150px;
+  box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.284);
+  border-radius: 5px;
+}
+
+.localifpi {
+  background-color: rgba(255, 255, 255, 0.475);
+  border-radius: 15px;
+  box-shadow: 2px 4px 13px rgba(0, 0, 0, 0.284);
+  padding: 20px;
+}
+
+.sobre {
+  background-color: rgba(255, 255, 255, 0.475);
+  border-radius: 15px;
+  box-shadow: 2px 4px 13px rgba(0, 0, 0, 0.284);
+  padding: 20px;
 }
 
 footer {
-  background-color: rgba(29, 78, 2, 0.715);
-  height: 60px;
-  margin-top: auto;
-  background-color: rgba(29, 78, 2, 0.715);
-  height: 60px;
-  margin-top: auto;
+  background-color: rgb(29, 84, 0);
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: white;
 }
