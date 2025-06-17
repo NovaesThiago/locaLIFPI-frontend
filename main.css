@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f9f5ed;
+  background-color: #fff5ec;
   font-family: "Open Sans", sans-serif;
   margin: 0;
   overflow-x: hidden;
@@ -97,7 +97,7 @@ header {
 
 #campus {
   width: 100%;
-  height: calc(100vh - 80px);
-  object-fit: cover;
+  height: 800px;
+  padding: 15px;
 }
 
