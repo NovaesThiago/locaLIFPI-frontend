@@ -32,14 +32,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 420px;
 }
 
 .logo-titulo {
   display: flex;
   align-items: center;
-  margin-top: px;
 }
 
 .logo-titulo img {
@@ -106,6 +103,7 @@ header {
   height: calc(100vh - 80px);
   object-fit: cover;
 }
+
 .marker {
   position: absolute;
   width: 24px;
@@ -135,10 +133,6 @@ header {
   max-width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 100;
-  display: none; /* Inicialmente oculto */
-}
-
-.sala-info {
   transition: opacity 0.3s ease, transform 0.3s ease;
   opacity: 1;
 }
@@ -146,4 +140,38 @@ header {
 .sala-info[style*="display: none"] {
   opacity: 0;
   transform: translateY(10px);
+}
+
+/* ----------- NOVOS ESTILOS PARA BLOCOS E SALAS ----------- */
+.bloco {
+  background-color: #e8f5e9;
+  padding: 10px 15px;
+  margin: 15px auto;
+  border-left: 5px solid #1d4e02;
+  border-radius: 6px;
+  max-width: 600px;
+}
+
+.bloco h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #1d4e02;
+}
+
+.bloco ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.bloco .sala {
+  cursor: pointer;
+  padding: 6px 0;
+  border-bottom: 1px dashed #ccc;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.bloco .sala:hover {
+  color: #1d4e02;
+  font-weight: bold;
 }

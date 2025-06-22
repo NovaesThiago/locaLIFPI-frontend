@@ -14,6 +14,7 @@
 
   <body>
     <div id="app">
+      <!-- Cabeçalho com logo e busca -->
       <header>
         <div class="nav">
           <div class="logo-titulo">
@@ -22,7 +23,13 @@
           </div>
 
           <div class="search-container">
-            <input type="text" placeholder="Pesquise" />
+            <input
+              type="text"
+              id="buscarSala"
+              name="buscarSala"
+              placeholder="Buscar sala"
+              autocomplete="off"
+            />
             <span class="material-symbols-outlined lupa">search</span>
           </div>
         </div>
@@ -36,8 +43,67 @@
         </div>
       </header>
 
-    <main>
-      <img id="campus" src="campus-m.jpg" alt="" />
-    </main>
+      <!-- Mapa e marcadores -->
+      <main>
+        <div class="map-container">
+          <img id="campus" src="campus-m.jpg" alt="Mapa do Campus" />
+
+          <!-- Marcadores sobrepostos -->
+          <div
+            v-for="bloco in blocosFiltrados"
+            :key="bloco.nome + '-marcadores'"
+          >
+            <div
+              v-for="sala in bloco.salas"
+              :key="sala.id"
+              class="marker"
+              :style="{ left: sala.x + 'px', top: sala.y + 'px' }"
+              @click="mostrarSala(sala)"
+              :title="sala.nome"
+            ></div>
+          </div>
+
+          <!-- Painel de sala só aparece ao clicar -->
+          <div v-if="salaSelecionada" class="sala-info">
+            <button
+              @click="salaSelecionada = null"
+              style="
+                float: right;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 18px;
+                cursor: pointer;
+              "
+            >
+              ×
+            </button>
+            <h3>{{ salaSelecionada.nome }}</h3>
+            <p>{{ salaSelecionada.horario }}</p>
+          </div>
+        </div>
+
+        <!-- Lista de blocos e salas -->
+        <section>
+          <div v-for="bloco in blocosFiltrados" :key="bloco.nome" class="bloco">
+            <h2>{{ bloco.nome }}</h2>
+            <ul>
+              <li
+                v-for="sala in bloco.salas"
+                :key="sala.id"
+                @click="mostrarSala(sala)"
+                class="sala"
+              >
+                {{ sala.nome }}
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Vue e App Script -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="map.vue.js"></script>
   </body>
 </html>
