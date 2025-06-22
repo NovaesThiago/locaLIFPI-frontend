@@ -36,33 +36,8 @@
         </div>
       </header>
 
-      <main>
-        <div class="map-container">
-          <img id="campus" src="campus-m.jpg" alt="Mapa do Campus" />
-          <div class="map-overlay">
-            <div
-              v-for="sala in salas"
-              :key="sala.id"
-              class="marker"
-              :style="{left: sala.x + 'px', top: sala.y + 'px'}"
-              @click="mostrarSala(sala)"
-              :title="sala.nome"
-            ></div>
-
-            <div class="sala-info" v-if="salaSelecionada">
-              <h2>{{ salaSelecionada.nome }}</h2>
-              <div>
-                <h3>Horários</h3>
-                <p>{{ salaSelecionada.horario }}</p>
-              </div>
-              <button @click="salaSelecionada = null">Fechar</button>
-            </div>
-          </div>
-        </div>
-      </main>
-    </div>
-
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="app.js"></script>
+    <main>
+      <img id="campus" src="campus-m.jpg" alt="" />
+    </main>
   </body>
 </html>
