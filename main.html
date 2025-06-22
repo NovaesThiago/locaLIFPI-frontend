@@ -9,34 +9,60 @@
     />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="query.css" />
-    <title>Document</title>
+    <title>Local IFPI</title>
   </head>
 
   <body>
-    <header>
-      <div class="nav">
-        <div class="logo-titulo">
-          <img src="logo-ifpi.png" alt="Logo IFPI" />
-          <h2>LocaLIFPI</h2>
+    <div id="app">
+      <header>
+        <div class="nav">
+          <div class="logo-titulo">
+            <img src="logo-ifpi.png" alt="Logo IFPI" />
+            <h2>LocaLIFPI</h2>
+          </div>
+
+          <div class="search-container">
+            <input type="text" placeholder="Pesquise" />
+            <span class="material-symbols-outlined lupa">search</span>
+          </div>
         </div>
 
-        <div class="search-container">
-          <input type="text" placeholder="Pesquise" />
-          <span class="material-symbols-outlined lupa">search</span>
+        <div class="links-inferiores">
+          <a href="https://www.ifpi.edu.br/picos">Campus Picos</a>
+          <a href="https://www.instagram.com/mambeeifpi?igsh=ZG8yNXk4a3htODlw"
+            >Mambee</a
+          >
+          <a href="entrar.html">Entrar</a>
         </div>
-      </div>
+      </header>
 
-      <div class="links-inferiores">
-        <a href="https://www.ifpi.edu.br/picos">Campus Picos</a>
-        <a href="https://www.instagram.com/mambeeifpi?igsh=ZG8yNXk4a3htODlw"
-          >Mambee</a
-        >
-        <a href="entrar.html">Entrar</a>
-      </div>
-    </header>
+      <main>
+        <div class="map-container">
+          <img id="campus" src="campus-m.jpg" alt="Mapa do Campus" />
+          <div class="map-overlay">
+            <div
+              v-for="sala in salas"
+              :key="sala.id"
+              class="marker"
+              :style="{left: sala.x + 'px', top: sala.y + 'px'}"
+              @click="mostrarSala(sala)"
+              :title="sala.nome"
+            ></div>
 
-    <main>
-      <img id="campus" src="campus-m.jpg" alt="" />
-    </main>
+            <div class="sala-info" v-if="salaSelecionada">
+              <h2>{{ salaSelecionada.nome }}</h2>
+              <div>
+                <h3>Horários</h3>
+                <p>{{ salaSelecionada.horario }}</p>
+              </div>
+              <button @click="salaSelecionada = null">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
