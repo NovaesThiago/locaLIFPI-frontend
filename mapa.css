@@ -206,3 +206,69 @@ main {
 .elemento-92 { width: 10px; height: 5px; left: 90px; top: 685px; }
 
 .elemento-93 { width: 10px; height: 5px; left: 90px; top: 650px; }
+
+
+
+
+/* POP-UPS INFOS */
+
+.sala-info {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #003300; /* Verde escuro */
+    color: white;
+    padding: 25px;
+    border-radius: 16px;
+    width: 320px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    font-family: 'Arial', sans-serif;
+}
+
+.sala-info h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.sala-info img {
+    width: 100%;
+    border-radius: 12px;
+    background: white;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.info-section {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.info-section h3 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.info-box {
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.sala-info button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
