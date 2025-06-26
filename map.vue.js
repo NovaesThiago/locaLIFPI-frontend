@@ -10,7 +10,7 @@ createApp({
             {
               id: 1,
               nome: "Sala 1",
-              x: 30,
+              x: 25,
               y: 154,
               imagem: "saladeaula.jpg",
               horarios: {
@@ -320,7 +320,7 @@ createApp({
             {
               id: 34,
               nome: "Sala 34",
-              x: 30,
+              x: 25,
               y: 573,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
@@ -626,7 +626,7 @@ createApp({
             {
               id: 70,
               nome: "Sala 70",
-              x: 190,
+              x: 185,
               y: 742,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },

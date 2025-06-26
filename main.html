@@ -152,7 +152,7 @@
               v-for="sala in bloco.salas"
               :key="sala.id"
               class="marker"
-              :style="{ left: sala.x + 'px', top: sala.y + 'px' }"
+              :style="{ left: sala.x + 'px', top: sala.y + 'px', width: '18px', height: '18px' }"
               @click="mostrarSala(sala)"
               :title="sala.nome"
             ></div>
