@@ -19,7 +19,7 @@
       <header>
         <div class="nav">
           <div class="logo-titulo">
-            <img src="logo-ifpi.png" alt="Logo IFPI" />
+            <a href="index.html"><img src="logo-ifpi.png" alt="Logo IFPI" /></a>
             <h2>LocaLIFPI</h2>
           </div>
 
@@ -189,23 +189,6 @@
 
         </div>
         
-
-        <!-- Lista de blocos e salas -->
-        <section>
-          <div v-for="bloco in blocosFiltrados" :key="bloco.nome" class="bloco">
-            <h2>{{ bloco.nome }}</h2>
-            <ul>
-              <li
-                v-for="sala in bloco.salas"
-                :key="sala.id"
-                @click="mostrarSala(sala)"
-                class="sala"
-              >
-                {{ sala.nome }}
-              </li>
-            </ul>
-          </div>
-        </section>
       </main>
     </div>
 

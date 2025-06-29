@@ -13,7 +13,8 @@ body {
 
 header {
   background-color: #1d4e02;
-  height: 80px;
+  background-image: radial-gradient(ellipse at center, #19882c 1%, #025310 100%);
+  height: 90px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -22,16 +23,17 @@ header {
   margin-bottom: 10px;
 }
 
-.nav,
-.links-inferiores {
-  width: 100%;
-  max-width: 420px;
-}
+
+
+
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto; /* centraliza o nav */
 }
 
 .logo-titulo {
@@ -75,11 +77,14 @@ header {
 }
 
 .links-inferiores {
-  margin-top: 8px;
+  margin-top: 20px;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1d4e02;
+  padding: 5px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
 }
 
 .links-inferiores a {
@@ -88,8 +93,22 @@ header {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  border-bottom: 1px solid white;
 }
+
+.links-inferiores a::after {
+  content: "|";
+  margin-left: 15px;
+  color: white;
+}
+
+.links-inferiores a:last-child::after {
+  content: "";
+}
+
+.links-inferiores a:hover {
+  text-decoration: underline;
+}
+
 
 /* Estilos para o mapa interativo */
 .map-container {
