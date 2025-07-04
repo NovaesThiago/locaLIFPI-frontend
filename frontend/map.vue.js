@@ -9,7 +9,7 @@ createApp({
           salas: [
             {
               id: 1,
-              nome: "Sala 1",
+              nome: "Sala 01",
               x: 25,
               y: 154,
               imagem: "saladeaula.jpg",
@@ -27,7 +27,7 @@ createApp({
           salas: [
             {
               id: 2,
-              nome: "Sala 2",
+              nome: "Sala 02",
               x: 73,
               y: 235,
               imagem: "saladeaula.jpg",
@@ -35,7 +35,7 @@ createApp({
             },
             {
               id: 3,
-              nome: "Sala 3",
+              nome: "Sala 03",
               x: 113,
               y: 235,
               imagem: "saladeaula.jpg",
@@ -43,7 +43,7 @@ createApp({
             },
             {
               id: 4,
-              nome: "Sala 4",
+              nome: "Sala 04",
               x: 137,
               y: 235,
               imagem: "saladeaula.jpg",
@@ -51,7 +51,7 @@ createApp({
             },
             {
               id: 5,
-              nome: "Sala 5",
+              nome: "Sala 05",
               x: 173,
               y: 235,
               imagem: "saladeaula.jpg",
@@ -59,7 +59,7 @@ createApp({
             },
             {
               id: 6,
-              nome: "Sala 6",
+              nome: "Sala 06",
               x: 213,
               y: 235,
               imagem: "saladeaula.jpg",
@@ -67,7 +67,7 @@ createApp({
             },
             {
               id: 7,
-              nome: "Sala 7",
+              nome: "Sala 07",
               x: 248,
               y: 235,
               imagem: "saladeaula.jpg",
@@ -81,7 +81,7 @@ createApp({
           salas: [
             {
               id: 8,
-              nome: "Sala 8",
+              nome: "Sala 08",
               x: 63,
               y: 275,
               imagem: "saladeaula.jpg",
@@ -89,7 +89,7 @@ createApp({
             },
             {
               id: 9,
-              nome: "Sala 9",
+              nome: "Sala 09",
               x: 98,
               y: 275,
               imagem: "saladeaula.jpg",

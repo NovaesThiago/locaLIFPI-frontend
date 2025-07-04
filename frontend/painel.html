@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+    />
+    <link rel="stylesheet" href="painel.css" />
+    <title>Local IFPI</title>
+    </head>
+
+    <body>
+        <div id="app">
+        <header>
+
+            <div class="links">
+                <a class="painel" href="mapa-adm.html">Mapa</a>
+                <a class="sair" href="index.html">Sair</a>
+            </div>
+
+            <div class="nav">
+
+            <div class="logo-titulo">
+                <a href="index.html"><img src="logo-ifpi.png" alt="Logo IFPI" /></a>
+                <h2>LocaLIFPI</h2>
+            </div>
+
+            <div class="search-container">
+                <input
+                type="text"
+                id="buscarSala"
+                name="buscarSala"
+                placeholder="Buscar sala"
+                autocomplete="off"
+                />
+                <span class="material-symbols-outlined lupa">search</span>
+            </div>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <div id="salas">
+                <div
+                v-for="sala in blocosFiltrados.flatMap(bloco => bloco.salas)"
+                :key="sala.id"
+                class="sala"
+                @click="mostrarSala(sala)"
+                >
+                <img :src="sala.imagem" alt="Imagem da sala" />
+                <div class="linha-inferior">
+                    <button>Editar</button>
+                    <h2>{{ sala.nome }}</h2>
+                </div>
+                </div>
+            </div>
+
+        </main>
+        </div>
+
+        <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+        <script src="map.vue.js"></script>
+    </body>
+</html>
