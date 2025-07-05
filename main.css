@@ -508,5 +508,13 @@ main {
     font-size: 15px;
   }
 
+  .elemento {
+    margin-left: 40%;
+  }
+
+  .marker {
+    margin-left: 40%;
+  }
+
 
 }

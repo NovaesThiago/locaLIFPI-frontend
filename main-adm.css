@@ -512,4 +512,11 @@ main {
         margin-right: 20px;
     }
 
+    .elemento {
+        margin-left: 40%;
+    }
+
+    .marker {
+        margin-left: 40%;
+    }
 }
