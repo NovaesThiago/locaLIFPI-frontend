@@ -636,6 +636,8 @@ createApp({
       ],
       salaSelecionada: null,
       termoBusca: "",
+      showEditPopup: false,
+      salaToEdit: null,
     };
   },
   computed: {
@@ -644,8 +646,12 @@ createApp({
       const busca = this.termoBusca.toLowerCase();
       return this.blocos
         .map((bloco) => {
-          const salasFiltradas = bloco.salas.filter((sala) =>
-            sala.nome.toLowerCase().includes(busca)
+          const salasFiltradas = bloco.salas.filter(
+            (sala) =>
+              sala.nome.toLowerCase().includes(busca) ||
+              Object.values(sala.horarios).some((horario) =>
+                horario.toLowerCase().includes(busca)
+              )
           );
           return salasFiltradas.length
             ? { ...bloco, salas: salasFiltradas }
@@ -660,6 +666,32 @@ createApp({
     },
     buscar(event) {
       this.termoBusca = event.target.value;
+    },
+    abrirEditarSala(sala) {
+      this.salaToEdit = JSON.parse(JSON.stringify(sala));
+      this.showEditPopup = true;
+    },
+    fecharEditarSala() {
+      this.showEditPopup = false;
+      this.salaToEdit = null;
+    },
+    salvarEdicao() {
+      console.log("Salvando:", this.salaToEdit);
+
+      const blocoIndex = this.blocos.findIndex((b) =>
+        b.salas.some((s) => s.id === this.salaToEdit.id)
+      );
+      if (blocoIndex !== -1) {
+        const salaIndex = this.blocos[blocoIndex].salas.findIndex(
+          (s) => s.id === this.salaToEdit.id
+        );
+        if (salaIndex !== -1) {
+          this.blocos[blocoIndex].salas[salaIndex] = { ...this.salaToEdit };
+          this.salaSelecionada = this.blocos[blocoIndex].salas[salaIndex];
+        }
+      }
+
+      this.fecharEditarSala();
     },
   },
   mounted() {
