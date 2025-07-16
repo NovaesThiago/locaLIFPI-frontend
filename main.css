@@ -518,3 +518,26 @@ main {
 
 
 }
+
+/** TABLETS **/
+
+@media only screen and (min-width: 768px) {
+
+  .links-inferiores {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .links-inferiores a {
+    font-size: 15px;
+  }
+
+  .elemento {
+    margin-left: 30%;
+  }
+
+  .marker {
+    margin-left: 30%;
+  }
+
+}

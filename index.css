@@ -241,3 +241,87 @@ footer {
   }
 
 }
+
+
+
+/** TABLETS **/
+
+@media only screen and (min-width: 768px) {
+  .esquerda {
+  }
+
+  .esquerda h2:first-child {
+  text-align: left;
+  font-size: 25px;
+  margin-left: 10px;
+  border: none;
+}
+
+.esquerda h2 {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 10px;
+  border-bottom: 2px solid black;
+  width: fit-content;
+  gap: 5px;
+}
+
+.esquerda h2 img {
+  width: 30px;
+  height: auto;
+  margin-bottom: 10px;
+  border: none;
+  padding: 0;
+}
+
+
+  .direita p {
+    width: 500px;
+    padding: 40px;
+    font-size: 23px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .esquerda img {
+    width: 600px;
+    height: 350px;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+  }
+
+  .direita img {
+    width: 600px;
+    height: 350px;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 10px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    
+  }
+
+  .direita h2 {
+    text-align: left;
+    font-size: 25px;
+    margin: 0 0 15px 0;
+  }
+
+  .esquerda p {
+    width: 500px;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0 0 15px -5px;
+    text-align: left;
+  }
+}

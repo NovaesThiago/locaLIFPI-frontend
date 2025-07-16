@@ -95,3 +95,19 @@ body {
   color: #011e0c;
   font-weight: bold;
 }
+
+
+
+/* Media Queries */
+
+
+/** NOTEBOOK **/
+
+@media only screen and (min-width: 992px) {
+
+  html,
+  body {
+    background-attachment: fixed;
+  }
+
+}
