@@ -39,6 +39,7 @@
       </header>
 
       <main>
+        
         <div class="map-container">
           <div class="container">
             <div class="elemento elemento-1"></div>
@@ -155,6 +156,7 @@
 
             <h2>{{ salaSelecionada.nome }}</h2>
             <span class="material-symbols-outlined editar" @click.stop="abrirEditarSala(salaSelecionada)">edit</span>
+            <p class="sala-tipo">{{ salaSelecionada.tipo }}</p>
 
             <img
               :src="salaSelecionada.imagem || 'https://via.placeholder.com/250x150'"
@@ -181,44 +183,45 @@
 
 
         <div v-if="showEditPopup" class="edit-container">
-            <div class="edit-header">
+
               <img
                 :src="salaToEdit.imagem || 'https://via.placeholder.com/250x150'"
                 alt="Imagem da sala"
                 class="edit-image"
               />
               <span class="material-symbols-outlined fechar" @click="fecharEditarSala">close</span>
-            </div>
 
             <div class="edit-content">
-              <div class="info-section">
-                <label>MANHÃ</label>
-                <input type="text" v-model="salaToEdit.horarios.manha" />
-              </div>
-              <div class="info-section">
-                <label>TARDE</label>
-                <input type="text" v-model="salaToEdit.horarios.tarde" />
-              </div>
-              <div class="info-section">
-                <label>NOITE</label>
-                <input type="text" v-model="salaToEdit.horarios.noite" />
-              </div>
-              <div class="info-section">
+
                 <label>SALA</label>
                 <input type="text" v-model="salaToEdit.nome" />
-              </div>
+
+                <label>MANHÃ</label>
+                <input type="text" v-model="salaToEdit.horarios.manha" />
+
+                <label>TARDE</label>
+                <input type="text" v-model="salaToEdit.horarios.tarde" />
+
+                <label>NOITE</label>
+                <input type="text" v-model="salaToEdit.horarios.noite" />
+
             </div>
 
             <div class="edit-buttons">
               <button @click="salvarEdicao" class="action-button save-button">
                 Salvar
               </button>
-              <select name="tipo" id="tipo-select" class="tipo">
-                <option value="">Tipo</option>
-                <option value="sala">Sala</option>
-                <option value="laboratorio">Laboratório</option>
-                <option value="admnistracao">Admnistração</option>
-              </select>
+
+                <select v-model="salaToEdit.tipo" id="tipo-select" class="tipo">
+                  <option class="tipo-op" disabled value="">Tipo</option>
+                  <option class="tipo-op" value="sala">Sala</option>
+                  <option class="tipo-op" value="laboratorio">Laboratório</option>
+                  <option class="tipo-op" value="administracao">Administração</option>
+                </select>
+
+
+
+
             </div>
         </div>
       </main>

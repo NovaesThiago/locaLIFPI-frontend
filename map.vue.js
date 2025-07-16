@@ -17,6 +17,7 @@ createApp({
                 manha: "TÉCNICO INFORMÁTICA 2° A",
                 tarde: "SUPERIOR QUÍMICA III",
                 noite: "SUPERIOR ADS II",
+                tipo: "",
               },
             },
           ],
@@ -32,6 +33,7 @@ createApp({
               y: 235,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 3,
@@ -40,6 +42,7 @@ createApp({
               y: 235,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 4,
@@ -48,6 +51,7 @@ createApp({
               y: 235,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 5,
@@ -56,6 +60,7 @@ createApp({
               y: 235,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 6,
@@ -64,6 +69,7 @@ createApp({
               y: 235,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 7,
@@ -72,6 +78,7 @@ createApp({
               y: 235,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
           ],
         },
@@ -86,6 +93,7 @@ createApp({
               y: 275,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 9,
@@ -94,6 +102,7 @@ createApp({
               y: 275,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 10,
@@ -102,6 +111,7 @@ createApp({
               y: 275,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 11,
@@ -110,6 +120,7 @@ createApp({
               y: 275,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 12,
@@ -118,6 +129,7 @@ createApp({
               y: 275,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 13,
@@ -126,6 +138,7 @@ createApp({
               y: 275,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
           ],
         },
@@ -140,6 +153,7 @@ createApp({
               y: 305,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 15,
@@ -148,6 +162,7 @@ createApp({
               y: 305,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 16,
@@ -156,6 +171,7 @@ createApp({
               y: 305,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 17,
@@ -164,6 +180,7 @@ createApp({
               y: 305,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 18,
@@ -172,6 +189,7 @@ createApp({
               y: 305,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
           ],
         },
@@ -186,6 +204,7 @@ createApp({
               y: 385,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 20,
@@ -194,6 +213,7 @@ createApp({
               y: 385,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 21,
@@ -202,6 +222,7 @@ createApp({
               y: 385,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 22,
@@ -210,6 +231,7 @@ createApp({
               y: 385,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 23,
@@ -218,6 +240,7 @@ createApp({
               y: 385,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
           ],
         },
@@ -232,6 +255,7 @@ createApp({
               y: 445,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 25,
@@ -240,6 +264,7 @@ createApp({
               y: 465,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 26,
@@ -248,6 +273,7 @@ createApp({
               y: 445,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 27,
@@ -256,6 +282,7 @@ createApp({
               y: 465,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
           ],
         },
@@ -270,6 +297,7 @@ createApp({
               y: 545,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 29,
@@ -278,6 +306,7 @@ createApp({
               y: 545,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 30,
@@ -286,6 +315,7 @@ createApp({
               y: 545,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 31,
@@ -294,6 +324,7 @@ createApp({
               y: 545,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 32,
@@ -302,6 +333,7 @@ createApp({
               y: 545,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 33,
@@ -310,6 +342,7 @@ createApp({
               y: 553,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
           ],
         },
@@ -324,6 +357,7 @@ createApp({
               y: 573,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 35,
@@ -332,6 +366,7 @@ createApp({
               y: 575,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 36,
@@ -340,6 +375,7 @@ createApp({
               y: 575,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 37,
@@ -348,6 +384,7 @@ createApp({
               y: 575,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 38,
@@ -356,6 +393,7 @@ createApp({
               y: 575,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 39,
@@ -364,6 +402,7 @@ createApp({
               y: 575,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 40,
@@ -372,6 +411,7 @@ createApp({
               y: 575,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 41,
@@ -380,6 +420,7 @@ createApp({
               y: 560,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
           ],
         },
@@ -394,6 +435,7 @@ createApp({
               y: 615,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 43,
@@ -402,6 +444,7 @@ createApp({
               y: 615,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 44,
@@ -410,6 +453,7 @@ createApp({
               y: 615,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 45,
@@ -418,6 +462,7 @@ createApp({
               y: 615,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 46,
@@ -426,6 +471,7 @@ createApp({
               y: 615,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 47,
@@ -434,6 +480,7 @@ createApp({
               y: 615,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 48,
@@ -442,6 +489,7 @@ createApp({
               y: 615,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 49,
@@ -450,6 +498,7 @@ createApp({
               y: 615,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 50,
@@ -458,6 +507,7 @@ createApp({
               y: 615,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 51,
@@ -466,6 +516,7 @@ createApp({
               y: 615,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 52,
@@ -474,6 +525,7 @@ createApp({
               y: 615,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
           ],
         },
@@ -488,6 +540,7 @@ createApp({
               y: 652,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 54,
@@ -496,6 +549,7 @@ createApp({
               y: 668,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 55,
@@ -504,6 +558,7 @@ createApp({
               y: 688,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 56,
@@ -512,6 +567,7 @@ createApp({
               y: 652,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 57,
@@ -520,6 +576,7 @@ createApp({
               y: 668,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 58,
@@ -528,6 +585,7 @@ createApp({
               y: 688,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 59,
@@ -536,6 +594,7 @@ createApp({
               y: 663,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 60,
@@ -544,6 +603,7 @@ createApp({
               y: 682,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 61,
@@ -552,6 +612,7 @@ createApp({
               y: 662,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
           ],
         },
@@ -566,6 +627,7 @@ createApp({
               y: 725,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 63,
@@ -574,6 +636,7 @@ createApp({
               y: 725,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 64,
@@ -582,6 +645,7 @@ createApp({
               y: 725,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 65,
@@ -590,6 +654,7 @@ createApp({
               y: 725,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 66,
@@ -598,6 +663,7 @@ createApp({
               y: 725,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 67,
@@ -606,6 +672,7 @@ createApp({
               y: 725,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 68,
@@ -614,6 +681,7 @@ createApp({
               y: 725,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 69,
@@ -622,6 +690,7 @@ createApp({
               y: 725,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
             {
               id: 70,
@@ -630,6 +699,7 @@ createApp({
               y: 742,
               imagem: "saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              tipo: "",
             },
           ],
         },
