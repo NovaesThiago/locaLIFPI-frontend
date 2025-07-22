@@ -9,9 +9,9 @@ createApp({
           salas: [
             {
               id: 1,
-              nome: "Sala 01",
-              x: 25,
-              y: 154,
+              nome: "Sala 01",  //refeitorio
+              x: 20,
+              y: 145,
               imagem: "saladeaula.jpg",
               horarios: {
                 manha: "TÉCNICO INFORMÁTICA 2° A",
@@ -414,7 +414,7 @@ createApp({
               tipo: "",
             },
             {
-              id: 41,
+              id: 41, //quadra
               nome: "Sala 41",
               x: 362,
               y: 560,
@@ -588,7 +588,7 @@ createApp({
               tipo: "",
             },
             {
-              id: 59,
+              id: 59, //auditorio
               nome: "Sala 59",
               x: 225,
               y: 663,
@@ -598,7 +598,7 @@ createApp({
             },
             {
               id: 60,
-              nome: "Sala 60",
+              nome: "Sala 60", //auditorio
               x: 225,
               y: 682,
               imagem: "saladeaula.jpg",
@@ -607,7 +607,7 @@ createApp({
             },
             {
               id: 61,
-              nome: "Sala 61",
+              nome: "Sala 61",  //biblioteca
               x: 246,
               y: 662,
               imagem: "saladeaula.jpg",

@@ -110,6 +110,19 @@ section img {
   padding: 20px;
 }
 
+.localifpi h2:first-child {
+  margin-bottom: -15px;
+}
+
+.localifpi-logo {
+  width: 20px;
+  height: 28px;
+  margin: 0 -5px 0 -5px;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
 .sobre {
   background-color: rgba(255, 255, 255, 0.475);
   border-radius: 15px;
@@ -118,7 +131,7 @@ section img {
 }
 
 footer {
-  background-color: rgb(29, 84, 0);
+  background-color: #1d5400;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -174,7 +187,7 @@ footer {
   gap: 5px;
 }
 
-.esquerda h2 img {
+.localifpi-logo {
   width: 30px;
   height: auto;
   margin-bottom: 10px;

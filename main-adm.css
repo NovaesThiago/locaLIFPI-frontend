@@ -1,18 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+:root {
+    --cor0: #fff5ec;
+    --cor1: #025310;
+    --cor2: #00420c;
+    --cor3: #051945;
+    --cor4: #000333;
+    --cor5: #0032A0;
+    --cor6: #0032A0;
+    --cor7: #fff5ec;
+    --cor8: #C9C2BE;
+}
+
 * {
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
-    background-color: #fff5ec;
-    font-family: "Open Sans", sans-serif;
+    background-color: var(--cor0);
     margin: 0;
     overflow-x: hidden;
 }
 
 header {
-    background-color: #051945;
+    background-color: var(--cor3);
     height: 90px;
     width: 100%;
     display: flex;
@@ -113,7 +125,7 @@ header {
     position: absolute;
     width: 24px;
     height: 24px;
-    background-color: #1d4e02;
+    background-color: var(--cor1);
     border-radius: 50%;
     border: 2px solid white;
     cursor: pointer;
@@ -124,14 +136,14 @@ header {
 
 .marker:hover {
     transform: translate(-50%, -50%) scale(1.2);
-    background-color: #2e5d2e;
+    background-color: var(--cor1);
 }
 
 .sala-info {
     position: absolute;
     right: 20px;
     top: 20px;
-    background-color: rgba(46, 93, 46, 0.95);
+    background-color: #2e5d2ef2;
     color: white;
     padding: 20px;
     border-radius: 8px;
@@ -142,50 +154,10 @@ header {
     opacity: 1;
 }
 
-.sala-info[style*="display: none"] {
-    opacity: 0;
-    transform: translateY(10px);
-}
-
-/* BLOCOS E SALAS */
-.bloco {
-    background-color: #e8f5e9;
-    padding: 10px 15px;
-    margin: 15px auto;
-    border-left: 5px solid #1d4e02;
-    border-radius: 6px;
-    max-width: 600px;
-}
-
-.bloco h2 {
-    margin-top: 0;
-    font-size: 18px;
-    color: #1d4e02;
-}
-
-.bloco ul {
-    list-style: none;
-    padding-left: 10px;
-}
-
-.bloco .sala {
-    cursor: pointer;
-    padding: 6px 0;
-    border-bottom: 1px dashed #ccc;
-    font-size: 14px;
-    transition: color 0.3s ease;
-}
-
-.bloco .sala:hover {
-    color: #1d4e02;
-    font-weight: bold;
-}
-
-
 /* MAPA */
 
 main {
-    background: #fff5ec;
+    background: var(--cor7);
     padding: 10px;
 }
 
@@ -196,7 +168,7 @@ main {
 }
 
 .elemento {
-    background-color: #C9C2BE;
+    background-color: var(--cor8);
     position: absolute;
 }
 
@@ -401,7 +373,8 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #000333;
+    background-color: var(--cor4);
+    border: 1px solid white;
     color: white;
     padding: 25px;
     border-radius: 16px;
@@ -409,8 +382,7 @@ main {
     max-width: 90%;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    font-family: 'Arial', sans-serif;
+    z-index: 10;
 }
 
 .sala-info h2 {
@@ -431,7 +403,8 @@ main {
 }
 
 .sala-info .editar {
-    background-color: #000ed0;
+    background-color: var(--cor5);
+    border: 1px solid white;
     border-radius: 50%;
     padding: 2px;
     cursor: pointer;
@@ -474,6 +447,7 @@ main {
     padding: 10px;
     border-radius: 10px;
     font-size: 14px;
+    font-weight: 600;
 }
 
 .sala-info button {
@@ -492,7 +466,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #000333;
+    background-color: var(--cor4);
     color: white;
     padding: 25px;
     border-radius: 16px;
@@ -500,8 +474,7 @@ main {
     max-width: 90%;
     text-align: center;
     border: 1px solid white;
-    z-index: 1000;
-    font-family: 'Arial', sans-serif;
+    z-index: 10;
 }
 
 .edit-container img {
@@ -562,13 +535,13 @@ main {
 }
 
 .save-button:hover {
-    background-color: #000ed0;
+    background-color: var(--cor5);
 }
 
 .tipo {
     border: none;
     background-color: white;
-    color: #0032A0;
+    color: var(--cor6);
     padding: 10px 15px;
     border-radius: 20px;
     font-weight: bold;
@@ -576,7 +549,7 @@ main {
 }
 
 .tipo option {
-    color: #0032A0;
+    color: var(--cor6);
     font-weight: bold;
 }
 

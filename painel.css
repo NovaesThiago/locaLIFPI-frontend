@@ -1,19 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+:root {
+    --cor0: #fff5ec;
+    --cor1: #025310;
+    --cor2: #00420c;
+    --cor3: #051945;
+    --cor4: #000333;
+    --cor5: #0032A0;
+    --cor6: #0032A0;
+    --cor7: #fff5ec;
+    --cor8: #C9C2BE;
+}
+
 * {
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
 }
 
 body {
-    background-color: #fff5ec;
-    font-family: "Open Sans", sans-serif;
+    background-color: var(--cor7);
     margin: 0;
     overflow-x: hidden;
 }
 
 header {
-    background-color: #051945;
+    background-color: var(--cor3);
     height: 90px;
     width: 100%;
     display: flex;
@@ -110,7 +121,7 @@ header {
 }
 
 .sala {
-    background-color: #0b1d3a;
+    background-color: var(--cor4);
     border-radius: 12px;
     padding: 10px;
     text-align: center;
@@ -132,7 +143,7 @@ header {
 
 .sala button {
     background-color: white;
-    color: #0b1d3a;
+    color: var(--cor4);
     font-size: 13px;
     font-weight: bold;
     padding: 4px 10px;
