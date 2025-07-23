@@ -142,22 +142,23 @@
 
           <div
             v-for="bloco in blocosFiltrados"
-            :key="bloco.nome + '-marcadores'"
-          >
+            :key="bloco.nome + '-marcadores'">
             <div
               v-for="sala in bloco.salas"
               :key="sala.id"
               class="marker"
+              :class="'marker-' + (sala.tipo || 'padrao')"
               :style="{ left: sala.x + 'px', top: sala.y + 'px', width: '18px', height: '18px' }"
               @click="mostrarSala(sala)"
-              :title="sala.nome"
-            ></div>
+              :title="sala.nome">
+            </div>
           </div>
 
           <div v-if="salaSelecionada" class="sala-info">
             <button @click="salaSelecionada = null">×</button>
             
             <h2>{{ salaSelecionada.nome }}</h2>
+            <p class="sala-tipo">{{ salaSelecionada.tipo }}</p>
             
             <img
               :src="salaSelecionada.imagem || 'https://via.placeholder.com/250x150'"
