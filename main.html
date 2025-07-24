@@ -148,7 +148,7 @@
               :key="sala.id"
               class="marker"
               :class="'marker-' + (sala.tipo || 'padrao')"
-              :style="{ left: sala.x + 'px', top: sala.y + 'px', width: '18px', height: '18px' }"
+              :style="{ left: sala.x + 'px', top: sala.y + 'px'}"
               @click="mostrarSala(sala)"
               :title="sala.nome">
             </div>
