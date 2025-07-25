@@ -152,7 +152,7 @@ header {
 }
 
 .marker-refeitorio {
-  background: var(--cor9) url('refeitorio.svg');
+  background: var(--cor9) url('../icons/refeitorio.svg');
   background-size: 18px;
   background-position: center;
   background-repeat: no-repeat;
@@ -191,7 +191,7 @@ header {
 }
 
 .marker-quadra {
-  background: var(--cor13) url('quadra.svg');
+  background: var(--cor13) url('../icons/quadra.svg');
   background-size: 14px;
   background-position: center;
   background-repeat: no-repeat;
