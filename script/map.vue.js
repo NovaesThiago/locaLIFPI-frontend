@@ -272,7 +272,7 @@ createApp({
             {
               id: 27,
               nome: "Sala 27",
-              x: 243,
+              x: 237,
               y: 263,
               imagem: "../assets/images/saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
@@ -281,7 +281,7 @@ createApp({
             {
               id: 28,
               nome: "Sala 28",
-              x: 269,
+              x: 262,
               y: 263,
               imagem: "../assets/images/saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
@@ -290,7 +290,7 @@ createApp({
             {
               id: 29,
               nome: "Sala 29",
-              x: 298.5,
+              x: 292,
               y: 263,
               imagem: "../assets/images/saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
@@ -299,7 +299,7 @@ createApp({
             {
               id: 30,
               nome: "Sala 30",
-              x: 319,
+              x: 312,
               y: 263,
               imagem: "../assets/images/saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
