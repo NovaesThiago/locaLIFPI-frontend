@@ -372,7 +372,7 @@ createApp({
               y: 322,
               imagem: "../assets/images/saladeaula.jpg",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "quadra",
+              tipo: "cantina",
             },
           ],
         },

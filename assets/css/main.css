@@ -7,7 +7,7 @@
     --cor4: #003300;
     --cor5: #2e5d2ef2;
     --cor6: #fff5ec;
-    --cor7: #C9C2BE;
+    --cor7: #a4a2a2;
     --cor8: #0f0028;
     --cor9: #ff4d00;
     --cor10: #000661;
@@ -192,7 +192,7 @@ header {
 
 .marker-quadra {
   background: var(--cor13) url('../icons/quadra.svg');
-  background-size: 14px;
+  background-size: 25px;
   background-position: center;
   background-repeat: no-repeat;
   border: 1px solid #000000;
