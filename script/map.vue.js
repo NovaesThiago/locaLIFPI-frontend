@@ -442,20 +442,20 @@ createApp({
           salas: [
             {
               id: 44,
-              nome: "Sala 44",
+              nome: "Sala E2 Laboratório de Linguágens",
               x: 82,
               y: 470,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { },
               tipo: "sala",
             },
             {
               id: 45,
-              nome: "Sala 45",
+              nome: "Sala E1",
               x: 50,
               y: 485,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
               tipo: "sala",
             },
             {
@@ -484,20 +484,20 @@ createApp({
           salas: [
             {
               id: 48,
-              nome: "Sala 48",
+              nome: "Sala Antigo Refeitorio",
               x: 82,
               y: 590,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
               tipo: "sala",
             },
             {
               id: 49,
-              nome: "Sala 49",
+              nome: "Sala Antigo Refeitorio",
               x: 107,
               y: 590,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
               tipo: "sala",
             },
             {
@@ -511,11 +511,11 @@ createApp({
             },
             {
               id: 51,
-              nome: "Sala 51",
+              nome: "Sala Setor Saúde",
               x: 262,
               y: 590,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { },
               tipo: "sala",
             },
             {
@@ -544,20 +544,20 @@ createApp({
             },
             {
               id: 54,
-              nome: "Sala 54",
+              nome: "Sala MAMBEE",
               x: 172,
               y: 671,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { },
               tipo: "sala",
             },
             {
               id: 55,
-              nome: "Sala 55",
+              nome: "Sala LaBioMat",
               x: 243,
               y: 671,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { },
               tipo: "sala",
             },
             {
@@ -590,7 +590,7 @@ createApp({
               x: 102,
               y: 770,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "Sala de Musica", tarde: "Sala de Musica", noite: "Sala de Musica" },
               tipo: "sala",
             },
             {
@@ -599,7 +599,7 @@ createApp({
               x: 132,
               y: 770,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "Ensino Médio Integrado", tarde: "#####", noite: "#####" },
+              horarios: { manha: "Ensino Médio Integrado", tarde: "#####", noite: "Licenciatura em Quimica" },
               tipo: "sala",
             },
             {
