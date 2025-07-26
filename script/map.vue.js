@@ -644,6 +644,7 @@ createApp({
         {
           nome: "Bloco S",
           salas: [
+            //sala mambee extensao antiga
             {
               id: 64,
               nome: "Sala I6",  //biblioteca

@@ -161,6 +161,15 @@ header {
   height: 30px;
 }
 
+.marker-cantina {
+  background: orange url('../icons/cantina.svg');
+  background-size: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #000000;
+  width: 20px;
+  height: 20px;
+}
 
 .marker-sala {
   background-color: var(--cor4);
@@ -193,9 +202,8 @@ header {
 .marker-quadra {
   background: var(--cor13) url('../icons/quadra.svg');
   background-size: 25px;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  border: 1px solid #000000;
   width: 18px;
   height: 18px;
 }
