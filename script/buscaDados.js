@@ -1,7 +1,7 @@
 async function enviaBlocoA(){
   try {
     const resposta = await fetch("https://suaapi.com/blocos", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json"
       },
@@ -17,7 +17,7 @@ async function enviaBlocoA(){
 async function enviaBlocoB(){
   try {
     const resposta = await fetch("https://suaapi.com/blocos", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json"
       },
@@ -34,7 +34,7 @@ async function enviaBlocoB(){
 async function enviaBlocoD(){
   try {
     const resposta = await fetch("https://suaapi.com/blocos", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json"
       },
@@ -51,7 +51,7 @@ async function enviaBlocoD(){
 async function enviaBlocoE(){
   try {
     const resposta = await fetch("https://suaapi.com/blocos", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json"
       },
@@ -68,7 +68,7 @@ async function enviaBlocoE(){
 async function enviaBlocoF(){
   try {
     const resposta = await fetch("https://suaapi.com/blocos", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json"
       },
@@ -85,7 +85,7 @@ async function enviaBlocoF(){
 async function enviarBlocoG() {
   try {
     const resposta = await fetch("https://suaapi.com/blocos", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json"
       },
@@ -102,7 +102,7 @@ async function enviarBlocoG() {
 async function enviarBlocoH() {
   try {
     const resposta = await fetch("https://suaapi.com/blocos", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json"
       },
@@ -119,7 +119,7 @@ async function enviarBlocoH() {
 async function enviarBlocoI() {
   try {
     const resposta = await fetch("https://suaapi.com/blocos", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json"
       },
@@ -136,7 +136,7 @@ async function enviarBlocoI() {
 async function enviarBlocoJ() {
   try {
     const resposta = await fetch("https://suaapi.com/blocos", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json"
       },
@@ -153,7 +153,7 @@ async function enviarBlocoJ() {
 async function enviarBlocoK() {
   try {
     const resposta = await fetch("https://suaapi.com/blocos", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json"
       },
@@ -170,7 +170,7 @@ async function enviarBlocoK() {
 async function enviarBlocoS() {
   try {
     const resposta = await fetch("https://suaapi.com/blocos", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json"
       },
