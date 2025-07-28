@@ -565,12 +565,16 @@ main {
     margin-left: 40%;
   }
 
+  .map-container {
+    left: 6%;
+  }
+
 
 }
 
 /** TABLETS **/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 500px) {
 
   .links-inferiores {
     justify-content: center;
@@ -587,6 +591,11 @@ main {
 
   .marker {
     margin-left: 30%;
+  }
+
+  .map-container {
+    right: 5%;
+    margin: auto;
   }
 
 }

@@ -83,7 +83,6 @@ createApp({
               x: 262,
               y: 138,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "Laboratório de Informática 01", tarde: "Laboratório de Informática 01", noite: "LABORATÓRIO DE INFORMÁTICA 01" },
               tipo: "laboratorio",
             },
             {
@@ -92,7 +91,6 @@ createApp({
               x: 292,
               y: 138,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "LABORATÓRIO DE INFORMÁTICA 02", tarde: "Laboratório de Informática 02", noite: "Laboratório de Informática 02" },
               tipo: "laboratorio",
             },
             {
@@ -101,7 +99,6 @@ createApp({
               x: 307,
               y: 138,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "LABORATÓRIO DE INFORMÁTICA 03", tarde: "Laboratório de Informática 03EMIT Informática 1º Ano A", noite: "Laboratório de Informática 03EMIT Informática 1º Ano A" },
               tipo: "laboratorio",
             },
           ],
@@ -182,7 +179,6 @@ createApp({
               x: 293,
               y: 171.5,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "laboratorio",
             },
             {
@@ -191,7 +187,6 @@ createApp({
               x: 293,
               y: 196,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "laboratorio",
             },
             {
@@ -200,7 +195,6 @@ createApp({
               x: 293,
               y: 222,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "laboratorio",
             },
           ],
