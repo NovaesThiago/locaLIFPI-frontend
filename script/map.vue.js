@@ -10,7 +10,7 @@ createApp({
             {
               id: 1,
               nome: "Refeitório",
-              tipo: "refeitorio",  //refeitorio
+              tipo: "refeitorio",
               x: 330,
               y: 933,
               imagem: "../assets/images/saladeaula.jpg",
@@ -71,13 +71,19 @@ createApp({
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "administracao",
             },
+          ]
+        },
+
+        {
+          nome: "Bloco A",
+          salas: [
             {
               id: 8,
               nome: "Laboratório de Informática I",
               x: 262,
               y: 138,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "Laboratório de Informática 01", tarde: "Laboratório de Informática 01", noite: "LABORATÓRIO DE INFORMÁTICA 01" },
               tipo: "laboratorio",
             },
             {
@@ -86,7 +92,7 @@ createApp({
               x: 292,
               y: 138,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "LABORATÓRIO DE INFORMÁTICA 02", tarde: "Laboratório de Informática 02", noite: "Laboratório de Informática 02" },
               tipo: "laboratorio",
             },
             {
@@ -95,14 +101,14 @@ createApp({
               x: 307,
               y: 138,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "LABORATÓRIO DE INFORMÁTICA 03", tarde: "Laboratório de Informática 03EMIT Informática 1º Ano A", noite: "Laboratório de Informática 03EMIT Informática 1º Ano A" },
               tipo: "laboratorio",
             },
           ],
         },
 
         {
-          nome: "Bloco B",
+          nome: "Bloco B1",
           salas: [
             {
               id: 11,
@@ -135,7 +141,7 @@ createApp({
         },
 
         {
-          nome: "Bloco D",
+          nome: "Bloco B2",
           salas: [
             {
               id: 14,
@@ -164,6 +170,12 @@ createApp({
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "administracao",
             },
+          ]
+        },
+
+        {
+          nome: "Bloco B3",
+          salas: [
             {
               id: 17,
               nome: "Laboratório de Eletrotécnica III",
@@ -195,7 +207,7 @@ createApp({
         },
 
         {
-          nome: "Bloco E",
+          nome: "Bloco B4",
           salas: [
             {
               id: 20,
@@ -260,13 +272,19 @@ createApp({
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "administracao",
             },
+          ]
+        },
+
+        {
+          nome: "Bloco C",
+          salas: [
             {
               id: 28,
               nome: "Sala C1",
               x: 262,
               y: 263,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "EMIT Informática 1º Ano A", tarde: "Contra turno Ensino Médio", noite: "Técnico Eletrotécnica Módulo I" },
               tipo: "sala",
             },
             {
@@ -275,7 +293,7 @@ createApp({
               x: 292,
               y: 263,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "EMIT Informática 1º Ano B", tarde: "Contra turno Ensino Médio", noite: "Téc. Energia Renovável Módulo III" },
               tipo: "sala",
             },
             {
@@ -284,14 +302,14 @@ createApp({
               x: 312,
               y: 263,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "EMIT Eletrotécnica 1º Ano", tarde: "Contra turno Ensino Médio", noite: "Técnico Desenvolvimento de Sistemas Módulo I" },
               tipo: "sala",
             },
           ],
         },
 
         {
-          nome: "Bloco F",
+          nome: "Bloco D",
           salas: [
             {
               id: 31,
@@ -299,7 +317,7 @@ createApp({
               x: 92,
               y: 313,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "EMIT Eletrotécnica 2º Ano", tarde: "Licenciatura em Física Módulo III", noite: "Licenciatura em Física Módulo I" },
               tipo: "sala",
             },
             {
@@ -308,7 +326,7 @@ createApp({
               x: 123,
               y: 313,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "EMIT Informática 2º Ano B", tarde: "Licenciatura em Química Módulo III", noite: "Análise e Desenvolvimento de Sistemas Módulo II" },
               tipo: "sala",
             },
             {
@@ -317,7 +335,7 @@ createApp({
               x: 172,
               y: 313,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "EMIT Informática 2º Ano A", tarde: "Contra turno Ensino Médio", noite: "Téc. Desenvolvimento de Sistemas Módulo III" },
               tipo: "sala",
             },
             {
@@ -335,7 +353,7 @@ createApp({
               x: 277,
               y: 313,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "EMIT Administração 2º Ano", tarde: "Partiu IF", noite: "Proeja Técnico Administração Módulo II" },
               tipo: "sala",
             },
             {
@@ -344,9 +362,15 @@ createApp({
               x: 307,
               y: 313,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "EMIT Administração 1º Ano", tarde: "Contra turno Ensino Médio", noite: "Proeja Técnico Comércio Módulo IV" },
               tipo: "sala",
             },
+          ]
+        },
+
+        {
+          nome: "Cantina",
+          salas: [
             {
               id: 37,
               nome: "Cantina",
@@ -360,7 +384,7 @@ createApp({
         },
 
         {
-          nome: "Bloco G",
+          nome: "Bloco E",
           salas: [
             {
               id: 38,
@@ -377,7 +401,7 @@ createApp({
               x: 92,
               y: 384,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "EMIT Eletrotécnica 3º Ano", tarde: "Análise e Desenvolvimento de Sistemas Módulo V", noite: "Licenciatura em Física Módulo IX" },
               tipo: "sala",
             },
             {
@@ -386,7 +410,7 @@ createApp({
               x: 123,
               y: 384,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "EMIT Administração 3º Ano B", tarde: "Análise e Desenvolvimento de Sistemas Módulo III", noite: "Licenciatura em Física Módulo VII" },
               tipo: "sala",
             },
             {
@@ -395,7 +419,7 @@ createApp({
               x: 171.5,
               y: 384,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "EMIT Administração 3º Ano A", tarde: "Análise e Desenvolvimento de Sistemas Módulo I", noite: "Licenciatura em Física Módulo V" },
               tipo: "sala",
             },
             {
@@ -404,7 +428,7 @@ createApp({
               x: 277,
               y: 384,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "Laboratório de Linguagens", tarde: "Laboratório de Linguagens", noite: "Laboratório de Linguagens" },
               tipo: "sala",
             },
             {
@@ -420,7 +444,7 @@ createApp({
         },
 
         {
-          nome: "Bloco H",
+          nome: "Bloco F",
           salas: [
             {
               id: 44,
@@ -464,7 +488,7 @@ createApp({
               x: 322,
               y: 470,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "Laboratório de Administração", tarde: "Laboratório de Administração", noite: "Laboratório de Administração" },
               tipo: "sala",
             },
             {
@@ -473,134 +497,14 @@ createApp({
               x: 350,
               y: 485,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
+              horarios: { manha: "Setor de Saúde", tarde: "Setor de Saúde", noite: "Setor de Saúde" },
               tipo: "sala",
             },
           ],
         },
 
         {
-          nome: "Bloco I",
-          salas: [
-            {
-              id: 48,
-              nome: "Sala G6",
-              x: 40,
-              y: 605,
-              imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
-              tipo: "sala",
-            },
-            {
-              id: 49,
-              nome: "Sala G5",
-              x: 112,
-              y: 590,
-              imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
-              tipo: "sala",
-            },
-            {
-              id: 50,
-              nome: "Sala G4",
-              x: 142,
-              y: 590,
-              imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "sala",
-            },
-            {
-              id: 51,
-              nome: "Sala G3",
-              x: 232,
-              y: 590,
-              imagem: "../assets/images/saladeaula.jpg",
-              horarios: { },
-              tipo: "sala",
-            },
-            {
-              id: 52,
-              nome: "Sala G2",
-              x: 282,
-              y: 590,
-              imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "sala",
-            },
-            {
-              id: 53,
-              nome: "Sala G1",
-              x: 317,
-              y: 590,
-              imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "sala",
-            },
-          ],
-        },
-
-        {
-          nome: "Bloco J",
-          salas: [
-            {
-              id: 54,
-              nome: "Sala H6",
-              x: 92,
-              y: 671,
-              imagem: "../assets/images/saladeaula.jpg",
-              horarios: { },
-              tipo: "sala",
-            },
-            {
-              id: 55,
-              nome: "Sala H5",
-              x: 123,
-              y: 671,
-              imagem: "../assets/images/saladeaula.jpg",
-              horarios: { },
-              tipo: "sala",
-            },
-            {
-              id: 56,
-              nome: "Sala H4",
-              x: 172,
-              y: 671,
-              imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "sala",
-            },
-            {
-              id: 57,
-              nome: "Sala H3",
-              x: 243,
-              y: 671,
-              imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "sala",
-            },
-            {
-              id: 58,
-              nome: "Sala H2",
-              x: 283,
-              y: 671,
-              imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "Sala de Musica", tarde: "Sala de Musica", noite: "Sala de Musica" },
-              tipo: "sala",
-            },
-            {
-              id: 59,
-              nome: "Sala H1",
-              x: 312,
-              y: 671,
-              imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "Ensino Médio Integrado", tarde: "#####", noite: "Licenciatura em Quimica" },
-              tipo: "sala",
-            },
-          ],
-        },
-
-        {
-          nome: "Bloco K",
+          nome: "Bloco G",
           salas: [
             {
               id: 60,
@@ -669,7 +573,7 @@ createApp({
         },
 
         {
-          nome: "Bloco J",
+          nome: "Bloco ",
           salas: [
             {
               id: 54,
@@ -677,7 +581,7 @@ createApp({
               x: 92,
               y: 671,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { },
+              horarios: { manha: "Sala de Música", tarde: "Sala de Música", noite: "Sala de Música" },
               tipo: "sala",
             },
             {
@@ -686,7 +590,7 @@ createApp({
               x: 123,
               y: 671,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { },
+              horarios: { manha: "EMIT Informática 3º Ano", tarde: "Licenciatura em Química Módulo I", noite: "#####" },
               tipo: "sala",
             },
             {
@@ -722,14 +626,14 @@ createApp({
               x: 312,
               y: 671,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "Ensino Médio Integrado", tarde: "#####", noite: "Licenciatura em Quimica" },
+              horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
               tipo: "sala",
             },
           ],
         },
 
         {
-          nome: "Bloco K",
+          nome: "Bloco I",
           salas: [
             {
               id: 61,
@@ -746,8 +650,8 @@ createApp({
               x: 92,
               y: 750,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { },
-              tipo: "auditorio",
+              horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
+              tipo: "sala",
             },
             {
               id: 63,
@@ -756,7 +660,7 @@ createApp({
               y: 750,
               imagem: "../assets/images/saladeaula.jpg",
               horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
-              tipo: "auditorio",
+              tipo: "sala",
             },
             {
               id: 64,
@@ -764,7 +668,7 @@ createApp({
               x: 182,
               y: 750,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção"  },
+              horarios: { manha: "Mnpef polo 65", tarde: "Mnpef polo 65", noite: "Licenciatura em Quimica Módulo IX" },
               tipo: "biblioteca",
             },
             {
@@ -773,7 +677,7 @@ createApp({
               x: 242,
               y: 750,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
+              horarios: { manha: "Licenciatura em Química Módulo VII", tarde: "###", noite: "###" },
               tipo: "sala",
             },
             {
@@ -782,7 +686,7 @@ createApp({
               x: 282,
               y: 750,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { manha: "Mnpef polo 65", tarde: "Mnpef polo 65", noite: "Licenciatura em Quimica" },
+              horarios: { manha: "Mnpef polo 65", tarde: "Mnpef polo 65", noite: "Licenciatura em Quimica Módulo V" },
               tipo: "sala",
             },
             {
@@ -791,36 +695,11 @@ createApp({
               x: 327,
               y: 750,
               imagem: "../assets/images/saladeaula.jpg",
-              horarios: { },
+              horarios: { manha: "Laboratório de Matemática", tarde: "Laboratório de Matemática", noite: "Laboratório de Matemática" },
               tipo: "sala",
             },
           ],
         },
-
-        // {
-        //   nome: "Bloco S",
-        //   salas: [
-        //     //sala mambee extensao antiga
-        //     {
-        //       id: 68,
-        //       nome: "Sala I3",
-        //       x: 262,
-        //       y: 839,
-        //       imagem: "../assets/images/saladeaula.jpg",
-        //       horarios: { manha: "#####", tarde: "#####", noite: "Licenciatura em Quimica" },
-        //       tipo: "sala",
-        //     },
-        //     {
-        //       id: 69,
-        //       nome: "Sala I2",
-        //       x: 298,
-        //       y: 839,
-        //       imagem: "../assets/images/saladeaula.jpg",
-        //       horarios: { manha: "Mnpef polo 65", tarde: "Mnpef polo 65", noite: "Licenciatura em Quimica" },
-        //       tipo: "sala",
-        //     },
-        //   ],
-        // },
       ],
       salaSelecionada: null,
       termoBusca: "",
@@ -849,20 +728,25 @@ createApp({
     },
   },
   methods: {
+
     mostrarSala(sala) {
       this.salaSelecionada = sala;
     },
+
     buscar(event) {
       this.termoBusca = event.target.value;
     },
+
     abrirEditarSala(sala) {
       this.salaToEdit = JSON.parse(JSON.stringify(sala));
       this.showEditPopup = true;
     },
+
     fecharEditarSala() {
       this.showEditPopup = false;
       this.salaToEdit = null;
     },
+
     salvarEdicao() {
       console.log("Salvando:", this.salaToEdit);
 
@@ -881,6 +765,7 @@ createApp({
 
       this.fecharEditarSala();
     },
+
   },
   mounted() {
     const input = document.querySelector(".search-container input");
