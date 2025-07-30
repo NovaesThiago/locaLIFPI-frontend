@@ -47,7 +47,7 @@
           <div class="container">
             <div class="elemento elemento-1"></div>
             <div class="elemento elemento-2"></div>
-            <div class="elemento elemento-3"></div>
+            <div class="elemento elemento-3 marker-quadra"></div>
             <div class="elemento elemento-4"></div>
             <div class="elemento elemento-5"></div>
             <div class="elemento elemento-6"></div>
@@ -138,20 +138,21 @@
             <div class="elemento elemento-91"></div>
             <div class="elemento elemento-92"></div>
             <div class="elemento elemento-93"></div>
+            <div class="elemento elemento-94"></div>
           </div>
 
           <div
             v-for="bloco in blocosFiltrados"
-            :key="bloco.nome + '-marcadores'"
-          >
+            :key="bloco.nome + '-marcadores'">
             <div
               v-for="sala in bloco.salas"
               :key="sala.id"
               class="marker"
-              :style="{ left: sala.x + 'px', top: sala.y + 'px', width: '18px', height: '18px' }"
+              :class="'marker-' + (sala.tipo || 'padrao')"
+              :style="{ left: sala.x + 'px', top: sala.y + 'px'}"
               @click="mostrarSala(sala)"
-              :title="sala.nome"
-            ></div>
+              :title="sala.nome">
+            </div>
           </div>
 
           <div v-if="salaSelecionada" class="sala-info">
