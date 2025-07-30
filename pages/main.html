@@ -156,31 +156,47 @@
           </div>
 
           <div v-if="salaSelecionada" class="sala-info">
-            <button @click="salaSelecionada = null">×</button>
-            
-            <h2>{{ salaSelecionada.nome }}</h2>
-            <p class="sala-tipo">{{ salaSelecionada.tipo }}</p>
-            
-            <img
-              :src="salaSelecionada.imagem || 'https://via.placeholder.com/250x150'"
-              alt="Imagem da sala"
-            />
 
-            <div class="info-section" v-if="salaSelecionada.horarios?.manha">
-              <h3>MANHÃ</h3>
-              <div class="info-box">{{ salaSelecionada.horarios.manha }}</div>
-            </div>
+            <div class="card">
+              <div class="header" :class="salaSelecionada.tipo">
+                  {{ salaSelecionada.tipo }}
+                  <button class="close-btn" @click="salaSelecionada = null">×</button>
+              </div>
 
-            <div class="info-section" v-if="salaSelecionada.horarios?.tarde">
-              <h3>TARDE</h3>
-              <div class="info-box">{{ salaSelecionada.horarios.tarde }}</div>
-            </div>
+              <div class="info">
+                <div class="status">
+                  <div class="disp">
+                    <div class="disp-ponto"></div>
+                    <span>{{ salaSelecionada.disponibilidade }}</span>
+                  </div>
+                <div class="capacidade"><span><img src="../assets/icons/cap-icon.svg" class="cap-icon"></span> {{ salaSelecionada.capacidade }} pessoas</div>
+              </div>
 
-            <div class="info-section" v-if="salaSelecionada.horarios?.noite">
-              <h3>NOITE</h3>
-              <div class="info-box">{{ salaSelecionada.horarios.noite }}</div>
+              <div class="content">
+                <h3>Tipo de Sala</h3>
+                <p>{{ salaSelecionada.nome }}</p>
+
+                <h3>Horários</h3>
+                <table class="schedule-table">
+                  <thead>
+                    <tr>
+                      <th>Manhã</th>
+                      <th>Tarde</th>
+                      <th>Noite</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>{{ salaSelecionada.horarios?.manha || '' }}</td>
+                      <td>{{ salaSelecionada.horarios?.tarde || '' }}</td>
+                      <td>{{ salaSelecionada.horarios?.noite || '' }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
+
 
           </div>
 
