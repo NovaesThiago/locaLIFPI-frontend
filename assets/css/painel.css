@@ -115,55 +115,228 @@ header {
 
 #salas {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
     padding: 10px;
-}
-
-.sala {
-    background-color: var(--cor4);
-    border-radius: 12px;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-}
-
-.sala img {
     width: 100%;
-    height: auto;
-    border: 5px solid #fff;
-    border-radius: 8px;
+    box-sizing: border-box;
 }
 
-.linha-inferior {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.sala button {
-    background-color: white;
-    color: var(--cor4);
-    font-size: 13px;
-    font-weight: bold;
-    padding: 4px 10px;
-    border-radius: 20px;
+.card .edit-btn {
+    position: absolute;
+    right: 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    background: none;
     border: none;
+    font-size: 1.3em;
+    cursor: pointer;
 }
 
-.sala h2 {
+.card {
+    background-color: #F3FBFF;
+    border-radius: 10px;
+    width: 100%;
+    min-width: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    color: #333;
+}
+
+.card .header {
+    background-color: var(--cor4);
     color: white;
-    font-size: 15px;
-    margin: 0;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+/* Cores para cada tipo de sala */
+
+.card .header.sala {
+    background: linear-gradient(90deg, #00cc1b 0%, #015a17 100%);
+}
+
+.card .header.cantina {
+    background: linear-gradient(90deg, #faff6e 0%, #fff200 100%);
+    color: black;
+}
+
+.card .header.cantina .close-btn {
+    color: black;
+}
+
+.card .header.auditorio {
+    background: linear-gradient(90deg, #45ff51 0%, #17ac00 100%);
+    color: black;
+}
+
+.card .header.administracao {
+    background: linear-gradient(90deg, #0048FF 0%, #002B99 100%);
+}
+
+.card .header.laboratorio {
+    background: linear-gradient(90deg, #0034B7 0%, #001751 100%);
+}
+
+.card .header.biblioteca {
+    background: linear-gradient(90deg, #f3e412 0%, #ffaa00 100%);
+    color: #333;
+}
+
+.card .header.banheiro {
+    background: linear-gradient(90deg, #d4c5ba 0%, #f89a6f 100%);
+    color: black;
+}
+
+.card .header.refeitorio {
+    background: linear-gradient(90deg, #ff9900 0%, #ff5100 100%);
+}
+
+.card .header.banheiro .close-btn {
+    color: black;
 }
 
 
 
+.card .info .status {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #606060;
+    font-weight: bold;
+}
 
+.edit-status {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #606060;
+    font-weight: bold;
+}
 
+.disp {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
 
+.disp-ponto {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: #2ce238;
+}
 
+.card .info .disp-ponto.manutencao {
+    background-color: #ffc107
+}
 
+.card .info .capacidade {
+    display: flex;
+    align-items: center;
+    font-size: .9em;
+    color: black;
+}
+
+.cap-icon {
+    width: 15px;
+    height: 15px;
+    margin: 10px 5px 5px 0;
+}
+
+.card .content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card .content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+    text-align: left;
+}
+
+.card .content p {
+    margin-bottom: 15px;
+    font-size: .9em;
+    color: #333;
+    text-align: left;
+}
+
+.card .content .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: fixed;
+}
+
+.card .content .schedule-table th,
+.card .content .schedule-table td {
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.card .content .schedule-table td {
+    font-size: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.card .content .schedule-table th:first-child{
+    border-top-left-radius: 8px;
+}
+
+.card .content .schedule-table th:last-child{
+    border-top-right-radius: 8px;
+}
+
+.card .content .schedule-table td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+.card .content .schedule-table td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+.card .content .schedule-table thead th {
+    background-color: #696969;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+}
+
+.card .content .schedule-table tbody td {
+    background-color: #D9D9D9;
+}
+
+.card .content .schedule-table tbody td:nth-child(2) {
+    border-left: 1px solid #606060;
+    border-right: 1px solid #606060;
+}
+
+.content .editar {
+    margin-top: 15px;
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content .editar:hover {
+    background-color: rgb(81, 81, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
 
 
 
@@ -283,3 +456,231 @@ header {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #salas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.card .edit-btn {
+    position: absolute;
+    right: 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.card {
+    background-color: #F3FBFF;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    color: #333;
+}
+
+.card .header {
+    background-color: var(--cor4);
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+/* Cores para cada tipo de sala */
+
+/* .card .header.sala {
+    background: linear-gradient(90deg, #00cc1b 0%, #015a17 100%);
+}
+
+.card .header.cantina {
+    background: linear-gradient(90deg, #faff6e 0%, #fff200 100%);
+    color: black;
+}
+
+.card .header.cantina .close-btn {
+    color: black;
+}
+
+.card .header.auditorio {
+    background: linear-gradient(90deg, #45ff51 0%, #17ac00 100%);
+    color: black;
+}
+
+.card .header.administracao {
+    background: linear-gradient(90deg, #0048FF 0%, #002B99 100%);
+}
+
+.card .header.laboratorio {
+    background: linear-gradient(90deg, #0034B7 0%, #001751 100%);
+}
+
+.card .header.biblioteca {
+    background: linear-gradient(90deg, #f3e412 0%, #ffaa00 100%);
+    color: #333;
+}
+
+.card .header.banheiro {
+    background: linear-gradient(90deg, #d4c5ba 0%, #f89a6f 100%);
+    color: black;
+}
+
+.card .header.refeitorio {
+    background: linear-gradient(90deg, #ff9900 0%, #ff5100 100%);
+}
+
+.card .header.banheiro .close-btn {
+    color: black;
+}
+
+
+
+.card .info .status {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #606060;
+    font-weight: bold;
+}
+
+.edit-status {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #606060;
+    font-weight: bold;
+}
+
+.disp {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.disp-ponto {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: #2ce238;
+}
+
+.card .info .disp-ponto.manutencao {
+    background-color: #ffc107
+}
+
+.card .info .capacidade {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: black;
+}
+
+.cap-icon {
+    width: 15px;
+    height: 15px;
+    margin: 10px 5px 5px 0;
+}
+
+.card .content {
+    padding: 20px;
+}
+
+.card .content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.card .content p {
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #333;
+}
+
+.card .content .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.card .content .schedule-table th,
+.card .content .schedule-table td {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card .content .schedule-table td {
+    font-size: 13px;
+}
+
+.card .content .schedule-table th:first-child{
+    border-top-left-radius: 8px;
+}
+
+.card .content .schedule-table th:last-child{
+    border-top-right-radius: 8px;
+}
+
+.card .content .schedule-table td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+.card .content .schedule-table td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+.card .content .schedule-table thead th {
+    background-color: #696969;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+}
+
+.card .content .schedule-table tbody td {
+    background-color: #D9D9D9;
+}
+
+.card .content .schedule-table tbody td:nth-child(2) {
+    border-left: 1px solid #606060;
+    border-right: 1px solid #606060;
+} */ 

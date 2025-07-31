@@ -46,16 +46,54 @@
 
             <div id="salas">
                 <div
-                v-for="sala in blocosFiltrados.flatMap(bloco => bloco.salas)"
-                :key="sala.id"
-                class="sala"
-                @click="mostrarSala(sala)"
+                    v-for="sala in blocosFiltrados.flatMap(bloco => bloco.salas)"
+                    :key="sala.id"
+                    class="sala"
+                    @click="mostrarSala(sala)"
                 >
-                <img :src="sala.imagem" alt="Imagem da sala" />
-                <div class="linha-inferior">
-                    <button>Editar</button>
-                    <h2>{{ sala.nome }}</h2>
-                </div>
+                    <div class="card">
+                    <div class="header" :class="sala.tipo">
+                        {{ sala.tipo }}
+                    </div>
+
+                    <div class="info">
+                        <div class="status">
+                        <div class="disp">
+                            <div class="disp-ponto"></div>
+                            <span>{{ sala.disponibilidade }}</span>
+                        </div>
+                        <div class="capacidade">
+                            <span><img src="../assets/icons/cap-icon.svg" class="cap-icon"></span> 
+                            {{ sala.capacidade }} pessoas
+                        </div>
+                        </div>
+
+                        <div class="content">
+                            <h3>Tipo de Sala</h3>
+                            <p>{{ sala.nome }}</p>
+
+                            <h3>Horários</h3>
+                            <table class="schedule-table">
+                                <thead>
+                                <tr>
+                                    <th>Manhã</th>
+                                    <th>Tarde</th>
+                                    <th>Noite</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>{{ sala.horarios?.manha || '' }}</td>
+                                    <td>{{ sala.horarios?.tarde || '' }}</td>
+                                    <td>{{ sala.horarios?.noite || '' }}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <button class="editar" @click="abrirEditarSala(salaSelecionada)">EDITAR</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </div>
 
