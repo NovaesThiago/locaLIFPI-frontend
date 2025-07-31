@@ -4,16 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    
     <link rel="stylesheet" href="/assets/css/main-adm.css" />
     <title>Local IFPI - ADM</title>
   </head>
 
   <body>
     <div id="app">
-
       <header>
-
         <div class="links">
           <a class="painel" href="/pages/painel.html">Painel</a>
           <a class="sair" href="index.html">Sair</a>
@@ -34,15 +31,14 @@
               name="buscarSala"
               placeholder="Buscar sala"
               autocomplete="off"
+              v-model="termoBusca"
             />
             <span class="material-symbols-outlined lupa">search</span>
           </div>
         </div>
-
       </header>
 
       <main>
-        
         <div class="map-container">
           <div class="container">
             <div class="elemento elemento-1"></div>
@@ -156,77 +152,112 @@
           </div>
 
           <div v-if="salaSelecionada" class="sala-info">
-            <button @click="salaSelecionada = null">×</button>
+            <div class="card">
+              <div class="header" :class="salaSelecionada.tipo">
+                  {{ salaSelecionada.tipo }}
+                  <button class="close-btn" @click="salaSelecionada = null">×</button>
+                  <span class="edit-btn" @click="abrirEditarSala(salaSelecionada)">
+                    <img src="/assets/icons/editar.svg">
+                  </span>
+              </div>
 
-            <h2>{{ salaSelecionada.nome }}</h2>
-            <span class="material-symbols-outlined editar" @click.stop="abrirEditarSala(salaSelecionada)">edit</span>
-            <p class="sala-tipo">{{ salaSelecionada.tipo }}</p>
+              <div class="info">
+                <div class="status">
+                  <div class="disp">
+                    <div class="disp-ponto"></div>
+                    <span>{{ salaSelecionada.disponibilidade }}</span>
+                  </div>
+                <div class="capacidade"><span><img src="../assets/icons/cap-icon.svg" class="cap-icon"></span> {{ salaSelecionada.capacidade }} pessoas</div>
+              </div>
 
-            <img
-              :src="salaSelecionada.imagem || 'https://via.placeholder.com/250x150'"
-              alt="Imagem da sala"
-            />
+              <div class="content">
+                <h3>Tipo de Sala</h3>
+                <p>{{ salaSelecionada.nome }}</p>
 
-            <div class="info-section" v-if="salaSelecionada.horarios?.manha">
-              <h3>MANHÃ</h3>
-              <div class="info-box">{{ salaSelecionada.horarios.manha }}</div>
-            </div>
-
-            <div class="info-section" v-if="salaSelecionada.horarios?.tarde">
-              <h3>TARDE</h3>
-              <div class="info-box">{{ salaSelecionada.horarios.tarde }}</div>
-            </div>
-
-            <div class="info-section" v-if="salaSelecionada.horarios?.noite">
-              <h3>NOITE</h3>
-              <div class="info-box">{{ salaSelecionada.horarios.noite }}</div>
+                <h3>Horários</h3>
+                <table class="schedule-table">
+                  <thead>
+                    <tr>
+                      <th>Manhã</th>
+                      <th>Tarde</th>
+                      <th>Noite</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>{{ salaSelecionada.horarios?.manha || '' }}</td>
+                      <td>{{ salaSelecionada.horarios?.tarde || '' }}</td>
+                      <td>{{ salaSelecionada.horarios?.noite || '' }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
 
-        <div v-if="showEditPopup" class="edit-container">
+        <div v-if="showEditPopup" class="edit-overlay">
 
-              <img
-                :src="salaToEdit.imagem || 'https://via.placeholder.com/250x150'"
-                alt="Imagem da sala"
-                class="edit-image"
-              />
-              <span class="material-symbols-outlined fechar" @click="fecharEditarSala">close</span>
+            <div class="edit-card">
 
-            <div class="edit-content">
-
-                <label>SALA</label>
-                <input type="text" v-model="salaToEdit.nome" />
-
-                <label>MANHÃ</label>
-                <input type="text" v-model="salaToEdit.horarios.manha" />
-
-                <label>TARDE</label>
-                <input type="text" v-model="salaToEdit.horarios.tarde" />
-
-                <label>NOITE</label>
-                <input type="text" v-model="salaToEdit.horarios.noite" />
-
-            </div>
-
-            <div class="edit-buttons">
-              <button @click="salvarEdicao" class="action-button save-button">
-                Salvar
-              </button>
-
-                <select v-model="salaToEdit.tipo" id="tipo-select" class="tipo">
-                  <option class="tipo-op" disabled value="">Tipo</option>
-                  <option class="tipo-op" value="sala">Sala</option>
-                  <option class="tipo-op" value="laboratorio">Laboratório</option>
-                  <option class="tipo-op" value="administracao">Administração</option>
+              <div class="edit-header" :class="salaToEdit.tipo">
+                <select v-model="salaToEdit.tipo" class="edit-tipo">
+                  <option value="sala">SALA</option>
+                  <option value="laboratorio">LABORATÓRIO</option>
+                  <option value="administracao">ADMINISTRAÇÃO</option>
                 </select>
+                <button class="edit-close-btn" @click="fecharEditarSala">×</button>
+              </div>
 
+              <div class="edit-info">
+                <div class="edit-status">
+                  <div class="disp">
+                    <div class="disp-ponto" ></div>
+                    <select v-model="salaToEdit.disponibilidade" class="disponibilidade-select">
+                      <option value="disponivel">Disponível</option>
+                      <option value="indisponivel">Indisponível</option>
+                      <option value="em-manutencao">Em Manutenção</option>
+                    </select>
+                  </div>
+                  <div class="edit-capacidade">
+                    <span><img src="../assets/icons/cap-icon.svg" class="edit-cap-icon"></span> 
+                    <input type="number" v-model="salaToEdit.capacidade" class="edit-field small"> pessoas
+                  </div>
+                </div>
+              </div>
+
+              <div class="edit-content">
+                <h3>Tipo de Sala</h3>
+                <input type="text" v-model="salaToEdit.nome" class="edit-field" placeholder="Ex: Laboratório de Informática I">
+
+                <h3>Horários</h3>
+                <table class="schedule-table">
+                  <thead>
+                    <tr>
+                      <th>Manhã</th>
+                      <th>Tarde</th>
+                      <th>Noite</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><textarea rows="3" cols="13"v-model="salaToEdit.horarios.manha" class="edit-field" ></textarea></td>
+                      <td><textarea rows="3" cols="13" v-model="salaToEdit.horarios.tarde" class="edit-field" ></textarea></td>
+                      <td><textarea rows="3" cols="13" type="text" v-model="salaToEdit.horarios.noite" class="edit-field" ></textarea></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="edit-button">
+                
+                <button @click="salvarEdicao" class="action-button save-button">
+                  Salvar
+                </button>
+              </div>
             </div>
-
         </div>
-
       </main>
-
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>

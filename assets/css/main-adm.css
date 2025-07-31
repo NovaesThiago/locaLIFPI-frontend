@@ -119,8 +119,6 @@ header {
 }
 
 
-
-/* LOCALIZAÇÕES */
 /* LOCALIZAÇÕES */
 .map-container {
     position: relative;
@@ -439,36 +437,219 @@ main {
 
 .sala-info {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--cor4);
-    border: 1px solid white;
-    color: white;
-    padding: 25px;
-    border-radius: 16px;
-    width: 320px;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    z-index: 10;
-}
-
-.sala-info h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-.sala-info .sala-tipo {
-    text-decoration: underline;
-}
-
-.sala-info img {
+    top: 0;
+    left: 0;
     width: 100%;
-    border-radius: 12px;
-    background: white;
-    padding: 5px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.sala-info .card .close-btn {
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.3em;
+    color: white;
+    cursor: pointer;
+}
+
+.sala-info .card .edit-btn {
+    position: absolute;
+    right: 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.sala-info .card {
+    background-color: #F3FBFF;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    color: #333;
+}
+
+.sala-info .card .header {
+    background-color: var(--cor4);
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+/* Cores para cada tipo de sala */
+
+.sala-info .card .header.sala {
+    background: linear-gradient(90deg, #00cc1b 0%, #015a17 100%);
+}
+
+.sala-info .card .header.cantina {
+    background: linear-gradient(90deg, #faff6e 0%, #fff200 100%);
+    color: black;
+}
+
+.sala-info .card .header.cantina .close-btn {
+    color: black;
+}
+
+.sala-info .card .header.auditorio {
+    background: linear-gradient(90deg, #45ff51 0%, #17ac00 100%);
+    color: black;
+}
+
+.sala-info .card .header.administracao {
+    background: linear-gradient(90deg, #0048FF 0%, #002B99 100%);
+}
+
+.sala-info .card .header.laboratorio {
+    background: linear-gradient(90deg, #0034B7 0%, #001751 100%);
+}
+
+.sala-info .card .header.biblioteca {
+    background: linear-gradient(90deg, #f3e412 0%, #ffaa00 100%);
+    color: #333;
+}
+
+.sala-info .card .header.banheiro {
+    background: linear-gradient(90deg, #d4c5ba 0%, #f89a6f 100%);
+    color: black;
+}
+
+.sala-info .card .header.refeitorio {
+    background: linear-gradient(90deg, #ff9900 0%, #ff5100 100%);
+}
+
+.sala-info .card .header.banheiro .close-btn {
+    color: black;
+}
+
+
+
+.sala-info .card .info .status {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #606060;
+    font-weight: bold;
+}
+
+.edit-status {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #606060;
+    font-weight: bold;
+}
+
+.disp {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.disp-ponto {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: #2ce238;
+}
+
+.sala-info .card .info .disp-ponto.manutencao {
+    background-color: #ffc107
+}
+
+.sala-info .card .info .capacidade {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: black;
+}
+
+.cap-icon {
+    width: 15px;
+    height: 15px;
+    margin: 10px 5px 5px 0;
+}
+
+.sala-info .card .content {
+    padding: 20px;
+}
+
+.sala-info .card .content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.sala-info .card .content p {
     margin-bottom: 20px;
+    font-size: 1em;
+    color: #333;
+}
+
+.sala-info .card .content .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.sala-info .card .content .schedule-table th,
+.sala-info .card .content .schedule-table td {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sala-info .card .content .schedule-table td {
+    font-size: 13px;
+}
+
+.sala-info .card .content .schedule-table th:first-child{
+    border-top-left-radius: 8px;
+}
+
+.sala-info .card .content .schedule-table th:last-child{
+    border-top-right-radius: 8px;
+}
+
+.sala-info .card .content .schedule-table td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+.sala-info .card .content .schedule-table td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+.sala-info .card .content .schedule-table thead th {
+    background-color: #696969;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+}
+
+.sala-info .card .content .schedule-table tbody td {
+    background-color: #D9D9D9;
+}
+
+.sala-info .card .content .schedule-table tbody td:nth-child(2) {
+    -left: 1px solid #606060;
+    border-right: 1px solid #606060;
 }
 
 .sala-info .editar {
@@ -530,96 +711,190 @@ main {
     cursor: pointer;
 }
 
-.edit-container {
+
+/* EDIÇÃO */
+.edit-overlay {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--cor4);
-    color: white;
-    padding: 25px;
-    border-radius: 16px;
-    width: 320px;
-    max-width: 90%;
-    text-align: center;
-    border: 1px solid white;
-    z-index: 10;
-}
-
-.edit-container img {
-    width: 100%;
-    border-radius: 12px;
-    background: white;
-    padding: 5px;
-    margin-bottom: 20px;
-}
-
-.edit-content label {
-    margin: 0 0 5px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
     display: flex;
-    flex-direction: column;
-    text-align: left;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
-.edit-content input {
-    background: white;
-    color: rgb(0, 0, 0);
-    padding: 10px;
+.edit-card {
+    background-color: #F3FBFF;
     border-radius: 10px;
-    font-size: 14px;
-    border: none;
-    width: 100%;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    color: #333;
+}
+
+.edit-header {
+    background-color: var(--cor4);
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
     text-align: center;
-    margin-bottom: 15px;
+    position: relative;
+}
+
+.edit-header.sala {
+    background: linear-gradient(90deg, #00cc1b 0%, #015a17 100%);
+}
+
+.edit-header.cantina {
+    background: linear-gradient(90deg, #faff6e 0%, #fff200 100%);
+    color: black;
+}
+
+.edit-header.cantina .close-btn {
+    color: black;
+}
+
+.edit-header.auditorio {
+    background: linear-gradient(90deg, #45ff51 0%, #17ac00 100%);
+    color: black;
+}
+
+.edit-header.administracao {
+    background: linear-gradient(90deg, #0048FF 0%, #002B99 100%);
+}
+
+.edit-header.laboratorio {
+    background: linear-gradient(90deg, #0034B7 0%, #001751 100%);
+}
+
+.edit-header.biblioteca {
+    background: linear-gradient(90deg, #f3e412 0%, #ffaa00 100%);
+    color: #333;
+}
+
+.edit-header.banheiro {
+    background: linear-gradient(90deg, #d4c5ba 0%, #f89a6f 100%);
+    color: black;
+}
+
+.edit-header.refeitorio {
+    background: linear-gradient(90deg, #ff9900 0%, #ff5100 100%);
+}
+
+.edit-close-btn {
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.3em;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-tipo {
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+.edit-tipo option {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 1px solid #606060;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: .425em;
+}
+
+.edit-status {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #606060;
     font-weight: bold;
 }
 
-.fechar {
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    padding: 2px;
-    cursor: pointer;
-    position: absolute;
-    top: 4px;
-    right: 4px;
+.edit-capacidae {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: black;
 }
 
-.edit-buttons {
-    display: flex;
-    justify-content: space-evenly;
+.small {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.edit-cap-icon {
+    width: 15px;
+    height: 15px;
+    margin: 15px 5px 0 0;
+}
+
+.disponibilidade-select {
+    width: 100%;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+}
+
+.disponibilidade-select option {
+    text-align: center;
+    font-size: 13px;
+}
+
+.edit-content {
+    padding: 20px;
+}
+
+.edit-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.edit-content .edit-field {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+td .edit-field{
+    text-align: center;
+}
+
+.edit-button {
+    text-align: center;
+    padding-bottom: 15px;
 }
 
 .save-button {
-    border: none;
-    background-color: #0032A0;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 20px;
+    background-color: transparent;
+    color: #0b5101;
+    border: 1px solid #0b5101;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
     font-weight: bold;
     cursor: pointer;
 }
 
 .save-button:hover {
-    background-color: var(--cor5);
-}
-
-.tipo {
-    border: none;
-    background-color: white;
-    color: var(--cor6);
-    padding: 10px 15px;
-    border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.tipo option {
-    color: var(--cor6);
-    font-weight: bold;
+    background-color: #0b5101;
+    color: white;
 }
 
 

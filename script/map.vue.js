@@ -793,6 +793,11 @@ createApp({
 
     mostrarSala(sala) {
       this.salaSelecionada = sala;
+      event.stopPropagation();
+    },
+
+    fecharSalaInfo() {
+      this.salaSelecionada = null;
     },
 
     buscar(event) {
