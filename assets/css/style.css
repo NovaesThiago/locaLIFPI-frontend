@@ -119,10 +119,20 @@ main {
   color: white;
 }
 
-.voltar {
+.adm {
   position: absolute;
   top: 20px;
-  left: 20px;
+  right: 20px;
+  font-size: 15px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo {
+  height: 40px;
+  width: 30px;
+  padding: 20px;
 }
 
 .voltar a,
