@@ -2,23 +2,65 @@
 
 html,
 body {
-  background-image: url("../images/fundo-2.jpg");
+  background-color: #CEFBBE;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Open Sans", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: block;
+}
+
+main {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.lock {
+  background-color: #0f5c0e;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.lock img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.container h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: #003103;
+}
+
+.container p {
+  font-size: 16px;
+  color: #0F2A00;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .formulario {
-  background: rgba(255, 255, 255, 0.778);
-  padding: 30px 40px;
+  background: white;
+  padding: 10px 20px;
   border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.127);
   width: 250px;
   text-align: center;
 }
@@ -36,36 +78,45 @@ body {
   text-align: left;
   font-weight: bold;
   font-size: 14px;
+  color: #656565;
 }
 
 .formulario input {
   width: 235px;
   padding: 10px;
   margin-top: 5px;
-  background-color: black;
-  color: #545454;
+  background-color: white;
+  color: #929292;
   font-size: 14px;
   border-radius: 10px;
-  border: none;
+  border: 2px solid #929292;
 }
 
-.formulario input[type="text"],
-.formulario input[type="email"],
-.formulario input[type="password"] {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-.formulario input[type="submit"] {
-  background-color: #137516;
+.enviar {
+  background-color: #3D8F24;
   color: white;
+  width: 70%;
   cursor: pointer;
   font-weight: bold;
   margin-top: 20px;
+  text-transform: capitalize;
+  position: relative;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 20px;
 }
 
-.formulario input[type="submit"]:hover {
+.enviar:hover {
   background-color: #0f5c0e;
+}
+
+.seta {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 38px;
+  bottom: 8px;
+  color: white;
 }
 
 .voltar {
@@ -96,6 +147,79 @@ body {
   font-weight: bold;
 }
 
+footer {
+  background-color: #022C00;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  position: relative;
+  bottom: 0;
+}
+
+footer h3 {
+  color: #BAE599;
+}
+
+.links-f {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.exp-mapa {
+  font-size: 14px;
+  color: black;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.exp-mapa a,
+.exp-mapa a:visited {
+  text-decoration: none;
+  color: #0F2A00;
+}
+
+.exp-mapa img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.site {
+  font-size: 14px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.site a,
+.site a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.site img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.linha {
+  background-color: white;
+  width: 93%;
+  height: 2px;
+  margin: auto;
+}
+
+footer p {
+  font-size: 12px;
+  color: #BAE599;
+  margin-top: 15px;
+}
 
 
 /* Media Queries */

@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <title>cadastro</title>
-  </head>
-  <body>
-    <p class="voltar"><a href="entrar.html">Voltar</a></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>entrar</title>
+</head>
+<body>
 
-    <div class="formulario">
-      <h1>CADASTRAR</h1>
-      <form>
-        <label for="matricula">MATRICULA</label>
-        <input type="text" id="matricula" placeholder="Insira a matricula" />
+    <main>
+        <p class="voltar"><a href="../index.html">Voltar</a></p>
+        <div class="container">
+            <div class="lock"><img src="../assets/icons/lock.svg"></div>
+            <h1>Bem-Vindo</h1>
+            <p>Entre para acessar o painel de Administrador</p>
+        </div>
+        <div class="formulario">
+            <form>
+                <label for="matricula">MATRICULA</label>
+                <input type="text" id="matricula" placeholder="Insira a matricula">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" placeholder="Insira o email">
+                <label for="email">SENHA</label>
+                <input type="email" id="email" placeholder="Insira a sua senha">
+                <button type="submit" class="enviar">Entar <img src="../assets/icons/seta.svg" class="seta"></button>
+            </form>
+        </div>
+    </main>
 
-        <label for="email">EMAIL</label>
-        <input type="email" id="email" placeholder="Insira o email" />
+    <footer>
 
-        <label for="senha">SENHA</label>
-        <input type="password" id="senha" placeholder="Insira uma senha" />
+        <h3>Pronto para Explorar?</h3>
 
-        <input class="enviar" type="submit" value="cadastrar" />
-      </form>
-    </div>
-  </body>
+        <div class="links-f">
+            <p class="exp-mapa"><a href="./main.html">Explore o mapa <img src="../assets/icons/local.svg"></a></p>
+            <p class="site"><a href="https://www.ifpi.edu.br/picos">Site Oficial IFPI <img src="../assets/icons/link.svg"></a></p>
+        </div>
+
+        <div class="linha"></div>
+
+        <p class="direitos">© 2025 LocaLIFPI. Todos os direitos reservados.</p>
+
+    </footer>
+</body>
 </html>

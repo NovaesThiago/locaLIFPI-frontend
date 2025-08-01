@@ -8,25 +8,42 @@
     <title>entrar</title>
 </head>
 <body>
+
+    <main>
         <p class="voltar"><a href="../index.html">Voltar</a></p>
+        <div class="container">
+            <div class="lock"><img src="../assets/icons/lock.svg"></div>
+            <h1>Bem-Vindo</h1>
+            <p>Entre para acessar o painel de Administrador</p>
+        </div>
+        <div class="formulario">
+            <form>
+                <label for="matricula">MATRICULA</label>
+                <input type="text" id="matricula" placeholder="Insira a matricula">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" placeholder="Insira o email">
+                <label for="email">SENHA</label>
+                <input type="email" id="email" placeholder="Insira a sua senha">
+                <button type="submit" class="enviar">Entar <img src="../assets/icons/seta.svg" class="seta"></button>
+        
+                <p class="cadastrese">Ainda não possui cadastro? <br> Cadastre-se <a href="cadastro.html">AQUI</a></p>
+            </form>
+        </div>
+    </main>
 
-    <div class="formulario">
-        <h1>ENTRAR</h1>
-        <form>
-            <label for="matricula">MATRICULA</label>
-            <input type="text" id="matricula" placeholder="Insira a matricula">
+    <footer>
 
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" placeholder="Insira o email">
+        <h3>Pronto para Explorar?</h3>
 
-            <label for="email">SENHA</label>
-            <input type="email" id="email" placeholder="Insira a sua senha">
+        <div class="links-f">
+            <p class="exp-mapa"><a href="./main.html">Explore o mapa <img src="../assets/icons/local.svg"></a></p>
+            <p class="site"><a href="https://www.ifpi.edu.br/picos">Site Oficial IFPI <img src="../assets/icons/link.svg"></a></p>
+        </div>
 
-            <input class="enviar" type="submit" value="entrar">
-            
-            <p class="cadastrese">Ainda não possui cadastro? <br> Cadastre-se <a href="cadastro.html">AQUI</a></p>
+        <div class="linha"></div>
 
-        </form>
-    </div>
+        <p class="direitos">© 2025 LocaLIFPI. Todos os direitos reservados.</p>
+
+    </footer>
 </body>
 </html>
