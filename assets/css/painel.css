@@ -150,6 +150,7 @@ header {
 
 .card .header.administracao {
     background: linear-gradient(90deg, #0048FF 0%, #002B99 100%);
+    font-size: 1.1rem;
 }
 
 .card .header.laboratorio {
