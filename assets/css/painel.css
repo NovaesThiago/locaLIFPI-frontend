@@ -18,96 +18,70 @@
 }
 
 body {
-    background-color: var(--cor7);
+    background-color: white;
     margin: 0;
     overflow-x: hidden;
 }
 
 header {
-    background-color: var(--cor3);
-    height: 90px;
+    background-color: white;
+    border-bottom: 2px solid #989898;
+    height: 75px;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 16px;
-    margin-bottom: 10px;
+    align-items: center;
 }
 
-.links {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 420px;
-    margin-top: 10px;
-    margin-bottom: -10px;
-}
-
-.painel {
-    color: white;
+.mapa {
+    color: #000;
     text-decoration: none;
-    font-size: 15px;
     font-weight: bold;
+}
+
+.mapa:hover {
+    text-decoration: underline;
 }
 
 .sair {
-    color: white;
+    color: rgb(255, 255, 255);
+    background-color: #08A400;
+    padding: 3px 10px;
+    border-radius: 10px;
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
+}
+
+.sair:hover {
+    background-color: #047600;
+    color: white;
 }
 
 .nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-    max-width: 420px;
-    margin: 0 auto;
-}
-
-.sair:hover,
-.painel:hover {
-    text-decoration: underline;
-}
-
-.logo-titulo {
-    display: flex;
-    margin-top: 8px;
 }
 
 .logo-titulo img {
-    width: 20px;
-    height: 30px;
-    margin-right: 10px;
-    margin-top: 20px;
+    width: 30px;
+    height: 40px;
 }
 
-.logo-titulo h2 {
-    color: white;
-    font-size: 18px;
-    margin: 0;
-    margin-top: 30px;
-}
-
-.search-container {
-    position: relative;
-    margin-top: 8px;
-    margin-right: 10px;
-}
 
 .search-container input {
     height: 30px;
     border-radius: 5px;
     border: none;
     width: 140px;
-    margin-top: 20px;
+    border: 2px solid #989898;
 }
 
 .lupa {
     position: absolute;
-    left: 120px;
-    top: 53%;
+    right: 28%;
+    top: 4%;
     color: gray;
     font-size: 16px;
 }
@@ -115,7 +89,7 @@ header {
 
 #salas {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
     gap: 10px;
     padding: 10px;
     width: 100%;
@@ -138,7 +112,7 @@ header {
     border-radius: 10px;
     width: 100%;
     min-width: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.598);
     overflow: hidden;
     color: #333;
 }
@@ -229,13 +203,23 @@ header {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    margin-right: 8px;
-    background-color: #2ce238;
+    display: inline-block;
+    margin-right: 5px;
+    background: #ccc;
 }
 
-.card .info .disp-ponto.manutencao {
-    background-color: #ffc107
+.disp-ponto.disponível {
+    background: #4CAF50;
 }
+
+.disp-ponto.indisponível {
+    background: #F44336;
+}
+
+.disp-ponto.em-manutenção {
+    background: #f1f436;
+}
+
 
 .card .info .capacidade {
     display: flex;
@@ -338,11 +322,201 @@ header {
     cursor: pointer;
 }
 
+.content .editar:disabled {
+    display: none;
+}
 
 
 
 
+/* EDIÇÃO */
+.edit-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
 
+.edit-card {
+    background-color: #F3FBFF;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    color: #333;
+}
+
+.edit-header {
+    background-color: var(--cor4);
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+.edit-header.sala {
+    background: linear-gradient(90deg, #00cc1b 0%, #015a17 100%);
+}
+
+.edit-header.cantina {
+    background: linear-gradient(90deg, #faff6e 0%, #fff200 100%);
+    color: black;
+}
+
+.edit-header.cantina .close-btn {
+    color: black;
+}
+
+.edit-header.auditorio {
+    background: linear-gradient(90deg, #45ff51 0%, #17ac00 100%);
+    color: black;
+}
+
+.edit-header.administracao {
+    background: linear-gradient(90deg, #0048FF 0%, #002B99 100%);
+}
+
+.edit-header.laboratorio {
+    background: linear-gradient(90deg, #0034B7 0%, #001751 100%);
+}
+
+.edit-header.biblioteca {
+    background: linear-gradient(90deg, #f3e412 0%, #ffaa00 100%);
+    color: #333;
+}
+
+.edit-header.banheiro {
+    background: linear-gradient(90deg, #d4c5ba 0%, #f89a6f 100%);
+    color: black;
+}
+
+.edit-header.refeitorio {
+    background: linear-gradient(90deg, #ff9900 0%, #ff5100 100%);
+}
+
+.edit-close-btn {
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.3em;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-tipo {
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+.edit-tipo option {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 1px solid #606060;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: .425em;
+}
+
+.edit-status {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #606060;
+    font-weight: bold;
+}
+
+.edit-capacidae {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: black;
+}
+
+.small {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.edit-cap-icon {
+    width: 15px;
+    height: 15px;
+    margin: 15px 5px 0 0;
+}
+
+.disponibilidade-select {
+    width: 100%;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+}
+
+.disponibilidade-select option {
+    text-align: center;
+    font-size: 13px;
+}
+
+.edit-content {
+    padding: 20px;
+}
+
+.edit-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.edit-content .edit-field {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+td .edit-field{
+    text-align: center;
+}
+
+td textarea {
+    resize: none;
+}
+
+.edit-button {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.save-button {
+    background-color: transparent;
+    color: #0b5101;
+    border: 1px solid #0b5101;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #0b5101;
+    color: white;
+}
 
 
 
@@ -415,7 +589,7 @@ header {
     }
 
     #salas {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
 

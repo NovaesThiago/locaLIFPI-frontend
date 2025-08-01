@@ -15,30 +15,32 @@
         <div id="app">
         <header>
 
-            <div class="links">
-                <a class="painel" href="../adm.html">Mapa</a>
-                <a class="sair" href="../index.html">Sair</a>
-            </div>
 
             <div class="nav">
 
             <div class="logo-titulo">
                 <a href="../index.html"><img src="../assets/icons/logo-ifpi.png" alt="Logo IFPI" /></a>
-                <h2>LocaLIFPI</h2>
             </div>
+
+            <a class="mapa" href="../adm.html">Mapa</a>
 
             <div class="search-container">
                 <input
-                type="text"
-                id="buscarSala"
-                name="buscarSala"
-                placeholder="Buscar sala"
-                autocomplete="off"
+                    type="search"
+                    id="buscarSala"
+                    name="buscarSala"
+                    placeholder="Buscar sala..."
+                    autocomplete="off"
+                    v-model.trim="termoBusca"
+                    @keydown.enter.prevent
                 />
                 <span class="material-symbols-outlined lupa">search</span>
             </div>
 
+            <a class="sair" href="../index.html">Sair</a>
+
             </div>
+
 
         </header>
 
@@ -59,7 +61,7 @@
                     <div class="info">
                         <div class="status">
                         <div class="disp">
-                            <div class="disp-ponto"></div>
+                            <div class="disp-ponto" :class="sala.disponibilidade.replace(' ', '-')"></div>
                             <span>{{ sala.disponibilidade }}</span>
                         </div>
                         <div class="capacidade">
@@ -90,9 +92,77 @@
                                 </tbody>
                             </table>
 
-                            <button class="editar" @click="abrirEditarSala(salaSelecionada)">EDITAR</button>
+                            <button 
+                            class="editar" 
+                            @click.stop="abrirEditarSala(sala)"
+                            :disabled="['refeitorio', 'banheiro', 'biblioteca', 'cantina'].includes(sala.tipo)"
+                            >
+                            EDITAR
+                            </button>
                         </div>
                     </div>
+                    </div>
+                </div>
+            </div>
+
+            <div v-if="showEditPopup" class="edit-overlay">
+
+                <div class="edit-card">
+
+                    <div class="edit-header" :class="salaToEdit.tipo">
+                        <select v-model="salaToEdit.tipo" class="edit-tipo">
+                        <option value="sala">SALA</option>
+                        <option value="laboratorio">LABORATÓRIO</option>
+                        <option value="administracao">ADMINISTRAÇÃO</option>
+                        </select>
+                        <button class="edit-close-btn" @click="fecharEditarSala">×</button>
+                    </div>
+
+                    <div class="edit-info">
+                        <div class="edit-status">
+                        <div class="disp">
+                            <div class="disp-ponto" ></div>
+                            <select v-model="salaToEdit.disponibilidade" class="disponibilidade-select">
+                            <option value="disponivel">Disponível</option>
+                            <option value="indisponivel">Indisponível</option>
+                            <option value="em-manutencao">Em Manutenção</option>
+                            </select>
+                        </div>
+                        <div class="edit-capacidade">
+                            <span><img src="../assets/icons/cap-icon.svg" class="edit-cap-icon"></span> 
+                            <input type="number" v-model="salaToEdit.capacidade" class="edit-field small"> pessoas
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="edit-content">
+                        <h3>Tipo de Sala</h3>
+                        <input type="text" v-model="salaToEdit.nome" class="edit-field" placeholder="Ex: Laboratório de Informática I">
+
+                        <h3>Horários</h3>
+                        <table class="schedule-table">
+                        <thead>
+                            <tr>
+                            <th>Manhã</th>
+                            <th>Tarde</th>
+                            <th>Noite</th>
+                            </tr>
+                        </thead>
+                            <tbody>
+                                <tr>
+                                    <td><textarea rows="3" cols="13"v-model="salaToEdit.horarios.manha" class="edit-field" ></textarea></td>
+                                    <td><textarea rows="3" cols="13" v-model="salaToEdit.horarios.tarde" class="edit-field" ></textarea></td>
+                                    <td><textarea rows="3" cols="13" type="text" v-model="salaToEdit.horarios.noite" class="edit-field" ></textarea></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="edit-button">
+                        
+                        <button @click="salvarEdicao" class="action-button save-button">
+                        Salvar
+                        </button>
                     </div>
                 </div>
             </div>

@@ -549,16 +549,25 @@ main {
     text-transform: capitalize;
 }
 
-.sala-info .card .info .disp-ponto {
+.disp-ponto {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    margin-right: 8px;
-    background-color: #2ce238;
+    display: inline-block;
+    margin-right: 5px;
+    background: #ccc;
 }
 
-.sala-info .card .info .disp-ponto.manutencao {
-    background-color: #ffc107
+.disp-ponto.disponível {
+    background: #4CAF50;
+}
+
+.disp-ponto.indisponível {
+    background: #F44336;
+}
+
+.disp-ponto.em-manutenção {
+    background: #f1f436;
 }
 
 .sala-info .card .info .capacidade {

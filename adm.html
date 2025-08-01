@@ -10,32 +10,35 @@
 
   <body>
     <div id="app">
+
       <header>
-        <div class="links">
-          <a class="painel" href="/pages/painel.html">Painel</a>
-          <a class="sair" href="index.html">Sair</a>
-        </div>
 
         <div class="nav">
+
           <div class="logo-titulo">
-            <a href="index.html"
-              ><img src="/assets/icons/logo-ifpi.png" alt="Logo IFPI"
-            /></a>
-            <h2>LocaLIFPI</h2>
+              <a href="../index.html"><img src="../assets/icons/logo-ifpi.png" alt="Logo IFPI" /></a>
           </div>
 
+          <a class="painel" href="../adm.html">Mapa</a>
+
           <div class="search-container">
-            <input
-              type="text"
-              id="buscarSala"
-              name="buscarSala"
-              placeholder="Buscar sala"
-              autocomplete="off"
-              v-model="termoBusca"
-            />
-            <span class="material-symbols-outlined lupa">search</span>
+              <input
+                  type="search"
+                  id="buscarSala"
+                  name="buscarSala"
+                  placeholder="Buscar sala..."
+                  autocomplete="off"
+                  v-model.trim="termoBusca"
+                  @keydown.enter.prevent
+              />
+              <span class="material-symbols-outlined lupa">search</span>
           </div>
+
+          <a class="sair" href="../index.html">Sair</a>
+
         </div>
+
+
       </header>
 
       <main>
@@ -156,7 +159,11 @@
               <div class="header" :class="salaSelecionada.tipo">
                   {{ salaSelecionada.tipo }}
                   <button class="close-btn" @click="salaSelecionada = null">×</button>
-                  <span class="edit-btn" @click="abrirEditarSala(salaSelecionada)">
+                  <span 
+                    class="edit-btn" 
+                    @click="abrirEditarSala(salaSelecionada)"
+                    v-if="!['refeitorio', 'banheiro', 'biblioteca', 'cantina'].includes(salaSelecionada.tipo)"
+                  >
                     <img src="/assets/icons/editar.svg">
                   </span>
               </div>
@@ -164,7 +171,7 @@
               <div class="info">
                 <div class="status">
                   <div class="disp">
-                    <div class="disp-ponto"></div>
+                    <div class="disp-ponto" :class="salaSelecionada.disponibilidade.replace(' ', '-')"></div>
                     <span>{{ salaSelecionada.disponibilidade }}</span>
                   </div>
                 <div class="capacidade"><span><img src="../assets/icons/cap-icon.svg" class="cap-icon"></span> {{ salaSelecionada.capacidade }} pessoas</div>

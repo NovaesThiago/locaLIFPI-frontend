@@ -30,90 +30,64 @@ body {
 }
 
 header {
-    background-color: var(--cor3);
-    height: 90px;
+    background-color: white;
+    border-bottom: 2px solid #989898;
+    height: 75px;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 16px;
-    margin-bottom: 10px;
-}
-
-.links {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 420px;
-    margin-top: 10px;
-    margin-bottom: -10px;
+    align-items: center;
 }
 
 .painel {
-    color: white;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.painel:hover {
+    text-decoration: underline;
+}
+
+.sair {
+    color: rgb(255, 255, 255);
+    background-color: #08A400;
+    padding: 3px 10px;
+    border-radius: 10px;
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
 }
 
-.sair {
+.sair:hover {
+    background-color: #047600;
     color: white;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
 }
 
 .nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-    max-width: 420px;
-    margin: 0 auto;
-}
-
-.sair:hover,
-.painel:hover {
-    text-decoration: underline;
-}
-
-.logo-titulo {
-    display: flex;
-    margin-top: 8px;
 }
 
 .logo-titulo img {
-    width: 20px;
-    height: 30px;
-    margin-right: 10px;
-    margin-top: 20px;
+    width: 30px;
+    height: 40px;
 }
 
-.logo-titulo h2 {
-    color: white;
-    font-size: 18px;
-    margin: 0;
-    margin-top: 30px;
-}
-
-.search-container {
-    position: relative;
-    margin-top: 8px;
-    margin-right: 10px;
-}
 
 .search-container input {
     height: 30px;
     border-radius: 5px;
     border: none;
     width: 140px;
-    margin-top: 20px;
+    border: 2px solid #989898;
 }
 
 .lupa {
     position: absolute;
-    left: 120px;
-    top: 53%;
+    right: 28%;
+    top: 4%;
     color: gray;
     font-size: 16px;
 }
@@ -214,7 +188,7 @@ header {
 /* MAPA */
 
 main {
-    background: var(--cor7);
+    background: white;
     padding: 10px;
 }
 
@@ -225,7 +199,7 @@ main {
 }
 
 .elemento {
-    background-color: var(--cor8);
+    background-color: #8a8a8a;
     position: absolute;
     margin: 0;
 }
@@ -471,6 +445,10 @@ main {
     cursor: pointer;
 }
 
+.edit-btn[disabled] {
+    display: none;
+}
+
 .sala-info .card {
     background-color: #F3FBFF;
     border-radius: 10px;
@@ -566,12 +544,21 @@ main {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    margin-right: 8px;
-    background-color: #2ce238;
+    display: inline-block;
+    margin-right: 5px;
+    background: #ccc;
 }
 
-.sala-info .card .info .disp-ponto.manutencao {
-    background-color: #ffc107
+.disp-ponto.disponível {
+    background: #4CAF50;
+}
+
+.disp-ponto.indisponível {
+    background: #F44336;
+}
+
+.disp-ponto.em-manutenção {
+    background: #f1f436;
 }
 
 .sala-info .card .info .capacidade {
@@ -874,6 +861,10 @@ main {
 
 td .edit-field{
     text-align: center;
+}
+
+td textarea {
+    resize: none;
 }
 
 .edit-button {

@@ -166,7 +166,7 @@
               <div class="info">
                 <div class="status">
                   <div class="disp">
-                    <div class="disp-ponto"></div>
+                    <div class="disp-ponto" :class="salaSelecionada.disponibilidade.replace(' ', '-')"></div>
                     <span>{{ salaSelecionada.disponibilidade }}</span>
                   </div>
                 <div class="capacidade"><span><img src="../assets/icons/cap-icon.svg" class="cap-icon"></span> {{ salaSelecionada.capacidade }} pessoas</div>

@@ -34,7 +34,7 @@ createApp({
               x: 180,
               y: 127,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "indisponível",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "administracao",
             },
@@ -124,7 +124,6 @@ createApp({
               y: 212,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "biblioteca",
             },
             {
@@ -134,7 +133,6 @@ createApp({
               y: 182,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "auditorio",
             },
             {
@@ -144,7 +142,6 @@ createApp({
               y: 217,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "auditorio",
             },
           ],
@@ -170,7 +167,6 @@ createApp({
               y: 196,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "banheiro",
             },
             {
@@ -229,7 +225,6 @@ createApp({
               y: 263,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "banheiro",
             },
             {
@@ -239,7 +234,6 @@ createApp({
               y: 263,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "banheiro",
             },
             {
@@ -279,7 +273,6 @@ createApp({
               y: 263,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "administracao",
             },
             {
@@ -407,7 +400,6 @@ createApp({
               y: 322,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "cantina",
             },
           ],
@@ -423,7 +415,6 @@ createApp({
               y: 367,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "banheiro",
             },
             {
@@ -472,7 +463,7 @@ createApp({
               x: 303,
               y: 384,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "em manutenção",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "sala",
             },
@@ -488,7 +479,7 @@ createApp({
               x: 82,
               y: 470,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "indisponível",
               horarios: { },
               tipo: "sala",
             },
@@ -498,7 +489,7 @@ createApp({
               x: 112,
               y: 470,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "em manutenção",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "sala",
             },
@@ -508,7 +499,7 @@ createApp({
               x: 50,
               y: 485,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "em manutenção",
               horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
               tipo: "sala",
             },
@@ -518,7 +509,7 @@ createApp({
               x: 292,
               y: 470,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "em manutenção",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "sala",
             },
@@ -555,7 +546,6 @@ createApp({
               y: 737,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { },
               tipo: "banheiro",
             },
             {
@@ -564,7 +554,7 @@ createApp({
               x: 40,
               y: 605,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "em manutenção",
               horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
               tipo: "sala",
             },
@@ -574,7 +564,7 @@ createApp({
               x: 112,
               y: 590,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "em manutenção",
               horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
               tipo: "sala",
             },
@@ -584,7 +574,7 @@ createApp({
               x: 142,
               y: 590,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "em manutenção",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "sala",
             },
@@ -594,7 +584,7 @@ createApp({
               x: 232,
               y: 590,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "em manutenção",
               horarios: { },
               tipo: "sala",
             },
@@ -604,7 +594,7 @@ createApp({
               x: 282,
               y: 590,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "em manutenção",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "sala",
             },
@@ -614,7 +604,7 @@ createApp({
               x: 317,
               y: 590,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "em manutenção",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "sala",
             },
@@ -650,7 +640,7 @@ createApp({
               x: 172,
               y: 671,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "em manutenção",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "sala",
             },
@@ -660,7 +650,7 @@ createApp({
               x: 243,
               y: 671,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "em manutenção",
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "sala",
             },
@@ -670,7 +660,7 @@ createApp({
               x: 283,
               y: 671,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "em manutenção",
               horarios: { manha: "Sala de Musica", tarde: "Sala de Musica", noite: "Sala de Musica" },
               tipo: "sala",
             },
@@ -680,7 +670,7 @@ createApp({
               x: 312,
               y: 671,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "em manutenção",
               horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
               tipo: "sala",
             },
@@ -696,8 +686,7 @@ createApp({
               x: 62,
               y: 750,
               capacidade: 40,
-              disponibilidade: "disponível",
-              horarios: { },
+              disponibilidade: "indisponível",
               tipo: "sala",
             },
             {
@@ -706,7 +695,7 @@ createApp({
               x: 92,
               y: 750,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "em manutenção",
               horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
               tipo: "sala",
             },
@@ -716,7 +705,7 @@ createApp({
               x: 132,
               y: 750,
               capacidade: 40,
-              disponibilidade: "disponível",
+              disponibilidade: "em manutenção",
               horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
               tipo: "sala",
             },
@@ -771,26 +760,33 @@ createApp({
   },
   computed: {
     blocosFiltrados() {
-      if (!this.termoBusca.trim()) return this.blocos;
-      const busca = this.termoBusca.toLowerCase();
+      const busca = this.termoBusca.toLowerCase().trim();
+      if (!busca) return this.blocos;
+
       return this.blocos
         .map((bloco) => {
-          const salasFiltradas = bloco.salas.filter(
-            (sala) =>
+          const salasFiltradas = bloco.salas.filter((sala) => {
+            return (
               sala.nome.toLowerCase().includes(busca) ||
-              Object.values(sala.horarios).some((horario) =>
-                horario.toLowerCase().includes(busca)
-              )
-          );
-          return salasFiltradas.length
-            ? { ...bloco, salas: salasFiltradas }
-            : null;
+              sala.tipo?.toLowerCase().includes(busca) ||
+              sala.disponibilidade?.toLowerCase().includes(busca) ||
+              Object.values(sala.horarios || {})
+                .join(" ")
+                .toLowerCase()
+                .includes(busca)
+            );
+          });
+
+          return salasFiltradas.length ? { ...bloco, salas: salasFiltradas } : null;
         })
         .filter(Boolean);
     },
   },
-  methods: {
 
+
+
+
+  methods: {
     mostrarSala(sala) {
       this.salaSelecionada = sala;
       event.stopPropagation();
@@ -801,7 +797,7 @@ createApp({
     },
 
     buscar(event) {
-      this.termoBusca = event.target.value;
+      this.termoBusca = event.target.value.trim().toLowerCase();
     },
 
     abrirEditarSala(sala) {
@@ -815,8 +811,6 @@ createApp({
     },
 
     salvarEdicao() {
-      console.log("Salvando:", this.salaToEdit);
-
       const blocoIndex = this.blocos.findIndex((b) =>
         b.salas.some((s) => s.id === this.salaToEdit.id)
       );
@@ -836,6 +830,6 @@ createApp({
   },
   mounted() {
     const input = document.querySelector(".search-container input");
-    if (input) input.addEventListener("input", this.buscar);
   },
+
 }).mount("#app");
