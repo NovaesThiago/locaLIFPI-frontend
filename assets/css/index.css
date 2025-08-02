@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 html,
 body {
@@ -7,7 +7,6 @@ body {
 }
 
 body {
-  background-image: url("/assets/images/fundo-1.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -16,30 +15,30 @@ body {
 }
 
 .inicio {
-  flex-direction: column;
+    flex-direction: column;
+    background: linear-gradient(to top, #1EFF00, #FFFFFF);
+    min-height: 100vh;
+    overflow: auto;
 }
 
 header {
   margin-bottom: -65px;
-}
-
-#cabeca {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 30px;
 }
 
-#cabeca img {
+header img {
   width: 23px;
   height: 32px;
 }
 
-#cabeca h2 {
+header h2 {
   font-size: 23px;
 }
 
-#cabeca p a {
+header p a {
   font-size: 15px;
   text-decoration: none;
   color: black;
@@ -47,36 +46,55 @@ header {
   border-bottom: 2px solid black;
 }
 
-main,
-section {
+main {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  margin-top: -80px;
 }
 
-main {
-  text-align: center;
+.localifpi-logo {
+  color: black;
+  font-size: 20px;
+}
+
+.localifpi-logo img {
+  width: 17px;
+  height: auto;
+  margin-top: 3px;
+  border: none;
+  padding: 0 3px;
 }
 
 main h1 {
-  margin-bottom: 5px;
-  font-size: 32px;
+  margin-bottom: -20px;
+  font-size: 40px;
+  color: #103300;
+  margin-top: -15px;
+}
+
+main h2 {
+  font-size: 25px;
+  color: #003103;
 }
 
 main p {
-  font-size: 17px;
-  margin-top: -3px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #0F2A00;
+  margin: -10px 0 20px 0;
+  padding: 10px;
 }
 
 button {
-  background-color: red;
+  background-color: #006200;
   border: none;
   padding: 5px 15px;
-  border-radius: 25px;
+  border-radius: 15px;
   cursor: pointer;
+  margin-top: 70px;
 }
 
 button a {
@@ -86,60 +104,124 @@ button a {
 }
 
 button:hover {
-  background-color: #ff4d4d;
+  background-color: #009000;
 }
 
-section {
-  background-image: url("/assets/images/fundo-1.jpg");
-  background-size: cover;
-  padding: 20px;
+.inicio .fatos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-section img {
-  width: 250px;
-  height: 150px;
-  box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.284);
-  border-radius: 5px;
+.fatos h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #003103;
+  margin-bottom: -5px;
 }
 
-.localifpi {
-  background-color: rgba(255, 255, 255, 0.475);
-  border-radius: 15px;
-  box-shadow: 2px 4px 13px rgba(0, 0, 0, 0.284);
-  padding: 20px;
-}
-
-.localifpi h2:first-child {
-  margin-bottom: -15px;
-}
-
-.localifpi-logo {
-  width: 20px;
-  height: 28px;
-  margin: 0 -5px 0 -5px;
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
-}
-
-.sobre {
-  background-color: rgba(255, 255, 255, 0.475);
-  border-radius: 15px;
-  box-shadow: 2px 4px 13px rgba(0, 0, 0, 0.284);
-  padding: 20px;
+.fatos p {
+  font-size: 14px;
+  color: #003103;
+  padding: 0 5px;
 }
 
 footer {
-  background-color: #1d5400;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
+  background-color: #022C00;
   color: white;
   text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  position: relative;
+  bottom: 0;
+}
 
+footer h3 {
+  color: #BAE599;
+  margin: 0;
+}
+
+.links-f {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exp-mapa {
+  font-size: 10px;
+  color: black;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.exp-mapa a,
+.exp-mapa a:visited {
+  text-decoration: none;
+  color: #0F2A00;
+}
+
+.exp-mapa img {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+
+.login {
+  font-size: 10px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.login a,
+.login a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.login img {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+
+.site {
+  font-size: 10px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.site a,
+.site a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.site img {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+
+.linha {
+  background-color: white;
+  width: 93%;
+  height: 2px;
+  margin: auto;
+}
+
+footer p {
+  font-size: 12px;
+  color: #BAE599;
+  margin-top: 15px;
 }
 
 
