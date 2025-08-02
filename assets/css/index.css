@@ -123,19 +123,91 @@ button:hover {
 }
 
 .fatos p {
-  font-size: 14px;
+  font-size: 15px;
   color: #003103;
   padding: 0 5px;
+  width: 300px;
 }
+
+.card {
+  padding-top: 50px;
+}
+
+.card1 h2 {
+  margin-left: 20px;
+}
+
+.card2 h2 {
+  margin-left: 40px;
+}
+
+.card3 h2,
+.card4 h2 {
+  margin-left: 60px;
+}
+
+.entrada1,
+.entrada2,
+.biblioteca,
+.baoba {
+  width: 300px;
+  height: 200px;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.entrada1 {
+    margin-left: 10px;
+}
+
+.entrada2 {
+    margin-left: 20px;
+}
+
+.biblioteca,
+.baoba {
+  margin-left: 40px;
+}
+
+.sobre {
+  background-color: #075100;
+  width: 300px;
+  border-radius: 30px;
+  text-align: center;
+  position: relative;
+  left: 45px;
+  top: -190px;
+}
+
+.card2 .sobre {
+  top: -120px;
+}
+
+.card4 .sobre {
+  top: -175px;
+  left: 10px;
+}
+
+.sobre p {
+  color: white;
+  font-size: 13px;
+  padding: 15px;
+}
+
+
+
+
+
+
+
 
 footer {
   background-color: #022C00;
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: auto;
-  position: relative;
-  bottom: 0;
 }
 
 footer h3 {
