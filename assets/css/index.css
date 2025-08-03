@@ -131,19 +131,10 @@ button:hover {
 
 .card {
   padding-top: 50px;
-}
-
-.card1 h2 {
-  margin-left: 20px;
-}
-
-.card2 h2 {
-  margin-left: 40px;
-}
-
-.card3 h2,
-.card4 h2 {
-  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .entrada1,
@@ -158,17 +149,38 @@ button:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.entrada1 {
-    margin-left: 10px;
+.toggle-button {
+  background-color: white;
+  color: black;
+  border-radius: 7px;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 20px;
+  z-index: 3;
+  cursor: pointer;
+  border: none;
+  right: 55px;
 }
 
-.entrada2 {
-    margin-left: 20px;
+.toggle-button:hover {
+  background-color: #f0f0f0;
 }
 
-.biblioteca,
-.baoba {
-  margin-left: 40px;
+.menos {
+  background-color:transparent;
+  color: white;
+  right: 130px;
+}
+.menos:hover {
+  background-color: #00000052;
+}
+
+.card1 .menos {
+  bottom: -60px;
+}
+
+.card4 .menos {
+  bottom: -5px;
 }
 
 .sobre {
@@ -176,26 +188,41 @@ button:hover {
   width: 300px;
   border-radius: 30px;
   text-align: center;
-  position: relative;
-  left: 45px;
-  top: -190px;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
 }
 
-.card2 .sobre {
-  top: -120px;
+.entrada1-sobre {
+  top: 100px;
 }
 
-.card4 .sobre {
-  top: -175px;
-  left: 10px;
+.entrada2-sobre {
+  top: 100px;
+}
+
+.biblioteca-sobre {
+  top: 100px;
+}
+
+.baoba-sobre {
+  top: 100px;
+}
+
+.sobre.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .sobre p {
   color: white;
   font-size: 13px;
   padding: 15px;
+  margin: 0;
 }
-
 
 
 
