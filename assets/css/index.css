@@ -274,11 +274,12 @@ button:hover {
 .card3-1, .card3-2, .card3-3 {
   display: none;
   position: absolute;
-  bottom: -60px;
+  bottom: -45px;
   left: 0;
   right: 0;
   background: #102500;
   color: #BAE599;
+  width: 65%;
   padding: 10px;
   border-radius: 8px;
   z-index: 5;
@@ -289,6 +290,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
 }
 
 
