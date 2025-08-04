@@ -139,7 +139,6 @@ button:hover {
 
 .entrada1,
 .entrada2,
-.biblioteca,
 .baoba {
   width: 300px;
   height: 200px;
@@ -171,6 +170,7 @@ button:hover {
   color: white;
   right: 130px;
 }
+
 .menos:hover {
   background-color: #00000052;
 }
@@ -180,7 +180,7 @@ button:hover {
 }
 
 .card4 .menos {
-  bottom: -5px;
+  bottom: -60px;
 }
 
 .sobre {
@@ -204,12 +204,18 @@ button:hover {
   top: 100px;
 }
 
-.biblioteca-sobre {
-  top: 100px;
+.baoba-sobre {
+  top: 50px;
 }
 
-.baoba-sobre {
-  top: 100px;
+.baoba-sobre h2 {
+  font-size: 20px;
+  width: 150px;
+  background-color: #102500;
+  color: #BAE599;
+  margin: 10px auto;
+  padding: 5px;
+  border-radius: 8px;
 }
 
 .sobre.visible {
@@ -224,10 +230,41 @@ button:hover {
   margin: 0;
 }
 
+.card3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  position: relative;
+}
 
+.card3 h2 {
+  grid-column: span 3;
+  text-align: center;
+  font-size: 30px;
+  color: #003103;
+  margin-bottom: 10px;
+}
 
+.card3 img {
+  width: 80%;
+  max-width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
 
-
+.card3 img:hover {
+  width: 300px;
+  max-width: none;
+  transform: scale(1);
+  z-index: 10;
+  position: relative;
+}
 
 
 footer {
@@ -235,6 +272,7 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+  margin-top: auto;
 }
 
 footer h3 {
