@@ -32,7 +32,7 @@ This is a web project built with **Vue.js** that displays an interactive map of 
 | 🔍 Search              | Search bar to locate rooms by name, time slot, or type                      |
 
 ## 🚀 Project Access  
-<sub>*https://loca-lifpi-frontend-gjavmecvg-thiago-novaes-projects-c9852d3d.vercel.app/*</sub>
+<sub>*https://loca-lifpi-frontend.vercel.app/*</sub>
 
 ## 🧑‍💻 Contributors
 
