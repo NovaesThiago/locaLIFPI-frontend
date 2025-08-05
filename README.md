@@ -48,7 +48,7 @@ This is a web project built with **Vue.js** that displays an interactive map of 
 
 | Name             | Contact                         |
 |------------------|----------------------------------|
-| Idelmar Junior   | email@email.com                  |
+| Idelmar Junior   | idelmarjuniorre@gmail.com        |
 | GitHub           | https://github.com/IdelmarJr-dev |
 
 ## 📜 License
