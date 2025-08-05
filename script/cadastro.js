@@ -24,7 +24,7 @@ function loginUsuario(matricula, email, senha) {
   .then(response => response.json())
   .then(data => {
     if (data.sucesso) {
-      window.location.href = "./main.html";
+      window.location.href = "./adm.html";
     } else {
       alert("Credenciais inválidas.");
     }
