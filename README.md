@@ -1,58 +1,56 @@
+# 🗺️ Interactive Map of IFPI Picos Campus
 
-# 🗺️ Mapa Interativo do Campus IFPI Picos
+## 🎯 About the Project
 
-## 🎯 Sobre o Projeto
+This is a web project built with **Vue.js** that displays an interactive map of the **IFPI Picos** campus. The goal is to allow students, staff, and visitors to explore the physical spaces of the campus in a dynamic, accessible, and responsive way.
 
-Este é um projeto web construído com **Vue.js** que exibe um mapa interativo do campus **IFPI Picos**. A proposta é permitir que alunos, servidores e visitantes possam explorar os espaços físicos do campus de forma dinâmica, acessível e responsiva.
+## 📦 Project Structure
 
-## 📦 Estrutura do Projeto
-
-| Pasta / Arquivo      | Descrição                                       |
+| Folder / File      | Description                                       |
 |---------------------|--------------------------------------------------|
-| `assets/`           | Imagens, ícones e arquivos visuais               |
-| `pages/`             | Paginas utilizadas na contrução da aplicação    |
-| `scripts/`          | Lógica JavaScript para navegação e interações    |
-| `index.html`        | Página principal do site                         |
+| `assets/`           | Images, icons, and visual assets                 |
+| `pages/`            | Pages used to build the application              |
+| `scripts/`          | JavaScript logic for navigation and interactions |
+| `index.html`        | Main page of the site                            |
 
-## 🔧 Tecnologias Utilizadas
+## 🔧 Technologies Used
 
-| Tecnologia       | Função                           |
-|------------------|----------------------------------|
-| HTML, CSS, JS    | Estrutura, estilo e interatividade |
-| Vue.js           |Framework JavaScript principal      |
-| Responsividade   | Adaptação a diversos dispositivos  |
+| Technology       | Purpose                           |
+|------------------|-----------------------------------|
+| HTML, CSS, JS    | Structure, styling and interactivity |
+| Vue.js           | Main JavaScript framework         |
+| Responsiveness   | Adapts to various devices         |
 
-## 🧭 Funcionalidades
+## 🧭 Features
 
-| Funcionalidade        | Descrição                                                           |
-|------------------------|----------------------------------------------------------------------|
-| 🔍 Zoom e navegação     | Interface interativa com controle de mapa                             |
-| 🎯 Filtros de locais    | Filtro por categorias como salas, laboratórios, setores               |
-| 🧾 Detalhes informativos | Informações e imagens de cada ponto do campus clicável               |
-| 📱 Responsividade       | Funciona perfeitamente em dispositivos móveis                         |
-| 🔍 Pesquisar            | Barra  de pesquisa onde pode localizar salas por nome horario ou tipo.|
+| Feature               | Description                                                                |
+|-----------------------|-----------------------------------------------------------------------------|
+| 🔍 Zoom & Navigation   | Interactive map interface with navigation controls                         |
+| 🎯 Location Filters    | Filters by categories like classrooms, labs, and departments                |
+| 🧾 Informative Details | Clickable campus points with details and images                            |
+| 📱 Mobile-Friendly     | Works perfectly on mobile devices                                           |
+| 🔍 Search              | Search bar to locate rooms by name, time slot, or type                      |
 
-
-## 🚀 Acesse o Projeto 
+## 🚀 Project Access  
 <sub>*https://loca-lifpi-frontend-gjavmecvg-thiago-novaes-projects-c9852d3d.vercel.app/*</sub>
 
-## 🧑‍💻 Contribuidores
+## 🧑‍💻 Contributors
 
-| Nome         | Contato                       |
-|--------------|-------------------------------|
-| Fernada Araújo| fernandacomun@gmail.com             |
-| GitHub       | https://github.com/NovaesThiago      |
+| Name             | Contact                         |
+|------------------|----------------------------------|
+| Fernanda Araújo  | fernandacomun@gmail.com          |
+| GitHub           | https://github.com/Fernanda135   |
 
-| Nome         | Contato                       |
-|--------------|-------------------------------|
-| Thiago Novaes| novaesthiagoss@gmail.com             |
-| GitHub       | https://github.com/NovaesThiago      |
+| Name             | Contact                         |
+|------------------|----------------------------------|
+| Thiago Novaes    | novaesthiagoss@gmail.com         |
+| GitHub           | https://github.com/NovaesThiago  |
 
-| Nome         | Contato                       |
-|--------------|-------------------------------|
-| Idelmar Junior| email@email.com              |
-| GitHub       | https://github.com/IdelmarJr-dev    |
+| Name             | Contact                         |
+|------------------|----------------------------------|
+| Idelmar Junior   | email@email.com                  |
+| GitHub           | https://github.com/IdelmarJr-dev |
 
-## 📜 Licença
+## 📜 License
 
-Este projeto está sob a licença All Rights Reserved.
+This project is licensed under **All Rights Reserved**.
