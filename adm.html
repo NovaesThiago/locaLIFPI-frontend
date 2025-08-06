@@ -42,11 +42,7 @@
       </header>
 
       <main>
-        <div class="map-container"
-        touchstart="startRotate" 
-        @touchmove="doRotate"
-        @touchend="endRotate">
-        <div id="map-rotator" :style="rotationStyle">
+        <div class="map-container">
           <div class="container">
             <div class="elemento elemento-1"></div>
             <div class="elemento elemento-2"></div>
@@ -143,8 +139,6 @@
             <div class="elemento elemento-93"></div>
             <div class="elemento elemento-94"></div>
           </div>
-        </div>
-          
 
           <div
             v-for="bloco in blocosFiltrados"

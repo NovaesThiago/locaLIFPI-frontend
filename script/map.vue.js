@@ -3,9 +3,6 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      rotationAngle: 0,
-      startAngle: 0,
-      isRotating: false,
       blocos: [
         {
           nome: "Refeitório",
@@ -870,11 +867,6 @@ createApp({
     };
   },
   computed: {
-    rotationStyle() {
-      return {
-        transform: `rotate(${this.rotationAngle}deg)`,
-      };
-    },
     blocosFiltrados() {
       const busca = this.termoBusca.toLowerCase().trim();
       if (!busca) return this.blocos;
@@ -902,51 +894,6 @@ createApp({
   },
 
   methods: {
-    startRotate(e) {
-      if (e.touches.length === 2) {
-        this.isRotating = true;
-        this.startAngle = this.getAngle(
-          e.touches[0].clientX,
-          e.touches[0].clientY,
-          e.touches[1].clientX,
-          e.touches[1].clientY
-        );
-        e.preventDefault();
-      }
-    },
-
-    doRotate(e) {
-      if (this.isRotating && e.touches.length === 2) {
-        const currentAngle = this.getAngle(
-          e.touches[0].clientX,
-          e.touches[0].clientY,
-          e.touches[1].clientX,
-          e.touches[1].clientY
-        );
-
-        this.rotationAngle += currentAngle - this.startAngle;
-        this.startAngle = currentAngle;
-        e.preventDefault();
-      }
-    },
-
-    endRotate() {
-      if (this.isRotating) {
-        this.snapToNearest90();
-        this.isRotating = false;
-      }
-    },
-
-    getAngle(x1, y1, x2, y2) {
-      const dx = x1 - x2;
-      const dy = y1 - y2;
-      return (Math.atan2(dy, dx) * 180) / Math.PI;
-    },
-
-    snapToNearest90() {
-      const targetAngle = Math.round(this.rotationAngle / 90) * 90;
-      this.rotationAngle = targetAngle;
-    },
     mostrarSala(sala) {
       this.salaSelecionada = sala;
       event.stopPropagation();
