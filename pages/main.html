@@ -16,7 +16,9 @@
       <header>
         <div class="nav">
           <div class="logo-titulo">
-            <a href="../index.html"><img src="../assets/icons/logo-ifpi.svg" alt="Logo IFPI" /></a>
+            <a href="../index.html"
+              ><img src="../assets/icons/logo-ifpi.svg" alt="Logo IFPI"
+            /></a>
             <h2>LocaLIFPI</h2>
           </div>
 
@@ -30,7 +32,6 @@
             />
             <span class="material-symbols-outlined lupa">search</span>
           </div>
-          
         </div>
 
         <div class="links-inferiores">
@@ -43,7 +44,21 @@
       </header>
 
       <main>
-        <div class="map-container">
+        <div
+          class="map-container"
+          @mousedown="startMouseRotation"
+          @mousemove="handleMouseMove"
+          @mouseup="stopMouseRotation"
+          @mouseleave="stopMouseRotation"
+          @touchstart="handleTouchStart"
+          @touchmove="handleTouchMove"
+          @touchend="handleTouchEnd"
+          ref="mapContainer"
+        >
+          <div
+            class="rotatable"
+            :style="{ transform: 'rotate(' + rotation + 'deg)' }"
+          ></div>
           <div class="container">
             <div class="elemento elemento-1"></div>
             <div class="elemento elemento-2"></div>
@@ -143,7 +158,8 @@
 
           <div
             v-for="bloco in blocosFiltrados"
-            :key="bloco.nome + '-marcadores'">
+            :key="bloco.nome + '-marcadores'"
+          >
             <div
               v-for="sala in bloco.salas"
               :key="sala.id"
@@ -151,57 +167,62 @@
               :class="'marker-' + (sala.tipo || 'padrao')"
               :style="{ left: sala.x + 'px', top: sala.y + 'px'}"
               @click="mostrarSala(sala)"
-              :title="sala.nome">
-            </div>
+              :title="sala.nome"
+            ></div>
           </div>
 
           <div v-if="salaSelecionada" class="sala-info">
-
             <div class="card">
               <div class="header" :class="salaSelecionada.tipo">
-                  {{ salaSelecionada.tipo }}
-                  <button class="close-btn" @click="salaSelecionada = null">×</button>
+                {{ salaSelecionada.tipo }}
+                <button class="close-btn" @click="salaSelecionada = null">
+                  ×
+                </button>
               </div>
 
               <div class="info">
                 <div class="status">
                   <div class="disp">
-                    <div class="disp-ponto" :class="salaSelecionada.disponibilidade.replace(' ', '-')"></div>
+                    <div
+                      class="disp-ponto"
+                      :class="salaSelecionada.disponibilidade.replace(' ', '-')"
+                    ></div>
                     <span>{{ salaSelecionada.disponibilidade }}</span>
                   </div>
-                <div class="capacidade"><span><img src="../assets/icons/cap-icon.svg" class="cap-icon"></span> {{ salaSelecionada.capacidade }} pessoas</div>
-              </div>
+                  <div class="capacidade">
+                    <span
+                      ><img src="../assets/icons/cap-icon.svg" class="cap-icon"
+                    /></span>
+                    {{ salaSelecionada.capacidade }} pessoas
+                  </div>
+                </div>
 
-              <div class="content">
-                <h3>Tipo de Sala</h3>
-                <p>{{ salaSelecionada.nome }}</p>
+                <div class="content">
+                  <h3>Tipo de Sala</h3>
+                  <p>{{ salaSelecionada.nome }}</p>
 
-                <h3>Horários</h3>
-                <table class="schedule-table">
-                  <thead>
-                    <tr>
-                      <th>Manhã</th>
-                      <th>Tarde</th>
-                      <th>Noite</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>{{ salaSelecionada.horarios?.manha || '' }}</td>
-                      <td>{{ salaSelecionada.horarios?.tarde || '' }}</td>
-                      <td>{{ salaSelecionada.horarios?.noite || '' }}</td>
-                    </tr>
-                  </tbody>
-                </table>
+                  <h3>Horários</h3>
+                  <table class="schedule-table">
+                    <thead>
+                      <tr>
+                        <th>Manhã</th>
+                        <th>Tarde</th>
+                        <th>Noite</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{{ salaSelecionada.horarios?.manha || '' }}</td>
+                        <td>{{ salaSelecionada.horarios?.tarde || '' }}</td>
+                        <td>{{ salaSelecionada.horarios?.noite || '' }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
-
-
-          </div>
-
         </div>
-        
       </main>
     </div>
 
