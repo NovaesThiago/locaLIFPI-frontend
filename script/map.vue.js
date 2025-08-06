@@ -3,6 +3,9 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+      rotationAngle: 0,
+      startAngle: 0,
+      isRotating: false,
       blocos: [
         {
           nome: "Refeitório",
@@ -78,7 +81,7 @@ createApp({
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "administracao",
             },
-          ]
+          ],
         },
 
         {
@@ -179,7 +182,7 @@ createApp({
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "administracao",
             },
-          ]
+          ],
         },
 
         {
@@ -285,7 +288,7 @@ createApp({
               horarios: { manha: "#####", tarde: "#####", noite: "#####" },
               tipo: "administracao",
             },
-          ]
+          ],
         },
 
         {
@@ -298,7 +301,11 @@ createApp({
               y: 263,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "EMIT Informática 1º Ano A", tarde: "Contra turno Ensino Médio", noite: "Técnico Eletrotécnica Módulo I" },
+              horarios: {
+                manha: "EMIT Informática 1º Ano A",
+                tarde: "Contra turno Ensino Médio",
+                noite: "Técnico Eletrotécnica Módulo I",
+              },
               tipo: "sala",
             },
             {
@@ -308,7 +315,11 @@ createApp({
               y: 263,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "EMIT Informática 1º Ano B", tarde: "Contra turno Ensino Médio", noite: "Téc. Energia Renovável Módulo III" },
+              horarios: {
+                manha: "EMIT Informática 1º Ano B",
+                tarde: "Contra turno Ensino Médio",
+                noite: "Téc. Energia Renovável Módulo III",
+              },
               tipo: "sala",
             },
             {
@@ -318,7 +329,11 @@ createApp({
               y: 263,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "EMIT Eletrotécnica 1º Ano", tarde: "Contra turno Ensino Médio", noite: "Técnico Desenvolvimento de Sistemas Módulo I" },
+              horarios: {
+                manha: "EMIT Eletrotécnica 1º Ano",
+                tarde: "Contra turno Ensino Médio",
+                noite: "Técnico Desenvolvimento de Sistemas Módulo I",
+              },
               tipo: "sala",
             },
           ],
@@ -334,7 +349,11 @@ createApp({
               y: 313,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "EMIT Eletrotécnica 2º Ano", tarde: "Licenciatura em Física Módulo III", noite: "Licenciatura em Física Módulo I" },
+              horarios: {
+                manha: "EMIT Eletrotécnica 2º Ano",
+                tarde: "Licenciatura em Física Módulo III",
+                noite: "Licenciatura em Física Módulo I",
+              },
               tipo: "sala",
             },
             {
@@ -344,7 +363,11 @@ createApp({
               y: 313,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "EMIT Informática 2º Ano B", tarde: "Licenciatura em Química Módulo III", noite: " ADS Módulo II" },
+              horarios: {
+                manha: "EMIT Informática 2º Ano B",
+                tarde: "Licenciatura em Química Módulo III",
+                noite: " ADS Módulo II",
+              },
               tipo: "sala",
             },
             {
@@ -354,7 +377,11 @@ createApp({
               y: 313,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "EMIT Informática 2º Ano A", tarde: "Contra turno Ensino Médio", noite: "Téc. Desenvolvimento de Sistemas Módulo III" },
+              horarios: {
+                manha: "EMIT Informática 2º Ano A",
+                tarde: "Contra turno Ensino Médio",
+                noite: "Téc. Desenvolvimento de Sistemas Módulo III",
+              },
               tipo: "sala",
             },
             {
@@ -374,7 +401,11 @@ createApp({
               y: 313,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "EMIT Administração 2º Ano", tarde: "Partiu IF", noite: "Proeja Técnico Administração Módulo II" },
+              horarios: {
+                manha: "EMIT Administração 2º Ano",
+                tarde: "Partiu IF",
+                noite: "Proeja Técnico Administração Módulo II",
+              },
               tipo: "sala",
             },
             {
@@ -384,10 +415,14 @@ createApp({
               y: 313,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "EMIT Administração 1º Ano", tarde: "Contra turno Ensino Médio", noite: "Proeja Técnico Comércio Módulo IV" },
+              horarios: {
+                manha: "EMIT Administração 1º Ano",
+                tarde: "Contra turno Ensino Médio",
+                noite: "Proeja Técnico Comércio Módulo IV",
+              },
               tipo: "sala",
             },
-          ]
+          ],
         },
 
         {
@@ -424,7 +459,11 @@ createApp({
               y: 384,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "EMIT Eletrotécnica 3º Ano", tarde: "ADS Módulo V", noite: "Licenciatura em Física Módulo IX" },
+              horarios: {
+                manha: "EMIT Eletrotécnica 3º Ano",
+                tarde: "ADS Módulo V",
+                noite: "Licenciatura em Física Módulo IX",
+              },
               tipo: "sala",
             },
             {
@@ -434,7 +473,11 @@ createApp({
               y: 384,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "EMIT Administração 3º Ano B", tarde: " ADS Módulo III", noite: "Licenciatura em Física Módulo VII" },
+              horarios: {
+                manha: "EMIT Administração 3º Ano B",
+                tarde: " ADS Módulo III",
+                noite: "Licenciatura em Física Módulo VII",
+              },
               tipo: "sala",
             },
             {
@@ -444,7 +487,11 @@ createApp({
               y: 384,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "EMIT Administração 3º Ano A", tarde: " ADS Módulo I", noite: "Licenciatura em Física Módulo V" },
+              horarios: {
+                manha: "EMIT Administração 3º Ano A",
+                tarde: " ADS Módulo I",
+                noite: "Licenciatura em Física Módulo V",
+              },
               tipo: "sala",
             },
             {
@@ -454,7 +501,11 @@ createApp({
               y: 384,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "Laboratório de Linguagens", tarde: "Laboratório de Linguagens", noite: "Laboratório de Linguagens" },
+              horarios: {
+                manha: "Laboratório de Linguagens",
+                tarde: "Laboratório de Linguagens",
+                noite: "Laboratório de Linguagens",
+              },
               tipo: "sala",
             },
             {
@@ -480,7 +531,7 @@ createApp({
               y: 470,
               capacidade: 40,
               disponibilidade: "indisponível",
-              horarios: { },
+              horarios: {},
               tipo: "sala",
             },
             {
@@ -500,7 +551,11 @@ createApp({
               y: 485,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
+              horarios: {
+                manha: "Em Manutenção",
+                tarde: "Em Manutenção",
+                noite: "Em Manutenção",
+              },
               tipo: "sala",
             },
             {
@@ -520,7 +575,11 @@ createApp({
               y: 470,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "Laboratório de Administração", tarde: "Laboratório de Administração", noite: "Laboratório de Administração" },
+              horarios: {
+                manha: "Laboratório de Administração",
+                tarde: "Laboratório de Administração",
+                noite: "Laboratório de Administração",
+              },
               tipo: "sala",
             },
             {
@@ -530,7 +589,11 @@ createApp({
               y: 485,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "Setor de Saúde", tarde: "Setor de Saúde", noite: "Setor de Saúde" },
+              horarios: {
+                manha: "Setor de Saúde",
+                tarde: "Setor de Saúde",
+                noite: "Setor de Saúde",
+              },
               tipo: "sala",
             },
           ],
@@ -555,7 +618,11 @@ createApp({
               y: 605,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
+              horarios: {
+                manha: "Em Manutenção",
+                tarde: "Em Manutenção",
+                noite: "Em Manutenção",
+              },
               tipo: "sala",
             },
             {
@@ -565,7 +632,11 @@ createApp({
               y: 590,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
+              horarios: {
+                manha: "Em Manutenção",
+                tarde: "Em Manutenção",
+                noite: "Em Manutenção",
+              },
               tipo: "sala",
             },
             {
@@ -585,7 +656,7 @@ createApp({
               y: 590,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: { },
+              horarios: {},
               tipo: "sala",
             },
             {
@@ -621,7 +692,11 @@ createApp({
               y: 671,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "Sala de Música", tarde: "Sala de Música", noite: "Sala de Música" },
+              horarios: {
+                manha: "Sala de Música",
+                tarde: "Sala de Música",
+                noite: "Sala de Música",
+              },
               tipo: "sala",
             },
             {
@@ -631,7 +706,11 @@ createApp({
               y: 671,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "EMIT Informática 3º Ano", tarde: "Licenciatura em Química Módulo I", noite: "#####" },
+              horarios: {
+                manha: "EMIT Informática 3º Ano",
+                tarde: "Licenciatura em Química Módulo I",
+                noite: "#####",
+              },
               tipo: "sala",
             },
             {
@@ -661,7 +740,11 @@ createApp({
               y: 671,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: { manha: "Sala de Musica", tarde: "Sala de Musica", noite: "Sala de Musica" },
+              horarios: {
+                manha: "Sala de Musica",
+                tarde: "Sala de Musica",
+                noite: "Sala de Musica",
+              },
               tipo: "sala",
             },
             {
@@ -671,7 +754,11 @@ createApp({
               y: 671,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
+              horarios: {
+                manha: "Em Manutenção",
+                tarde: "Em Manutenção",
+                noite: "Em Manutenção",
+              },
               tipo: "sala",
             },
           ],
@@ -696,7 +783,11 @@ createApp({
               y: 750,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
+              horarios: {
+                manha: "Em Manutenção",
+                tarde: "Em Manutenção",
+                noite: "Em Manutenção",
+              },
               tipo: "sala",
             },
             {
@@ -706,17 +797,25 @@ createApp({
               y: 750,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: { manha: "Em Manutenção", tarde: "Em Manutenção", noite: "Em Manutenção" },
+              horarios: {
+                manha: "Em Manutenção",
+                tarde: "Em Manutenção",
+                noite: "Em Manutenção",
+              },
               tipo: "sala",
             },
             {
               id: 64,
-              nome: "Sala I4",  //biblioteca
+              nome: "Sala I4", //biblioteca
               x: 182,
               y: 750,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "Mnpef polo 65", tarde: "Mnpef polo 65", noite: "Licenciatura em Quimica Módulo IX" },
+              horarios: {
+                manha: "Mnpef polo 65",
+                tarde: "Mnpef polo 65",
+                noite: "Licenciatura em Quimica Módulo IX",
+              },
               tipo: "biblioteca",
             },
             {
@@ -726,7 +825,11 @@ createApp({
               y: 750,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "Licenciatura em Química Módulo VII", tarde: "###", noite: "###" },
+              horarios: {
+                manha: "Licenciatura em Química Módulo VII",
+                tarde: "###",
+                noite: "###",
+              },
               tipo: "sala",
             },
             {
@@ -736,7 +839,11 @@ createApp({
               y: 750,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "Mnpef polo 65", tarde: "Mnpef polo 65", noite: "Licenciatura em Quimica Módulo V" },
+              horarios: {
+                manha: "Mnpef polo 65",
+                tarde: "Mnpef polo 65",
+                noite: "Licenciatura em Quimica Módulo V",
+              },
               tipo: "sala",
             },
             {
@@ -746,7 +853,11 @@ createApp({
               y: 750,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "Laboratório de Matemática", tarde: "Laboratório de Matemática", noite: "Laboratório de Matemática" },
+              horarios: {
+                manha: "Laboratório de Matemática",
+                tarde: "Laboratório de Matemática",
+                noite: "Laboratório de Matemática",
+              },
               tipo: "sala",
             },
           ],
@@ -759,6 +870,11 @@ createApp({
     };
   },
   computed: {
+    rotationStyle() {
+      return {
+        transform: `rotate(${this.rotationAngle}deg)`,
+      };
+    },
     blocosFiltrados() {
       const busca = this.termoBusca.toLowerCase().trim();
       if (!busca) return this.blocos;
@@ -777,16 +893,60 @@ createApp({
             );
           });
 
-          return salasFiltradas.length ? { ...bloco, salas: salasFiltradas } : null;
+          return salasFiltradas.length
+            ? { ...bloco, salas: salasFiltradas }
+            : null;
         })
         .filter(Boolean);
     },
   },
 
-
-
-
   methods: {
+    startRotate(e) {
+      if (e.touches.length === 2) {
+        this.isRotating = true;
+        this.startAngle = this.getAngle(
+          e.touches[0].clientX,
+          e.touches[0].clientY,
+          e.touches[1].clientX,
+          e.touches[1].clientY
+        );
+        e.preventDefault();
+      }
+    },
+
+    doRotate(e) {
+      if (this.isRotating && e.touches.length === 2) {
+        const currentAngle = this.getAngle(
+          e.touches[0].clientX,
+          e.touches[0].clientY,
+          e.touches[1].clientX,
+          e.touches[1].clientY
+        );
+
+        this.rotationAngle += currentAngle - this.startAngle;
+        this.startAngle = currentAngle;
+        e.preventDefault();
+      }
+    },
+
+    endRotate() {
+      if (this.isRotating) {
+        this.snapToNearest90();
+        this.isRotating = false;
+      }
+    },
+
+    getAngle(x1, y1, x2, y2) {
+      const dx = x1 - x2;
+      const dy = y1 - y2;
+      return (Math.atan2(dy, dx) * 180) / Math.PI;
+    },
+
+    snapToNearest90() {
+      const targetAngle = Math.round(this.rotationAngle / 90) * 90;
+      this.rotationAngle = targetAngle;
+    },
     mostrarSala(sala) {
       this.salaSelecionada = sala;
       event.stopPropagation();
@@ -826,10 +986,8 @@ createApp({
 
       this.fecharEditarSala();
     },
-
   },
   mounted() {
     const input = document.querySelector(".search-container input");
   },
-
 }).mount("#app");

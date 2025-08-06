@@ -1,398 +1,832 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 :root {
-    --cor0: #fff5ec;
-    --cor1: #025310;
-    --cor2: #00420c;
-    --cor3: #051945;
-    --cor4: #000333;
-    --cor5: #0032A0;
-    --cor6: #0032A0;
-    --cor7: #fff5ec;
-    --cor8: #a4a2a2;
-    --cor9: #ff4d00;
-    --cor10: #000661;
-    --cor10: #000661;
-    --cor11: #0080ff;
-    --cor12: #f3e412;
-    --cor13: #2ce238;
+  --cor0: #fff5ec;
+  --cor1: #025310;
+  --cor2: #00420c;
+  --cor3: #051945;
+  --cor4: #000333;
+  --cor5: #0032a0;
+  --cor6: #0032a0;
+  --cor7: #fff5ec;
+  --cor8: #a4a2a2;
+  --cor9: #ff4d00;
+  --cor10: #000661;
+  --cor10: #000661;
+  --cor11: #0080ff;
+  --cor12: #f3e412;
+  --cor13: #2ce238;
 }
 
 * {
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
-    background-color: white;
-    margin: 0;
-    overflow-x: hidden;
+  background-color: white;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 header {
-    background-color: white;
-    border-bottom: 2px solid #989898;
-    height: 75px;
-    width: 100%;
-    display: flex;
-    align-items: center;
+  background-color: white;
+  border-bottom: 2px solid #989898;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .painel {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .painel:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .sair {
-    color: rgb(255, 255, 255);
-    background-color: #08A400;
-    padding: 3px 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: #08a400;
+  padding: 3px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .sair:hover {
-    background-color: #047600;
-    color: white;
+  background-color: #047600;
+  color: white;
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .logo-titulo img {
-    width: 30px;
-    height: 40px;
+  width: 30px;
+  height: 40px;
 }
 
-
 .search-container input {
-    height: 30px;
-    border-radius: 5px;
-    border: none;
-    width: 140px;
-    border: 2px solid #989898;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  width: 140px;
+  border: 2px solid #989898;
 }
 
 .lupa {
-    position: absolute;
-    right: 28%;
-    top: 4%;
-    color: gray;
-    font-size: 16px;
+  position: absolute;
+  right: 28%;
+  top: 4%;
+  color: gray;
+  font-size: 16px;
 }
-
 
 /* LOCALIZAÇÕES */
 .map-container {
-    position: relative;
-    width: 100%;
-    height: 800px;
+  position: relative;
+  width: 100%;
+  height: 800px;
 }
 
 .marker {
-    position: absolute;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    transition: transform 0.2s;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
 .marker:hover {
-    transform: translate(-50%, -50%) scale(1.2);
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
 .marker-sala {
-    background-color: var(--cor2);
-    border: 1px solid #ffffff;
-    width: 12px;
-    height: 12px;
+  background-color: var(--cor2);
+  border: 1px solid #ffffff;
+  width: 12px;
+  height: 12px;
 }
 
 .marker-refeitorio {
-    background: var(--cor9) url('../icons/refeitorio.svg');
-    background-size: 18px;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 1px solid #000000;
-    width: 30px;
-    height: 30px;
+  background: var(--cor9) url("../icons/refeitorio.svg");
+  background-size: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #000000;
+  width: 30px;
+  height: 30px;
 }
 
 .marker-cantina {
-    background: orange url('../icons/cantina.svg');
-    background-size: 15px;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 1px solid #000000;
-    width: 20px;
-    height: 20px;
+  background: orange url("../icons/cantina.svg");
+  background-size: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #000000;
+  width: 20px;
+  height: 20px;
 }
 
 .marker-administracao {
-    background-color: var(--cor11);
-    border: 1px solid #000000;
-    width: 10px;
-    height: 10px;
+  background-color: var(--cor11);
+  border: 1px solid #000000;
+  width: 10px;
+  height: 10px;
 }
 
 .marker-banheiro {
-    background-color: khaki;
-    border: 1px solid #000000;
-    width: 10px;
-    height: 10px;
+  background-color: khaki;
+  border: 1px solid #000000;
+  width: 10px;
+  height: 10px;
 }
 
-
 .marker-laboratorio {
-    background-color: var(--cor10);
-    border: 1px solid #ffffff;
-    width: 12px;
-    height: 12px;
+  background-color: var(--cor10);
+  border: 1px solid #ffffff;
+  width: 12px;
+  height: 12px;
 }
 
 .marker-biblioteca {
-    background-color: var(--cor12);
-    border: 1px solid #000000;
-    width: 12px;
-    height: 12px;
+  background-color: var(--cor12);
+  border: 1px solid #000000;
+  width: 12px;
+  height: 12px;
 }
 
 .marker-auditorio {
-    background-color: var(--cor13);
-    border: 1px solid #000000;
-    width: 12px;
-    height: 12px;
+  background-color: var(--cor13);
+  border: 1px solid #000000;
+  width: 12px;
+  height: 12px;
 }
 
 .marker-quadra {
-    background: url('../icons/quadra.svg');
-    background-size: 25px;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    width: 18px;
-    height: 18px;
+  background: url("../icons/quadra.svg");
+  background-size: 25px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
 }
-
 
 /* MAPA */
 
 main {
-    background: white;
-    padding: 10px;
+  background: white;
+  padding: 10px;
 }
 
 .container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
 .elemento {
-    background-color: #8a8a8a;
-    position: absolute;
-    margin: 0;
+  background-color: #8a8a8a;
+  position: absolute;
+  margin: 0;
 }
-
 
 /* CORREDORES */
 
-.elemento-1 { width: 10px; height: 570px; left: 202px; top: 300px; }
+.elemento-1 {
+  width: 10px;
+  height: 570px;
+  left: 202px;
+  top: 300px;
+}
 
-.elemento-2 { width: 360px; height: 10px; left: 1px; top: 291px; }
+.elemento-2 {
+  width: 360px;
+  height: 10px;
+  left: 1px;
+  top: 291px;
+}
 
-.elemento-3 { width: 20px; height: 35px; top: 291px; }
+.elemento-3 {
+  width: 20px;
+  height: 35px;
+  top: 291px;
+}
 
-.elemento-4 { width: 10px; height: 45px; top: 291px; left: 351px; }
+.elemento-4 {
+  width: 10px;
+  height: 45px;
+  top: 291px;
+  left: 351px;
+}
 
-.elemento-5 { width: 30px; height: 10px; left: 331px; top: 335px; }
+.elemento-5 {
+  width: 30px;
+  height: 10px;
+  left: 331px;
+  top: 335px;
+}
 
-.elemento-6 { width: 40px; height: 45px; top: 250px; left: 189px; }
+.elemento-6 {
+  width: 40px;
+  height: 45px;
+  top: 250px;
+  left: 189px;
+}
 
-.elemento-7 { width: 310px; height: 10px; left: 50px; top: 241px; }
+.elemento-7 {
+  width: 310px;
+  height: 10px;
+  left: 50px;
+  top: 241px;
+}
 
-.elemento-8 { width: 5px; height: 85px; left: 115px; top: 159px; }
+.elemento-8 {
+  width: 5px;
+  height: 85px;
+  left: 115px;
+  top: 159px;
+}
 
-.elemento-9 { width: 5px; height: 85px; left: 180px; top: 159px; }
+.elemento-9 {
+  width: 5px;
+  height: 85px;
+  left: 180px;
+  top: 159px;
+}
 
-.elemento-10 { width: 5px; height: 85px; left: 240px; top: 159px; }
+.elemento-10 {
+  width: 5px;
+  height: 85px;
+  left: 240px;
+  top: 159px;
+}
 
-.elemento-11 { width: 5px; height: 85px; left: 305px; top: 159px }
+.elemento-11 {
+  width: 5px;
+  height: 85px;
+  left: 305px;
+  top: 159px;
+}
 
-.elemento-12 { width: 310px; height: 10px; left: 50px; top: 150px; }
+.elemento-12 {
+  width: 310px;
+  height: 10px;
+  left: 50px;
+  top: 150px;
+}
 
-.elemento-13 { width: 40px; height: 50px; top: 101px; left: 189px; }
+.elemento-13 {
+  width: 40px;
+  height: 50px;
+  top: 101px;
+  left: 189px;
+}
 
-.elemento-14 { width: 10px; height: 30px; top: 75px; left: 219px; }
+.elemento-14 {
+  width: 10px;
+  height: 30px;
+  top: 75px;
+  left: 219px;
+}
 
-.elemento-15 { width: 310px; height: 10px; left: 50px; top: 395px; }
+.elemento-15 {
+  width: 310px;
+  height: 10px;
+  left: 50px;
+  top: 395px;
+}
 
-.elemento-16 { width: 280px; height: 10px; left: 61px; top: 480px; }
+.elemento-16 {
+  width: 280px;
+  height: 10px;
+  left: 61px;
+  top: 480px;
+}
 
-.elemento-17 { width: 310px; height: 10px; left: 50px; top: 600px; }
+.elemento-17 {
+  width: 310px;
+  height: 10px;
+  left: 50px;
+  top: 600px;
+}
 
-.elemento-18 { width: 310px; height: 10px; left: 50px; top: 650px; }
+.elemento-18 {
+  width: 310px;
+  height: 10px;
+  left: 50px;
+  top: 650px;
+}
 
 /* .elemento-19 { width: 310px; height: 10px; left: 50px; top: 780px; } */
 
-.elemento-20 { width: 310px; height: 10px; left: 50px; top: 760px; }
+.elemento-20 {
+  width: 310px;
+  height: 10px;
+  left: 50px;
+  top: 760px;
+}
 
-.elemento-21 { width: 152px; height: 10px; left: 202px; top: 869px; }
+.elemento-21 {
+  width: 152px;
+  height: 10px;
+  left: 202px;
+  top: 869px;
+}
 
-.elemento-22 { width: 10px; height: 95px; left: 350px; top: 869px; }
+.elemento-22 {
+  width: 10px;
+  height: 95px;
+  left: 350px;
+  top: 869px;
+}
 
-.elemento-23{ width: 90px; height: 10px; left: 270px; top: 960px; }
-
-
-
-
+.elemento-23 {
+  width: 90px;
+  height: 10px;
+  left: 270px;
+  top: 960px;
+}
 
 /* SALAS */
 
-
-.elemento-24 { width: 8px; height: 4px; left: 183px; top:125px; }
-
-.elemento-26 { width: 4px; height: 8px; left: 95px; top: 143px; }
-
-.elemento-27 { width: 4px; height: 8px; left: 135px; top: 143px; }
-
-.elemento-28 { width: 4px; height: 8px; left: 160px; top: 143px; }
-
-.elemento-29 { width: 4px; height: 8px; left: 240px; top: 143px; }
-
-.elemento-30 { width: 4px; height: 8px; left: 260px; top: 143px; }
-
-.elemento-31 { width: 4px; height: 8px; left: 290px; top: 143px; }
-
-.elemento-32 { width: 4px; height: 8px; left: 306px; top: 143px; }
-
-.elemento-33 { width: 8px; height: 4px; left: 119px; top: 210px; }
-
-.elemento-34 { width: 8px; height: 4px; left: 173px; top: 215px; }
-
-.elemento-35 { width: 8px; height: 4px; left: 173px; top: 180px; }
-
-.elemento-36 { width: 8px; height: 4px; left: 244px; top: 170px; }
-
-.elemento-37 { width: 8px; height: 4px; left: 244px; top: 195px; }
-
-.elemento-38 { width: 8px; height: 4px; left: 244px; top: 220px; }
-
-.elemento-39 { width: 8px; height: 4px; left: 298px; top: 170px; }
-
-.elemento-40 { width: 8px; height: 4px; left: 298px; top: 195px; }
-
-.elemento-41 { width: 8px; height: 4px; left: 298px; top: 220px; }
-
-.elemento-42 { width: 4px; height: 8px; left: 60px; top: 250px; }
-
-.elemento-43 { width: 4px; height: 8px; left: 75px; top: 250px; }
-
-.elemento-44 { width: 4px; height: 8px; left: 90px; top: 250px; }
-
-.elemento-45 { width: 4px; height: 8px; left: 115px; top: 250px; }
-
-.elemento-46 { width: 4px; height: 8px; left: 140px; top: 250px; }
-
-.elemento-47 { width: 4px; height: 8px; left: 155px; top: 250px; }
-
-.elemento-48 { width: 4px; height: 8px; left: 180px; top: 250px; }
-
-.elemento-49 { width: 4px; height: 8px; left: 240px; top: 250px; }
-
-.elemento-50 { width: 4px; height: 8px; left: 260px; top: 250px; }
-
-.elemento-51 { width: 4px; height: 8px; left: 290px; top: 250px; }
-
-.elemento-52 { width: 4px; height: 8px; left: 310px; top: 250px; }
-
-.elemento-53 { width: 4px; height: 8px; left: 90px; top: 300px; }
-
-.elemento-54 { width: 4px; height: 8px; left: 120px; top: 300px; }
-
-.elemento-55 { width: 4px; height: 8px; left: 170px; top: 300px; }
-
-.elemento-56 { width: 4px; height: 8px; left: 235px; top: 300px; }
-
-.elemento-57 { width: 4px; height: 8px; left: 275px; top: 300px; }
-
-.elemento-58 { width: 4px; height: 8px; left: 305px; top: 300px; }
-
-.elemento-59 {width: 8px; height: 4px; left: 343px; top: 320px; }
-
-.elemento-60 { width: 8px; height: 4px; left: 212px; top: 365px; }
-
-.elemento-61 { width: 4px; height: 8px; left: 90px; top: 388px; }
-
-.elemento-62 { width: 4px; height: 8px; left: 120px; top: 388px; }
-
-.elemento-63 { width: 4px; height: 8px; left: 170px; top: 388px; }
-
-.elemento-64 { width: 4px; height: 8px; left: 275px; top: 388px; }
-
-.elemento-65 { width: 4px; height: 8px; left: 300px; top: 388px; }
-
-.elemento-66 { width: 4px; height: 8px; left: 80px; top: 473px; }
-
-.elemento-25 { width: 4px; height: 8px; left: 110px; top: 473px; }
-
-.elemento-67 { width: 8px; height: 4px; left: 53px; top: 483.25px; }
-
-.elemento-44 { width: 4px; height: 8px; left: 290px; top: 473px; }
-
-.elemento-68 { width: 4px; height: 8px; left: 320px; top: 473px; }
-
-.elemento-69 { width: 8px; height: 4px; left: 340px; top: 483.25px; }
-
-.elemento-93 { width: 8px; height: 4px; left: 43px; top: 603px; }
-
-.elemento-70 { width: 4px; height: 8px; left: 110px; top: 594px; }
-
-.elemento-71 { width: 4px; height: 8px; left: 140px; top: 594px; }
-
-.elemento-72 { width: 4px; height: 8px; left: 230px; top: 594px; }
-
-.elemento-73 { width: 4px; height: 8px; left: 280px; top: 594px; }
-
-.elemento-74 { width: 4px; height: 8px; left: 315px; top: 594px; }
-
-.elemento-87 { width: 4px; height: 8px; left: 90px; top: 659px; }
-
-.elemento-75 { width: 4px; height: 8px; left: 120px; top: 659px; }
-
-.elemento-76 { width: 4px; height: 8px; left: 170px; top: 659px; }
-
-.elemento-77 { width: 4px; height: 8px; left: 240px; top: 659px; }
-
-.elemento-78 { width: 4px; height: 8px; left: 280px; top: 659px; }
-
-.elemento-79 { width: 4px; height: 8px; left: 310px; top: 659px; }
-
-.elemento-80 { width: 8px; height: 4px; left: 211px; top: 735px; }
-
-.elemento-94 { width: 4px; height: 8px; left: 90px; top: 753px; }
-
-.elemento-81 { width: 4px; height: 8px; left: 130px; top: 753px; }
-
-.elemento-82 { width: 4px; height: 8px; left: 180px; top: 753px; }
-
-.elemento-83 { width: 4px; height: 8px; left: 240px; top: 753px; }
-
-.elemento-84 { width: 4px; height: 8px;left: 280px; top: 753px; }
-
-.elemento-85 { width: 4px; height: 8px; left: 325px; top: 753px; }
-
-.elemento-86 { width: 4px; height: 8px; left: 60px; top: 753px; }
+.elemento-24 {
+  width: 8px;
+  height: 4px;
+  left: 183px;
+  top: 125px;
+}
+
+.elemento-26 {
+  width: 4px;
+  height: 8px;
+  left: 95px;
+  top: 143px;
+}
+
+.elemento-27 {
+  width: 4px;
+  height: 8px;
+  left: 135px;
+  top: 143px;
+}
+
+.elemento-28 {
+  width: 4px;
+  height: 8px;
+  left: 160px;
+  top: 143px;
+}
+
+.elemento-29 {
+  width: 4px;
+  height: 8px;
+  left: 240px;
+  top: 143px;
+}
+
+.elemento-30 {
+  width: 4px;
+  height: 8px;
+  left: 260px;
+  top: 143px;
+}
+
+.elemento-31 {
+  width: 4px;
+  height: 8px;
+  left: 290px;
+  top: 143px;
+}
+
+.elemento-32 {
+  width: 4px;
+  height: 8px;
+  left: 306px;
+  top: 143px;
+}
+
+.elemento-33 {
+  width: 8px;
+  height: 4px;
+  left: 119px;
+  top: 210px;
+}
+
+.elemento-34 {
+  width: 8px;
+  height: 4px;
+  left: 173px;
+  top: 215px;
+}
+
+.elemento-35 {
+  width: 8px;
+  height: 4px;
+  left: 173px;
+  top: 180px;
+}
+
+.elemento-36 {
+  width: 8px;
+  height: 4px;
+  left: 244px;
+  top: 170px;
+}
+
+.elemento-37 {
+  width: 8px;
+  height: 4px;
+  left: 244px;
+  top: 195px;
+}
+
+.elemento-38 {
+  width: 8px;
+  height: 4px;
+  left: 244px;
+  top: 220px;
+}
+
+.elemento-39 {
+  width: 8px;
+  height: 4px;
+  left: 298px;
+  top: 170px;
+}
+
+.elemento-40 {
+  width: 8px;
+  height: 4px;
+  left: 298px;
+  top: 195px;
+}
+
+.elemento-41 {
+  width: 8px;
+  height: 4px;
+  left: 298px;
+  top: 220px;
+}
+
+.elemento-42 {
+  width: 4px;
+  height: 8px;
+  left: 60px;
+  top: 250px;
+}
+
+.elemento-43 {
+  width: 4px;
+  height: 8px;
+  left: 75px;
+  top: 250px;
+}
+
+.elemento-44 {
+  width: 4px;
+  height: 8px;
+  left: 90px;
+  top: 250px;
+}
+
+.elemento-45 {
+  width: 4px;
+  height: 8px;
+  left: 115px;
+  top: 250px;
+}
+
+.elemento-46 {
+  width: 4px;
+  height: 8px;
+  left: 140px;
+  top: 250px;
+}
+
+.elemento-47 {
+  width: 4px;
+  height: 8px;
+  left: 155px;
+  top: 250px;
+}
+
+.elemento-48 {
+  width: 4px;
+  height: 8px;
+  left: 180px;
+  top: 250px;
+}
+
+.elemento-49 {
+  width: 4px;
+  height: 8px;
+  left: 240px;
+  top: 250px;
+}
+
+.elemento-50 {
+  width: 4px;
+  height: 8px;
+  left: 260px;
+  top: 250px;
+}
+
+.elemento-51 {
+  width: 4px;
+  height: 8px;
+  left: 290px;
+  top: 250px;
+}
+
+.elemento-52 {
+  width: 4px;
+  height: 8px;
+  left: 310px;
+  top: 250px;
+}
+
+.elemento-53 {
+  width: 4px;
+  height: 8px;
+  left: 90px;
+  top: 300px;
+}
+
+.elemento-54 {
+  width: 4px;
+  height: 8px;
+  left: 120px;
+  top: 300px;
+}
+
+.elemento-55 {
+  width: 4px;
+  height: 8px;
+  left: 170px;
+  top: 300px;
+}
+
+.elemento-56 {
+  width: 4px;
+  height: 8px;
+  left: 235px;
+  top: 300px;
+}
+
+.elemento-57 {
+  width: 4px;
+  height: 8px;
+  left: 275px;
+  top: 300px;
+}
+
+.elemento-58 {
+  width: 4px;
+  height: 8px;
+  left: 305px;
+  top: 300px;
+}
+
+.elemento-59 {
+  width: 8px;
+  height: 4px;
+  left: 343px;
+  top: 320px;
+}
+
+.elemento-60 {
+  width: 8px;
+  height: 4px;
+  left: 212px;
+  top: 365px;
+}
+
+.elemento-61 {
+  width: 4px;
+  height: 8px;
+  left: 90px;
+  top: 388px;
+}
+
+.elemento-62 {
+  width: 4px;
+  height: 8px;
+  left: 120px;
+  top: 388px;
+}
+
+.elemento-63 {
+  width: 4px;
+  height: 8px;
+  left: 170px;
+  top: 388px;
+}
+
+.elemento-64 {
+  width: 4px;
+  height: 8px;
+  left: 275px;
+  top: 388px;
+}
+
+.elemento-65 {
+  width: 4px;
+  height: 8px;
+  left: 300px;
+  top: 388px;
+}
+
+.elemento-66 {
+  width: 4px;
+  height: 8px;
+  left: 80px;
+  top: 473px;
+}
+
+.elemento-25 {
+  width: 4px;
+  height: 8px;
+  left: 110px;
+  top: 473px;
+}
+
+.elemento-67 {
+  width: 8px;
+  height: 4px;
+  left: 53px;
+  top: 483.25px;
+}
+
+.elemento-44 {
+  width: 4px;
+  height: 8px;
+  left: 290px;
+  top: 473px;
+}
+
+.elemento-68 {
+  width: 4px;
+  height: 8px;
+  left: 320px;
+  top: 473px;
+}
+
+.elemento-69 {
+  width: 8px;
+  height: 4px;
+  left: 340px;
+  top: 483.25px;
+}
+
+.elemento-93 {
+  width: 8px;
+  height: 4px;
+  left: 43px;
+  top: 603px;
+}
+
+.elemento-70 {
+  width: 4px;
+  height: 8px;
+  left: 110px;
+  top: 594px;
+}
+
+.elemento-71 {
+  width: 4px;
+  height: 8px;
+  left: 140px;
+  top: 594px;
+}
+
+.elemento-72 {
+  width: 4px;
+  height: 8px;
+  left: 230px;
+  top: 594px;
+}
+
+.elemento-73 {
+  width: 4px;
+  height: 8px;
+  left: 280px;
+  top: 594px;
+}
+
+.elemento-74 {
+  width: 4px;
+  height: 8px;
+  left: 315px;
+  top: 594px;
+}
+
+.elemento-87 {
+  width: 4px;
+  height: 8px;
+  left: 90px;
+  top: 659px;
+}
+
+.elemento-75 {
+  width: 4px;
+  height: 8px;
+  left: 120px;
+  top: 659px;
+}
+
+.elemento-76 {
+  width: 4px;
+  height: 8px;
+  left: 170px;
+  top: 659px;
+}
+
+.elemento-77 {
+  width: 4px;
+  height: 8px;
+  left: 240px;
+  top: 659px;
+}
+
+.elemento-78 {
+  width: 4px;
+  height: 8px;
+  left: 280px;
+  top: 659px;
+}
+
+.elemento-79 {
+  width: 4px;
+  height: 8px;
+  left: 310px;
+  top: 659px;
+}
+
+.elemento-80 {
+  width: 8px;
+  height: 4px;
+  left: 211px;
+  top: 735px;
+}
+
+.elemento-94 {
+  width: 4px;
+  height: 8px;
+  left: 90px;
+  top: 753px;
+}
+
+.elemento-81 {
+  width: 4px;
+  height: 8px;
+  left: 130px;
+  top: 753px;
+}
+
+.elemento-82 {
+  width: 4px;
+  height: 8px;
+  left: 180px;
+  top: 753px;
+}
+
+.elemento-83 {
+  width: 4px;
+  height: 8px;
+  left: 240px;
+  top: 753px;
+}
+
+.elemento-84 {
+  width: 4px;
+  height: 8px;
+  left: 280px;
+  top: 753px;
+}
+
+.elemento-85 {
+  width: 4px;
+  height: 8px;
+  left: 325px;
+  top: 753px;
+}
+
+.elemento-86 {
+  width: 4px;
+  height: 8px;
+  left: 60px;
+  top: 753px;
+}
 
 /* .elemento-87 { width: 4px; height: 8px; left: 130px; top: 843px; } */
 
@@ -402,550 +836,599 @@ main {
 
 /* .elemento-91 { width: 4px; height: 8px; left: 295px; top: 843px; } */
 
-.elemento-92 { width: 8px; height: 4px; left: 344px; top: 930px; }
-
-
-
+.elemento-92 {
+  width: 8px;
+  height: 4px;
+  left: 344px;
+  top: 930px;
+}
 
 /* POP-UPS */
 
 .sala-info {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
 .sala-info .card .close-btn {
-    position: absolute;
-    right: 10px;
-    top: 25%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-size: 1.3em;
-    color: white;
-    cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 25%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.3em;
+  color: white;
+  cursor: pointer;
 }
 
 .sala-info .card .edit-btn {
-    position: absolute;
-    right: 10px;
-    top: 70%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-size: 1.3em;
-    cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 70%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.3em;
+  cursor: pointer;
 }
 
 .edit-btn[disabled] {
-    display: none;
+  display: none;
 }
 
 .sala-info .card {
-    background-color: #F3FBFF;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    color: #333;
+  background-color: #f3fbff;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  color: #333;
 }
 
 .sala-info .card .header {
-    background-color: var(--cor4);
-    color: white;
-    text-transform: uppercase;
-    padding: 20px;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
+  background-color: var(--cor4);
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
 }
 
 /* Cores para cada tipo de sala */
 
 .sala-info .card .header.sala {
-    background: linear-gradient(90deg, #00cc1b 0%, #015a17 100%);
+  background: linear-gradient(90deg, #00cc1b 0%, #015a17 100%);
 }
 
 .sala-info .card .header.cantina {
-    background: linear-gradient(90deg, #faff6e 0%, #fff200 100%);
-    color: black;
+  background: linear-gradient(90deg, #faff6e 0%, #fff200 100%);
+  color: black;
 }
 
 .sala-info .card .header.cantina .close-btn {
-    color: black;
+  color: black;
 }
 
 .sala-info .card .header.auditorio {
-    background: linear-gradient(90deg, #45ff51 0%, #17ac00 100%);
-    color: black;
+  background: linear-gradient(90deg, #45ff51 0%, #17ac00 100%);
+  color: black;
 }
 
 .sala-info .card .header.administracao {
-    background: linear-gradient(90deg, #0048FF 0%, #002B99 100%);
+  background: linear-gradient(90deg, #0048ff 0%, #002b99 100%);
 }
 
 .sala-info .card .header.laboratorio {
-    background: linear-gradient(90deg, #0034B7 0%, #001751 100%);
+  background: linear-gradient(90deg, #0034b7 0%, #001751 100%);
 }
 
 .sala-info .card .header.biblioteca {
-    background: linear-gradient(90deg, #f3e412 0%, #ffaa00 100%);
-    color: #333;
+  background: linear-gradient(90deg, #f3e412 0%, #ffaa00 100%);
+  color: #333;
 }
 
 .sala-info .card .header.banheiro {
-    background: linear-gradient(90deg, #d4c5ba 0%, #f89a6f 100%);
-    color: black;
+  background: linear-gradient(90deg, #d4c5ba 0%, #f89a6f 100%);
+  color: black;
 }
 
 .sala-info .card .header.refeitorio {
-    background: linear-gradient(90deg, #ff9900 0%, #ff5100 100%);
+  background: linear-gradient(90deg, #ff9900 0%, #ff5100 100%);
 }
 
 .sala-info .card .header.banheiro .close-btn {
-    color: black;
+  color: black;
 }
 
-
-
 .sala-info .card .info .status {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid #606060;
-    font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #606060;
+  font-weight: bold;
 }
 
 .edit-status {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid #606060;
-    font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #606060;
+  font-weight: bold;
 }
 
 .disp {
-    display: flex;
-    align-items: center;
-    text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
 }
 
 .disp-ponto {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 5px;
-    background: #ccc;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  background: #ccc;
 }
 
 .disp-ponto.disponível {
-    background: #4CAF50;
+  background: #4caf50;
 }
 
 .disp-ponto.indisponível {
-    background: #F44336;
+  background: #f44336;
 }
 
 .disp-ponto.em-manutenção {
-    background: #f1f436;
+  background: #f1f436;
 }
 
 .sala-info .card .info .capacidade {
-    display: flex;
-    align-items: center;
-    font-size: 1em;
-    color: black;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: black;
 }
 
 .cap-icon {
-    width: 15px;
-    height: 15px;
-    margin: 10px 5px 5px 0;
+  width: 15px;
+  height: 15px;
+  margin: 10px 5px 5px 0;
 }
 
 .sala-info .card .content {
-    padding: 20px;
+  padding: 20px;
 }
 
 .sala-info .card .content h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 1.1em;
-    color: #555;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #555;
 }
 
 .sala-info .card .content p {
-    margin-bottom: 20px;
-    font-size: 1em;
-    color: #333;
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #333;
 }
 
 .sala-info .card .content .schedule-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
 }
 
 .sala-info .card .content .schedule-table th,
 .sala-info .card .content .schedule-table td {
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .sala-info .card .content .schedule-table td {
-    font-size: 13px;
+  font-size: 13px;
 }
 
-.sala-info .card .content .schedule-table th:first-child{
-    border-top-left-radius: 8px;
+.sala-info .card .content .schedule-table th:first-child {
+  border-top-left-radius: 8px;
 }
 
-.sala-info .card .content .schedule-table th:last-child{
-    border-top-right-radius: 8px;
+.sala-info .card .content .schedule-table th:last-child {
+  border-top-right-radius: 8px;
 }
 
 .sala-info .card .content .schedule-table td:first-child {
-    border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 .sala-info .card .content .schedule-table td:last-child {
-    border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .sala-info .card .content .schedule-table thead th {
-    background-color: #696969;
-    color: rgb(0, 0, 0);
-    font-weight: normal;
+  background-color: #696969;
+  color: rgb(0, 0, 0);
+  font-weight: normal;
 }
 
 .sala-info .card .content .schedule-table tbody td {
-    background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .sala-info .card .content .schedule-table tbody td:nth-child(2) {
-    -left: 1px solid #606060;
-    border-right: 1px solid #606060;
+  -left: 1px solid #606060;
+  border-right: 1px solid #606060;
 }
 
 .sala-info .editar {
-    background-color: var(--cor5);
-    border: 1px solid white;
-    border-radius: 50%;
-    padding: 2px;
-    cursor: pointer;
-    position: absolute;
-    top: 40px;
-    right: 85px;
+  background-color: var(--cor5);
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 2px;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 85px;
 }
 
 .info-section {
-    margin-bottom: 15px;
-    text-align: left;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
 .info-section label {
-    margin: 0 0 5px;
-    font-size: 16px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
+  margin: 0 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
 }
 
 .info-section input {
-    background: white;
-    color: black;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 14px;
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
 }
 
 .info-section h3 {
-    margin: 0 0 5px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
+  margin: 0 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
 }
 
-
 .info-box {
-    background: white;
-    color: black;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 600;
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .sala-info button {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 22px;
-    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
 }
-
 
 /* EDIÇÃO */
 .edit-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
 .edit-card {
-    background-color: #F3FBFF;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    color: #333;
+  background-color: #f3fbff;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  color: #333;
 }
 
 .edit-header {
-    background-color: var(--cor4);
-    text-transform: uppercase;
-    padding: 20px;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
+  background-color: var(--cor4);
+  text-transform: uppercase;
+  padding: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
 }
 
 .edit-header.sala {
-    background: linear-gradient(90deg, #00cc1b 0%, #015a17 100%);
+  background: linear-gradient(90deg, #00cc1b 0%, #015a17 100%);
 }
 
 .edit-header.cantina {
-    background: linear-gradient(90deg, #faff6e 0%, #fff200 100%);
-    color: black;
+  background: linear-gradient(90deg, #faff6e 0%, #fff200 100%);
+  color: black;
 }
 
 .edit-header.cantina .close-btn {
-    color: black;
+  color: black;
 }
 
 .edit-header.auditorio {
-    background: linear-gradient(90deg, #45ff51 0%, #17ac00 100%);
-    color: black;
+  background: linear-gradient(90deg, #45ff51 0%, #17ac00 100%);
+  color: black;
 }
 
 .edit-header.administracao {
-    background: linear-gradient(90deg, #0048FF 0%, #002B99 100%);
+  background: linear-gradient(90deg, #0048ff 0%, #002b99 100%);
 }
 
 .edit-header.laboratorio {
-    background: linear-gradient(90deg, #0034B7 0%, #001751 100%);
+  background: linear-gradient(90deg, #0034b7 0%, #001751 100%);
 }
 
 .edit-header.biblioteca {
-    background: linear-gradient(90deg, #f3e412 0%, #ffaa00 100%);
-    color: #333;
+  background: linear-gradient(90deg, #f3e412 0%, #ffaa00 100%);
+  color: #333;
 }
 
 .edit-header.banheiro {
-    background: linear-gradient(90deg, #d4c5ba 0%, #f89a6f 100%);
-    color: black;
+  background: linear-gradient(90deg, #d4c5ba 0%, #f89a6f 100%);
+  color: black;
 }
 
 .edit-header.refeitorio {
-    background: linear-gradient(90deg, #ff9900 0%, #ff5100 100%);
+  background: linear-gradient(90deg, #ff9900 0%, #ff5100 100%);
 }
 
 .edit-close-btn {
-    position: absolute;
-    right: 10px;
-    top: 25%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-size: 1.3em;
-    color: white;
-    cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 25%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.3em;
+  color: white;
+  cursor: pointer;
 }
 
 .edit-tipo {
-    background-color: transparent;
-    border: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 1.1em;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
 }
 
 .edit-tipo option {
-    background-color: white;
-    color: rgb(0, 0, 0);
-    border: 1px solid #606060;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: .425em;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: 1px solid #606060;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.425em;
 }
 
 .edit-status {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid #606060;
-    font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #606060;
+  font-weight: bold;
 }
 
 .edit-capacidae {
-    display: flex;
-    align-items: center;
-    font-size: 1em;
-    color: black;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: black;
 }
 
 .small {
-    width: 40px;
-    margin-bottom: 10px;
+  width: 40px;
+  margin-bottom: 10px;
 }
 
 .edit-cap-icon {
-    width: 15px;
-    height: 15px;
-    margin: 15px 5px 0 0;
+  width: 15px;
+  height: 15px;
+  margin: 15px 5px 0 0;
 }
 
 .disponibilidade-select {
-    width: 100%;
-    border-radius: 5px;
-    color: black;
-    font-size: 15px;
+  width: 100%;
+  border-radius: 5px;
+  color: black;
+  font-size: 15px;
 }
 
 .disponibilidade-select option {
-    text-align: center;
-    font-size: 13px;
+  text-align: center;
+  font-size: 13px;
 }
 
 .edit-content {
-    padding: 20px;
+  padding: 20px;
 }
 
 .edit-content h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 1.1em;
-    color: #555;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #555;
 }
 
 .edit-content .edit-field {
-    width: 100%;
-    margin-bottom: 15px;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
-td .edit-field{
-    text-align: center;
+td .edit-field {
+  text-align: center;
 }
 
 td textarea {
-    resize: none;
+  resize: none;
 }
 
 .edit-button {
-    text-align: center;
-    padding-bottom: 15px;
+  text-align: center;
+  padding-bottom: 15px;
 }
 
 .save-button {
-    background-color: transparent;
-    color: #0b5101;
-    border: 1px solid #0b5101;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1em;
-    font-weight: bold;
-    cursor: pointer;
+  background-color: transparent;
+  color: #0b5101;
+  border: 1px solid #0b5101;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .save-button:hover {
-    background-color: #0b5101;
-    color: white;
+  background-color: #0b5101;
+  color: white;
 }
-
 
 /* Media Queries */
 
 /** NOTEBOOK **/
 
 @media only screen and (min-width: 992px) {
+  .nav {
+    margin-top: -38px;
+  }
 
-    .nav {
-        margin-top: -38px;
-    }
+  .logo-titulo img {
+    width: 30px;
+    height: 40px;
+    margin-top: 15px;
+  }
 
-    .logo-titulo img {
-        width: 30px;
-        height: 40px;
-        margin-top: 15px;
-    }
+  .logo-titulo h2 {
+    font-size: 23px;
+    margin-top: 30px;
+  }
 
-    .logo-titulo h2 {
-        font-size: 23px;
-        margin-top: 30px;
-    }
+  .search-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+  }
 
-    .search-container {
-        display: flex;
-        align-items: center;
-        flex-grow: 1;
-        justify-content: center;
-    }
+  .search-container input {
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 20px;
+  }
 
-    .search-container input {
-        width: 300px;
-        margin-left: 150px;
-        margin-top: 20px;
-    }
+  .lupa {
+    left: 425px;
+  }
 
-    .lupa {
-        left: 425px;
-    }
+  .links {
+    position: relative;
+    max-width: 100%;
+    margin-top: 38px;
+  }
 
-    .links {
-        position: relative;
-        max-width: 100%;
-        margin-top: 38px;
-    }
+  .painel {
+    margin-left: 20px;
+  }
 
-    .painel {
-        margin-left: 20px;
-    }
+  .sair {
+    margin-right: 20px;
+  }
 
-    .sair {
-        margin-right: 20px;
-    }
+  .elemento {
+    margin-left: 40%;
+  }
 
-    .elemento {
-        margin-left: 40%;
-    }
+  .marker {
+    margin-left: 40%;
+  }
+}
 
-    .marker {
-        margin-left: 40%;
-    }
+/* Adicione ao seu arquivo CSS existente */
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ocupa toda a altura da tela em mobile */
+  touch-action: none; /* Permite manipulação manual de gestos */
+  overflow: hidden;
+}
+#map-rotator {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center center;
+  transition: transform 0.3s ease-out;
+}
+
+.rotation-hint {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 80%;
+  z-index: 10;
+  animation: fadeOut 3s forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+/* Esconde controles em mobile e vice-versa */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none;
+  }
 }
