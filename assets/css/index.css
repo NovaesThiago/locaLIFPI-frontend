@@ -16,7 +16,7 @@ body {
 
 .inicio {
     flex-direction: column;
-    background: linear-gradient(to top, #1EFF00, #FFFFFF);
+    background: linear-gradient(to top, #a0f681, #FFFFFF);
     min-height: 100vh;
     overflow: auto;
 }
