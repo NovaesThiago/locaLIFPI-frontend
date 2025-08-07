@@ -148,7 +148,7 @@ button:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.toggle-button {
+.toggle-btn {
   background-color: white;
   color: black;
   border-radius: 7px;
@@ -161,7 +161,7 @@ button:hover {
   right: 55px;
 }
 
-.toggle-button:hover {
+.toggle-btn:hover {
   background-color: #f0f0f0;
 }
 
@@ -212,7 +212,7 @@ button:hover {
   font-size: 20px;
   width: 150px;
   background-color: #102500;
-  color: #BAE599;
+  color: #dfffc9;
   margin: 10px auto;
   padding: 5px;
   border-radius: 8px;
@@ -252,7 +252,7 @@ button:hover {
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
   margin: 0 auto;
   display: block;
@@ -261,7 +261,6 @@ button:hover {
 .card3 img:hover {
   width: 300px;
   max-width: none;
-  transform: scale(1);
   z-index: 10;
   position: relative;
 }
@@ -299,7 +298,6 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: auto;
 }
 
 footer h3 {
@@ -398,189 +396,197 @@ footer p {
 
 @media only screen and (min-width: 992px) {
 
-
-  .localifpi {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
-  background-color: rgba(255, 0, 0, 0);
-  box-shadow: none;
-  padding: 20px;
+  header img {
+    width: 40px;
+    height: 47px;
   }
 
-  .esquerda {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  header h2 {
+    font-size: 30px;
   }
 
-  .esquerda h2:first-child {
-  text-align: left;
-  font-size: 20px;
-  margin-left: 10px;
-  border: none;
-}
-
-.esquerda h2 {
-  display: flex;
-  align-items: center;
-  font-size: 40px;
-  font-weight: bold;
-  margin: 0;
-  margin-left: 10px;
-  border-bottom: 2px solid black;
-  width: fit-content;
-  gap: 5px;
-}
-
-.localifpi-logo {
-  width: 30px;
-  height: auto;
-  margin-bottom: 10px;
-  border: none;
-  padding: 0;
-}
-
-
-  .direita p {
-    width: 500px;
+  header p a {
     font-size: 20px;
-    padding: 10px;
-    margin-top: 90px;
-    text-align: left;
   }
 
-  .esquerda img {
-    width: 600px;
-    height: 350px;
-    height: auto;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 10px;
-    padding-right: 50px;
-    border-right: 2px solid black;
+  .localifpi-logo {
+    font-size: 30px;
   }
 
-  .sobre {
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
-    background-color: rgba(255, 0, 0, 0);
-    box-shadow: none;
+  .localifpi-logo img {
+    width: 20px;
+  }
+
+  main h1 {
+    font-size: 60px;
+  }
+
+  main h2 {
+    font-size: 35px;
+  }
+
+  main p {
+    font-size: 25px;
+    width: 70%;
+  }
+
+  button {
+    width: 250px;
+    height: 50px;
+  }
+
+  button a {
+    font-size: 25px;
+  }
+
+  .fatos h2 {
+    font-size: 45px;
+  }
+
+  .fatos p {
+    font-size: 25px;
+    width: 500px;
+  }
+
+  .card1 h2,
+  .card2 h2,
+  .card3 h2,
+  .baoba h2 {
+    font-size: 34px;
+  }
+
+  .card3 {
     padding: 20px;
   }
 
-
-  .direita img {
-    width: 600px;
-    height: 350px;
-    height: auto;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 10px;
-    padding-left: 30px;
-    padding-bottom: 30px;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
-    
+  .card1 h2 {
+    align-self: start;
+    margin-left: 40px;
   }
 
-  .direita h2 {
-    text-align: left;
-    font-size: 25px;
-    margin: 0 0 15px 0;
+  .card2 h2 {
+    align-self: flex-end;
+    margin-right: 70px;
   }
 
-  .esquerda p {
-    width: 500px;
+  .toggle-btn {
     font-size: 20px;
-    padding: 10px;
-    margin: 0 0 15px -5px;
-    text-align: left;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
   }
 
-}
-
-
-
-/** TABLETS **/
-
-@media only screen and (min-width: 768px) {
-  .esquerda {
+  .menos {
+    background-color: rgba(0, 0, 0, 0.493);
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
   }
 
-  .esquerda h2:first-child {
-  text-align: left;
-  font-size: 25px;
-  margin-left: 10px;
-  border: none;
-}
-
-.esquerda h2 {
-  display: flex;
-  align-items: center;
-  font-size: 40px;
-  font-weight: bold;
-  margin: 0;
-  margin-left: 10px;
-  border-bottom: 2px solid black;
-  width: fit-content;
-  gap: 5px;
-}
-
-.esquerda h2 img {
-  width: 30px;
-  height: auto;
-  margin-bottom: 10px;
-  border: none;
-  padding: 0;
-}
-
-
-  .direita p {
-    width: 500px;
-    padding: 40px;
-    font-size: 23px;
-    text-align: center;
-    margin: auto;
-  }
-
-  .esquerda img {
+  .entrada1,
+  .entrada2,
+  .baoba {
     width: 600px;
-    height: 350px;
     height: auto;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 10px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid black;
   }
 
-  .direita img {
-    width: 600px;
-    height: 350px;
-    height: auto;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 10px;
-    padding-left: 30px;
-    padding-bottom: 30px;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
-    
-  }
-
-  .direita h2 {
-    text-align: left;
-    font-size: 25px;
-    margin: 0 0 15px 0;
-  }
-
-  .esquerda p {
+  .entrada1-sobre,
+  .entrada2-sobre,
+  .baoba-sobre {
     width: 500px;
-    font-size: 24px;
-    padding: 10px;
-    margin: 0 0 15px -5px;
-    text-align: left;
+    height: auto;
+    bottom: 30px;
   }
+
+  .entrada1-sobre p,
+  .entrada2-sobre p,
+  .baoba-sobre p {
+    font-size: 20px;
+    padding: 25px;
+  }
+
+  .entrada1 {
+    align-self: start;
+    margin-left: 20px;
+  }
+
+  .entrada1-sobre {
+    align-self: flex-end;
+    margin-right: 60px;
+  }
+
+  .card1 .menos {
+    left: 880px;
+    top: 420px;
+  }
+
+  .entrada1-btn {
+    left: 400px;
+  }
+
+  .entrada2 {
+    align-self: flex-end;
+    margin-right: 20px;
+  }
+
+  .entrada2-sobre {
+    align-self: start;
+    margin-left: 70px;
+    margin-top: 50px;
+  }
+
+  .entrada2-btn {
+    left: 700px;
+  }
+
+  .card2 .menos {
+    left: 230px;
+    top: 300px;
+  }
+
+  .baoba {
+    align-self: start;
+    margin-left: 20px;
+  }
+
+  .baoba-btn {
+    left: 400px;
+  }
+
+  .baoba-sobre {
+    align-self: flex-end;
+    margin-right: 60px;
+  }
+
+  .card4 .menos {
+    left: 880px;
+    top: 325px;
+  }
+
+  .card3 img {
+    height: 400px;
+  }
+
+  .card3 img:hover {
+  width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .links-f {
+    justify-content: center;
+    gap: 15px;
+  }
+
 }
