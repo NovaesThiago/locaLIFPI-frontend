@@ -22,7 +22,6 @@ body {
 }
 
 header {
-  margin-bottom: -65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,7 +52,6 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: -80px;
 }
 
 .localifpi-logo {
@@ -517,7 +515,7 @@ footer p {
   }
 
   .card1 .menos {
-    left: 880px;
+    left: 1085px;
     top: 420px;
   }
 
@@ -537,11 +535,11 @@ footer p {
   }
 
   .entrada2-btn {
-    left: 700px;
+    left: 900px;
   }
 
   .card2 .menos {
-    left: 230px;
+    left: 210px;
     top: 300px;
   }
 
@@ -560,7 +558,7 @@ footer p {
   }
 
   .card4 .menos {
-    left: 880px;
+    left: 1085px;
     top: 325px;
   }
 
@@ -569,8 +567,8 @@ footer p {
   }
 
   .card3 img:hover {
-  width: 600px;
-}
+    width: 600px;
+  }
 
 
 
