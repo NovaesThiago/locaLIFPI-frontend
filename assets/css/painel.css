@@ -562,91 +562,40 @@ td textarea {
 
 @media only screen and (min-width: 992px) {
 
-    .nav {
-        margin-top: -38px;
+    #salas {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        padding: 50px;
     }
 
-    .logo-titulo img {
-        width: 30px;
-        height: 40px;
-        margin-top: 15px;
-    }
-
-    .logo-titulo h2 {
-        font-size: 23px;
-        margin-top: 30px;
-    }
-
-    .search-container {
-        display: flex;
-        align-items: center;
-        flex-grow: 1;
-        justify-content: center;
+    .logo-titulo {
+        position: relative;
+        left: -100px;
     }
 
     .search-container input {
-        width: 300px;
-        margin-left: 150px;
-        margin-top: 20px;
+        position: relative;
+        left: -300px;
+        width: 200%;
     }
 
     .lupa {
-        left: 425px;
+        left: 490px;
     }
 
-    .links {
+    .mapa {
         position: relative;
-        max-width: 100%;
-        margin-top: 38px;
-    }
-
-    .painel {
-        margin-left: 20px;
+        left: 300px;
     }
 
     .sair {
-        margin-right: 20px;
+        position: relative;
+        left: 100px;
     }
 
-    #salas {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
-
-    .sala {
-        background-color: #0b1d3a;
-        width: 400px;
-        height: 250px;
-        margin: auto;
-        border-radius:30px;
-        padding: 10px;
-        text-align: center;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    }
-
-    .sala img {
-        width: 350px;
-        height: 170px;
-        margin-top: 10px;
-        border: 5px solid #fff;
-        border-radius: 8px;
-    }
-
-    .linha-inferior {
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    .sala button {
-        font-size: 15px;
-        width: 100px;
-        height: 30px;
-        margin-left: 30px;
-        cursor: pointer;
-    }
-
-    .sala h2 {
-        margin-right: 30px;
+    .localifpi-logo {
+        position: relative;
+        left: 35px;
     }
 
 }

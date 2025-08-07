@@ -84,7 +84,7 @@ header {
 
 .lupa {
   position: absolute;
-  right: 28%;
+  left: 50%;
   top: 4%;
   color: gray;
   font-size: 16px;
@@ -1345,57 +1345,36 @@ td textarea {
 /** NOTEBOOK **/
 
 @media only screen and (min-width: 992px) {
-  .nav {
-    margin-top: -38px;
-  }
 
-  .logo-titulo img {
-    width: 30px;
-    height: 40px;
-    margin-top: 15px;
-  }
-
-  .logo-titulo h2 {
-    font-size: 23px;
-    margin-top: 30px;
-  }
-
-  .search-container {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    justify-content: center;
+  .logo-titulo {
+    position: relative;
+    left: -100px;
   }
 
   .search-container input {
-    width: 300px;
-    margin-left: 150px;
-    margin-top: 20px;
+    position: relative;
+    left: -300px;
+    width: 200%;
   }
 
   .lupa {
-    left: 425px;
-  }
-
-  .links {
-    position: relative;
-    max-width: 100%;
-    margin-top: 38px;
+    left: 490px;
   }
 
   .painel {
-    margin-left: 20px;
+    position: relative;
+    left: 300px;
   }
 
   .sair {
-    margin-right: 20px;
+    position: relative;
+    left: 100px;
   }
 
-  .elemento {
-    margin-left: 40%;
+  .localifpi-logo {
+    position: relative;
+    left: 35px;
   }
 
-  .marker {
-    margin-left: 40%;
-  }
+
 }
