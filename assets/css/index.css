@@ -228,68 +228,119 @@ button:hover {
   margin: 0;
 }
 
+.locais {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card3-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+}
+
 .card3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  gap: 16px;
+}
+
+.card3 li {
+  right: 5%;
   position: relative;
+  overflow: hidden;
+  flex: 0 0 80px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1.2px solid #eee;
+  box-shadow: 5px 10px 15px rgb(0, 0, 0, 0.4), -2px -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card3 li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card3 li,
+.card3 li img {
+  transition: 0.3s;
+}
+
+.card3 li .card3-item {
+  transition: 1.5s;
+}
+
+.card3 span {
+  text-align: center;
+  width: 71%;
 }
 
 .card3 h2 {
-  grid-column: span 3;
-  text-align: center;
-  font-size: 30px;
-  color: #003103;
-  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  margin-bottom: 3px;
+  white-space: nowrap;
+  color: #adffb1;
+  background-color: #003103;
+  padding: 5px;
+  border-radius: 5px;
 }
 
-.card3 img {
-  width: 80%;
-  max-width: 250px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-  margin: 0 auto;
-  display: block;
-}
-
-.card3 img:hover {
-  width: 300px;
-  max-width: none;
-  z-index: 10;
-  position: relative;
-}
-
-.card3-item {
-  position: relative;
-  text-align: center;
-}
-
-.card3-1, .card3-2, .card3-3 {
-  display: none;
+.card3 li .card3-item {
   position: absolute;
-  bottom: -45px;
+  top: 0;
   left: 0;
   right: 0;
-  background: #102500;
-  color: #BAE599;
-  width: 65%;
-  padding: 10px;
-  border-radius: 8px;
-  z-index: 5;
-  transition: all 0.3s ease-in-out;
+  bottom: 0;
+  z-index: 1;
+  color: white;
+  padding: 15px;
+  background: 
+  linear-gradient( 0deg, rgb(0 0 0 / 70%) 10%, rgb(255 255 255 / 0%) 100% );
+  opacity: 0;
+  visibility: hidden;
 }
 
-.card3-item:hover h3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
+.card3:hover {
+  gap: 10px;
 }
 
+.card3 li .card3-item span {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 0px;
+  translate: -50%;
+  scale: 0.85;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.card3 li:hover {
+  flex: 0 1 260px;
+  scale: 1.1;
+  z-index: 10;
+  opacity: 1;
+}
+
+.card3 li:hover .card3-item {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card3 li:hover span {
+  scale: 1;
+  opacity: 1;
+  visibility: visible;
+}
 
 footer {
   background-color: #022C00;
@@ -448,13 +499,8 @@ footer p {
 
   .card1 h2,
   .card2 h2,
-  .card3 h2,
   .baoba h2 {
     font-size: 34px;
-  }
-
-  .card3 {
-    padding: 20px;
   }
 
   .card1 h2 {
@@ -562,13 +608,21 @@ footer p {
     top: 325px;
   }
 
-  .card3 img {
-    height: 400px;
+  .card3 {
+    width: 500px;
   }
 
-  .card3 img:hover {
-    width: 600px;
+  .card3:hover {
+  gap: 50px;
+}
+
+  .card3 li {
+    flex: 0 0 300px;
   }
+
+  .card3 li:hover {
+  flex: 0 0 400px;
+}
 
 
 
