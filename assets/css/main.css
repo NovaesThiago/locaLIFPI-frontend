@@ -208,21 +208,55 @@ header {
   height: 12px;
 }
 
+.guia-titulo {
+  text-align: center;
+  padding: 15px;
+  background-color: gray;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1.5px solid black;
+}
+
 .guia {
   background-color: white;
-  width: 50%;
+  border: 1.5px solid black;
+  width: 80%;
   height: auto;
-  margin: 20% auto 0 auto;
-  border-radius: 20px;
+  margin: 70% auto 10% auto;
+  border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.079), -2px -5px 5px rgba(0, 0, 0, 0.039);
 }
 
 .guia ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  flex-direction: column;
   padding: 20px;
-  text-align: center;
+  text-align: left;
+  font-weight: 600;
+  gap: 10px;
+}
+
+.guia-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid black;
+  padding: 5px 0;
+}
+
+.guia-marker {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+
+.guia-item p {
+  margin-left: 2%;
+  margin-bottom: 3px;
 }
 
 
