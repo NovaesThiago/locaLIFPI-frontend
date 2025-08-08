@@ -1376,5 +1376,12 @@ td textarea {
     left: 35px;
   }
 
+  .elemento {
+    margin-left: 35%;
+  }
+
+  .marker {
+    margin-left: 35%;
+  }
 
 }

@@ -239,9 +239,48 @@ footer p {
 
 @media only screen and (min-width: 992px) {
 
-  html,
-  body {
-    background-attachment: fixed;
+  .container {
+    margin-top: -40px;
+  }
+
+  .lock {
+    scale: 1.5;
+  }
+
+  .container h1 {
+    font-size: 40px;
+  }
+
+  .container p {
+    font-size: 24px;
+  }
+
+  .formulario {
+    width: 40%;
+  }
+
+  .formulario label {
+    margin-left: 16%;
+    font-size: 17px;
+  }
+
+  .formulario input {
+    width: 65%;
+    font-size: 17px;
+  }
+
+  .enviar {
+    width: 40%;
+  }
+
+  footer h3 {
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .links-f {
+    justify-content: center;
+    gap: 80px;
   }
 
 }

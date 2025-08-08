@@ -12,13 +12,16 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  height: auto;
+  overflow-x: hidden;
 }
 
 .inicio {
     flex-direction: column;
     background: linear-gradient(to top, #a0f681, #FFFFFF);
-    min-height: 100vh;
-    overflow: auto;
+    min-height: auto;
+    overflow: visible;
+    flex: 1;
 }
 
 header {
@@ -135,6 +138,10 @@ button:hover {
   position: relative;
 }
 
+.card4 {
+  margin-bottom: 90px;
+}
+
 .entrada1,
 .entrada2,
 .baoba {
@@ -164,7 +171,7 @@ button:hover {
 }
 
 .menos {
-  background-color:transparent;
+  background-color: rgba(0, 0, 0, 0.493);
   color: white;
   right: 130px;
 }
@@ -178,7 +185,7 @@ button:hover {
 }
 
 .card4 .menos {
-  bottom: -60px;
+  bottom: -80px;
 }
 
 .sobre {
@@ -499,7 +506,8 @@ footer p {
 
   .card1 h2,
   .card2 h2,
-  .baoba h2 {
+  .baoba h2,
+  .locais  {
     font-size: 34px;
   }
 
@@ -561,7 +569,7 @@ footer p {
   }
 
   .card1 .menos {
-    left: 1085px;
+    left: 890px;
     top: 420px;
   }
 
@@ -581,12 +589,12 @@ footer p {
   }
 
   .entrada2-btn {
-    left: 900px;
+    left: 680px;
   }
 
   .card2 .menos {
     left: 210px;
-    top: 300px;
+    top: 278px;
   }
 
   .baoba {
@@ -603,8 +611,8 @@ footer p {
     margin-right: 60px;
   }
 
-  .card4 .menos {
-    left: 1085px;
+  .card4 .menos  {
+    left: 890px;
     top: 325px;
   }
 
@@ -621,20 +629,9 @@ footer p {
   }
 
   .card3 li:hover {
-  flex: 0 0 400px;
+  flex: 0 0 450px;
+  height: 220px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
   .links-f {
     justify-content: center;

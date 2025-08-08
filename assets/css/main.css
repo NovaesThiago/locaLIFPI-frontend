@@ -208,13 +208,21 @@ header {
   height: 12px;
 }
 
-.marker-quadra {
-  background: var(--cor13) url('../icons/quadra.svg');
-  background-size: 25px;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  width: 18px;
-  height: 18px;
+.guia {
+  background-color: white;
+  width: 50%;
+  height: auto;
+  margin: 20% auto 0 auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.079), -2px -5px 5px rgba(0, 0, 0, 0.039);
+}
+
+.guia ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  text-align: center;
 }
 
 
@@ -245,7 +253,12 @@ main {
 
 .elemento-2 { width: 360px; height: 10px; left: 1px; top: 291px; }
 
-.elemento-3 { width: 20px; height: 35px; top: 291px; }
+.elemento-3 { width: 20px; height: 35px; top: 291px;
+  background-image: url('../icons/quadra.svg');
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
 
 .elemento-4 { width: 10px; height: 45px; top: 291px; left: 351px; }
 
@@ -686,44 +699,12 @@ main {
   }
 
   .elemento {
-    margin-left: 40%;
+    margin-left: 35%;
   }
 
   .marker {
-    margin-left: 40%;
+    margin-left: 35%;
   }
 
-  .map-container {
-    left: 6%;
-  }
-
-
-}
-
-/** TABLETS **/
-
-@media only screen and (min-width: 500px) {
-
-  .links-inferiores {
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .links-inferiores a {
-    font-size: 15px;
-  }
-
-  .elemento {
-    margin-left: 30%;
-  }
-
-  .marker {
-    margin-left: 30%;
-  }
-
-  .map-container {
-    right: 5%;
-    margin: auto;
-  }
 
 }
