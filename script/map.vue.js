@@ -774,7 +774,7 @@ createApp({
               tipo: "sala",
             },
             {
-              id: 62, //auditorio
+              id: 62, 
               nome: "Sala I6",
               x: 92,
               y: 750,
@@ -789,7 +789,7 @@ createApp({
             },
             {
               id: 63,
-              nome: "Sala I5", //auditorio
+              nome: "Sala I5", 
               x: 132,
               y: 750,
               capacidade: 40,
@@ -803,7 +803,7 @@ createApp({
             },
             {
               id: 64,
-              nome: "Sala I4", //biblioteca
+              nome: "Sala I4",
               x: 182,
               y: 750,
               capacidade: 40,
@@ -813,7 +813,7 @@ createApp({
                 tarde: "Mnpef polo 65",
                 noite: "Licenciatura em Quimica Módulo IX",
               },
-              tipo: "biblioteca",
+              tipo: "sala",
             },
             {
               id: 65,
