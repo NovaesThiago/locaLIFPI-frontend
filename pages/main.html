@@ -21,14 +21,16 @@
           </div>
 
           <div class="search-container">
-            <input
-              type="text"
-              id="buscarSala"
-              name="buscarSala"
-              placeholder="Buscar sala"
-              autocomplete="off"
-            />
-            <span class="material-symbols-outlined lupa">search</span>
+              <input
+                  type="search"
+                  id="buscarSala"
+                  name="buscarSala"
+                  placeholder="Buscar sala..."
+                  autocomplete="off"
+                  v-model.trim="termoBusca"
+                  @keydown.enter.prevent
+              />
+              <span class="material-symbols-outlined lupa">search</span>
           </div>
           
         </div>
