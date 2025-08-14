@@ -944,20 +944,20 @@ createApp({
       this.fecharEditarSala();
     },
 
-    // Zoom melhorado com limites
-    zoomMap(event) {
-      event.preventDefault();
-      const zoomFactor = 0.1;
-      const minZoom = 0.5;
-      const maxZoom = 3;
-      
-      if (event.deltaY < 0) {
-        this.scale = Math.min(maxZoom, this.scale + zoomFactor);
-      } else {
-        this.scale = Math.max(minZoom, this.scale - zoomFactor);
-      }
-      this.updateTransform();
-    },
+    zoomIn() {
+    const zoomFactor = 0.1;
+    const maxZoom = 3;
+    this.scale = Math.min(maxZoom, this.scale + zoomFactor);
+    this.updateTransform();
+  },
+
+  zoomOut() {
+    const zoomFactor = 0.1;
+    const minZoom = 0.5;
+    this.scale = Math.max(minZoom, this.scale - zoomFactor);
+    this.updateTransform();
+  },
+
 
     // Navegação com mouse melhorada
     startRotate(event) {

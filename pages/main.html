@@ -35,10 +35,12 @@
     </header>
     <main>
       <div class="map-container">
-        <div id="mapTransform" class="container" @mousedown="startRotate($event)" @wheel="zoomMap($event)"
-          @touchstart="startTouch($event)" @touchmove="doTouch($event)" @touchend="stopTouch">
+        <div id="mapTransform" class="container" 
+              @mousedown="startRotate($event)" 
+              @touchstart="startTouch($event)" 
+              @touchmove="doTouch($event)" 
+              @touchend="stopTouch">
 
-          <!-- Base do mapa -->
           <div class="elemento elemento-1"></div>
           <div class="elemento elemento-2"></div>
           <div class="elemento elemento-3"></div>
@@ -150,17 +152,8 @@
           <button class="control-btn" @click="centerMap">📍 Centralizar</button>
           <button class="control-btn" @click="rotateMap(90)">↻ Girar 90°</button>
           <button class="control-btn" @click="rotateMap(-90)">↺ Girar -90°</button>
-        </div>
-
-        <!-- Instruções de uso -->
-        <div class="map-instructions">
-          <h4>Controles:</h4>
-          <ul>
-            <li>Scroll: Zoom</li>
-            <li>Arrastar: Mover</li>
-            <li>Shift + Arrastar: Rotacionar</li>
-            <li>Toque: Mover (mobile)</li>
-          </ul>
+          <button class="control-btn" @click="zoomIn">Zoom +</button>
+          <button class="control-btn" @click="zoomOut">Zoom -</button>
         </div>
       </div>
 
