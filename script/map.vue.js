@@ -680,7 +680,7 @@ createApp({
         },
 
         {
-          nome: "Bloco ",
+          nome: "Bloco H",
           salas: [
             {
               id: 54,
@@ -774,7 +774,7 @@ createApp({
               tipo: "sala",
             },
             {
-              id: 62, 
+              id: 62,
               nome: "Sala I6",
               x: 92,
               y: 750,
@@ -789,7 +789,7 @@ createApp({
             },
             {
               id: 63,
-              nome: "Sala I5", 
+              nome: "Sala I5",
               x: 132,
               y: 750,
               capacidade: 40,
@@ -860,6 +860,16 @@ createApp({
           ],
         },
       ],
+      // Controles de navegação melhorados
+      scale: 1,
+      rotation: 0,
+      translateX: 0,
+      translateY: 0,
+      isDragging: false,
+      lastX: 0,
+      lastY: 0,
+      touchStartX: 0,
+      touchStartY: 0,
       salaSelecionada: null,
       termoBusca: "",
       showEditPopup: false,
@@ -933,8 +943,132 @@ createApp({
 
       this.fecharEditarSala();
     },
+
+    // Zoom melhorado com limites
+    zoomMap(event) {
+      event.preventDefault();
+      const zoomFactor = 0.1;
+      const minZoom = 0.5;
+      const maxZoom = 3;
+      
+      if (event.deltaY < 0) {
+        this.scale = Math.min(maxZoom, this.scale + zoomFactor);
+      } else {
+        this.scale = Math.max(minZoom, this.scale - zoomFactor);
+      }
+      this.updateTransform();
+    },
+
+    // Navegação com mouse melhorada
+    startRotate(event) {
+      this.isDragging = true;
+      this.lastX = event.clientX;
+      this.lastY = event.clientY;
+      document.addEventListener("mousemove", this.doNavigate);
+      document.addEventListener("mouseup", this.stopNavigate);
+      event.preventDefault();
+    },
+
+    doNavigate(event) {
+      if (!this.isDragging) return;
+      
+      const deltaX = event.clientX - this.lastX;
+      const deltaY = event.clientY - this.lastY;
+      
+      // Se Shift estiver pressionado, rotaciona; senão, move
+      if (event.shiftKey) {
+        this.rotation += deltaX * 0.5;
+      } else {
+        this.translateX += deltaX;
+        this.translateY += deltaY;
+      }
+      
+      this.lastX = event.clientX;
+      this.lastY = event.clientY;
+      this.updateTransform();
+    },
+
+    stopNavigate() {
+      this.isDragging = false;
+      document.removeEventListener("mousemove", this.doNavigate);
+      document.removeEventListener("mouseup", this.stopNavigate);
+    },
+
+    // Suporte a toque melhorado
+    startTouch(event) {
+      if (event.touches.length === 1) {
+        this.isDragging = true;
+        this.touchStartX = event.touches[0].clientX;
+        this.touchStartY = event.touches[0].clientY;
+      }
+    },
+
+    doTouch(event) {
+      if (event.touches.length === 1 && this.isDragging) {
+        const deltaX = event.touches[0].clientX - this.touchStartX;
+        const deltaY = event.touches[0].clientY - this.touchStartY;
+        
+        // Movimento para dispositivos móveis
+        this.translateX += deltaX;
+        this.translateY += deltaY;
+        
+        this.touchStartX = event.touches[0].clientX;
+        this.touchStartY = event.touches[0].clientY;
+        this.updateTransform();
+      }
+    },
+
+    stopTouch() {
+      this.isDragging = false;
+      this.touchStartX = 0;
+      this.touchStartY = 0;
+    },
+
+    // Atualiza a transformação com limites
+    updateTransform() {
+      // Limites de movimento baseados no zoom
+      const maxTranslate = 200 * this.scale;
+      this.translateX = Math.max(-maxTranslate, Math.min(maxTranslate, this.translateX));
+      this.translateY = Math.max(-maxTranslate, Math.min(maxTranslate, this.translateY));
+      
+      const map = document.getElementById("mapTransform");
+      if (map) {
+        map.style.transform = `translate(${this.translateX}px, ${this.translateY}px) scale(${this.scale}) rotate(${this.rotation}deg)`;
+      }
+    },
+
+    // Botão reset melhorado
+    resetMap() {
+      this.scale = 1;
+      this.rotation = 0;
+      this.translateX = 0;
+      this.translateY = 0;
+      this.updateTransform();
+    },
+
+    // Centralizar mapa
+    centerMap() {
+      this.translateX = 0;
+      this.translateY = 0;
+      this.updateTransform();
+    },
+
+    // Rotação rápida
+    rotateMap(degrees) {
+      this.rotation += degrees;
+      this.updateTransform();
+    },
   },
+  
   mounted() {
     const input = document.querySelector(".search-container input");
+    
+    // Adicionar instruções de uso
+    console.log("Controles do mapa:");
+    console.log("- Scroll: Zoom in/out");
+    console.log("- Arrastar: Mover mapa");
+    console.log("- Shift + Arrastar: Rotacionar");
+    console.log("- Botão Reset: Voltar ao estado inicial");
   },
 }).mount("#app");
+
