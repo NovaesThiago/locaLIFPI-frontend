@@ -144,7 +144,7 @@ header {
 }
 
 .marker:hover {
-  transform: translate(-50%, -50%) scale(1.2);
+  transform: translate(-80%, -50%) scale(1.2);
 }
 
 .marker-sala {
