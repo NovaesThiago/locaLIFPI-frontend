@@ -34,6 +34,17 @@
       </div>
     </header>
     <main>
+
+      <div class="controls">
+        <button class="reset-btn" @click="resetMap">Resetar</button>
+        
+          <button class="control-btn" @click="centerMap">Centralizar</button>
+          <!-- <button class="control-btn" @click="rotateMap(90)">↻ Girar 90°</button>
+          <button class="control-btn" @click="rotateMap(-90)">↺ Girar -90°</button> -->
+          <button class="control-btn" @click="zoomIn">Zoom +</button>
+          <button class="control-btn" @click="zoomOut">Zoom -</button>
+      </div>
+
       <div class="map-container">
         <div id="mapTransform" class="container" 
               @mousedown="startRotate($event)" 
@@ -149,16 +160,6 @@
           </div>
         </div> -->
 
-        <!-- Controles do mapa -->
-        <!-- <button class="reset-btn" @click="resetMap">🔄 Resetar</button>
-        
-        <div class="map-controls">
-          <button class="control-btn" @click="centerMap">📍 Centralizar</button>
-          <button class="control-btn" @click="rotateMap(90)">↻ Girar 90°</button>
-          <button class="control-btn" @click="rotateMap(-90)">↺ Girar -90°</button>
-          <button class="control-btn" @click="zoomIn">Zoom +</button>
-          <button class="control-btn" @click="zoomOut">Zoom -</button>
-        </div> -->
       </div>
 
       <div v-if="salaSelecionada" class="sala-info">
