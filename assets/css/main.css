@@ -104,7 +104,6 @@ header {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-top: 20px;
-  gap: 100px;
 }
 
 .links-inferiores a {
@@ -187,11 +186,14 @@ header {
 /* Controles do mapa */
 .controls {
   display: flex;
-  gap: 2px;
+  flex-wrap: wrap;
+  gap: 5px;
   margin-bottom: 5px;
+  justify-content: center;
 }
 
 .control-btn {
+  flex: 0 0 calc(27% - 5px);
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -199,13 +201,13 @@ header {
   cursor: pointer;
   font-size: 12px;
   font-weight: bold;
+  text-align: center;
   transition: background 0.2s;
-  width: 90px;
   height: 30px;
 }
 
 .control-btn:hover {
-  background: rgba(255, 255, 255, 1);
+  background: rgb(245, 245, 245);
 }
 
 .reset-btn {
@@ -756,6 +758,7 @@ main {
 
   .links-inferiores {
     justify-content: center;
+    gap: 100px;
   }
 
   .links-inferiores a {
@@ -769,6 +772,7 @@ main {
 
   .control-btn {
     width: 100px;
+    flex: none;
   }
 
   .map-container {
@@ -783,11 +787,11 @@ main {
 
   .elementos {
     position: relative;
-    left: 30%;
+    left: 32%;
   }
 
   .marker {
-    margin-left: 32%;
+    margin-left: 34.02%;
   }
 
   .guia {
