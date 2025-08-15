@@ -134,7 +134,7 @@ header {
 .marker {
   position: absolute;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-80%, -50%);
   cursor: pointer;
   transition: transform 0.2s;
   z-index: 10;
@@ -181,6 +181,10 @@ header {
 
 .marker-auditorio {
   background-color: var(--cor12);
+}
+
+.marker-saude {
+  background-color: red;
 }
 
 /* Controles do mapa */
@@ -791,7 +795,7 @@ main {
   }
 
   .marker {
-    margin-left: 34.02%;
+    margin-left: 34.2%;
   }
 
   .guia {
