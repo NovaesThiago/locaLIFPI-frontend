@@ -29,7 +29,7 @@ createApp({
           nome: "Bloco Entrada",
           salas: [
             {
-              id: 2,
+              id: 1,
               nome: "Gabinete de Diretoria Geral",
               x: 208,
               y: 72,
@@ -39,7 +39,7 @@ createApp({
               tipo: "administracao"
             },
             {
-              id: 4,
+              id: 2,
               nome: "Coordenação - Almoxarifado - Pat",
               x: 129,
               y: 73,
@@ -49,7 +49,7 @@ createApp({
               tipo: "administracao"
             },
             {
-              id: 5,
+              id: 3,
               nome: "Coordenação Compras/SCDP",
               x: 139,
               y: 73,
@@ -59,7 +59,7 @@ createApp({
               tipo: "administracao"
             },
             {
-              id: 6,
+              id: 4,
               nome: "Depc. planejamento / Coordenação de Orçamento",
               x: 171,
               y: 73,
@@ -69,7 +69,7 @@ createApp({
               tipo: "administracao"
             },
             {
-              id: 7,
+              id: 5,
               nome: "Controle Pedagógico",
               x: 180,
               y: 73,
@@ -79,7 +79,7 @@ createApp({
               tipo: "administracao"
             },
             {
-              id: 8,
+              id: 6,
               nome: "Coordenação Pedagógico",
               x: 261,
               y: 73,
@@ -89,7 +89,7 @@ createApp({
               tipo: "administracao"
             },
             {
-              id: 9,
+              id: 7,
               nome: "Laboratório de Informática I",
               x: 271,
               y: 73,
@@ -99,7 +99,7 @@ createApp({
               tipo: "laboratorio"
             },
             {
-              id: 10,
+              id: 8,
               nome: "Laboratório de Informática II",
               x: 311,
               y: 73,
@@ -109,7 +109,7 @@ createApp({
               tipo: "laboratorio"
             },
             {
-              id: 11,
+              id: 9,
               nome: "Laboratório de Informática III",
               x: 321,
               y: 73,
@@ -124,7 +124,7 @@ createApp({
           nome: "Bloco B1",
           salas: [
             {
-              id: 12,
+              id: 10,
               nome: "Auditório",
               x: 194,
               y: 96,
@@ -134,7 +134,7 @@ createApp({
               tipo: "auditorio"
             },
             {
-              id: 13,
+              id: 11,
               nome: "Auditório",
               x: 194,
               y: 136,
@@ -144,7 +144,7 @@ createApp({
               tipo: "auditorio"
             },
             {
-              id: 14,
+              id: 12,
               nome: "Biblioteca",
               x: 150,
               y: 136,
@@ -159,7 +159,7 @@ createApp({
           nome: "Bloco B2",
           salas: [
             {
-              id: 15,
+              id: 13,
               nome: "Coordenação Ensino Médio",
               x: 270,
               y: 96,
@@ -169,7 +169,7 @@ createApp({
               tipo: "administracao"
             },
             {
-              id: 16,
+              id: 14,
               nome: "Banheiro",
               x: 270,
               y: 112,
@@ -178,7 +178,7 @@ createApp({
               tipo: "banheiro"
             },
             {
-              id: 67,
+              id: 15,
               nome: "Sala de Professores / Reuniões",
               x: 270,
               y: 126,
@@ -188,7 +188,7 @@ createApp({
               tipo: "administracao"
             },
             {
-              id: 17,
+              id: 16,
               nome: "Laboratório de Eletrotécnica III",
               x: 313,
               y: 97,
@@ -198,7 +198,7 @@ createApp({
               tipo: "laboratorio"
             },
             {
-              id: 18,
+              id: 17,
               nome: "Laboratório de Eletrotécnica II",
               x: 313,
               y: 112,
@@ -208,7 +208,7 @@ createApp({
               tipo: "laboratorio"
             },
             {
-              id: 19,
+              id: 18,
               nome: "Laboratório de Eletrotécnica I",
               x: 313,
               y: 126,
@@ -223,7 +223,7 @@ createApp({
           nome: "Bloco B3",
           salas: [
             {
-              id: 20,
+              id: 19,
               nome: "Banheiro Servidores",
               x: 136,
               y: 161,
@@ -232,7 +232,7 @@ createApp({
               tipo: "banheiro"
             },
             {
-              id: 21,
+              id: 20,
               nome: "CPD / CTI / Coord. - Cont. - Acad.",
               x: 146,
               y: 161,
@@ -242,7 +242,7 @@ createApp({
               tipo: "administracao"
             },
             {
-              id: 23,
+              id: 21,
               nome: "Coordenação Estudantil",
               x: 166,
               y: 161,
@@ -252,7 +252,7 @@ createApp({
               tipo: "administracao"
             },
             {
-              id: 24,
+              id: 22,
               nome: "Serviços Sociais",
               x: 183,
               y: 161,
@@ -262,7 +262,7 @@ createApp({
               tipo: "administracao"
             },
             {
-              id: 25,
+              id: 23,
               nome: "Audiovisual",
               x: 202,
               y: 161,
@@ -277,7 +277,7 @@ createApp({
           nome: "Bloco B4",
           salas: [
             {
-              id: 26,
+              id: 24,
               nome: "Sala de Professores 02",
               x: 262,
               y: 161,
@@ -287,7 +287,7 @@ createApp({
               tipo: "administracao"
             },
             {
-              id: 27,
+              id: 25,
               nome: "Sala C1",
               x: 276,
               y: 161,
@@ -297,7 +297,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 28,
+              id: 26,
               nome: "Sala C2",
               x: 309,
               y: 161,
@@ -311,7 +311,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 29,
+              id: 27,
               nome: "Sala C3",
               x: 323,
               y: 161,
@@ -330,7 +330,7 @@ createApp({
           nome: "Banheiro",
           salas: [
             {
-              id: 30,
+              id: 28,
               nome: "Banheiro Quadra",
               x: 41,
               y: 214,
@@ -339,7 +339,7 @@ createApp({
               tipo: "banheiro"
             },
             {
-              id: 31,
+              id: 29,
               nome: "Banheiro Quadra",
               x: 56,
               y: 214,
@@ -348,7 +348,7 @@ createApp({
               tipo: "banheiro"
             },
             {
-              id: 101,
+              id: 30,
               nome: "Quadra",
               x: 48,
               y: 233,
@@ -362,7 +362,7 @@ createApp({
           nome: "Bloco D",
           salas: [
             {
-              id: 32,
+              id: 31,
               nome: "Sala D5",
               x: 176,
               y: 232,
@@ -376,7 +376,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 33,
+              id: 32,
               nome: "Sala D4",
               x: 188,
               y: 232,
@@ -390,7 +390,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 34,
+              id: 33,
               nome: "Sala D3",
               x: 211,
               y: 232,
@@ -404,7 +404,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 35,
+              id: 34,
               nome: "Controle Acadêmico",
               x: 251,
               y: 232,
@@ -414,7 +414,7 @@ createApp({
               tipo: "administracao"
             },
             {
-              id: 36,
+              id: 35,
               nome: "Sala D2",
               x: 271,
               y: 232,
@@ -428,7 +428,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 37,
+              id: 36,
               nome: "Sala D1",
               x: 281,
               y: 232,
@@ -443,7 +443,7 @@ createApp({
           nome: "Cantina",
           salas: [
             {
-              id: 38,
+              id: 37,
               nome: "Cantina",
               x: 317,
               y: 245,
@@ -458,7 +458,7 @@ createApp({
           nome: "Bloco E",
           salas: [
             {
-              id: 39,
+              id: 38,
               nome: "Sala E5",
               x: 176,
               y: 292,
@@ -472,7 +472,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 40,
+              id: 39,
               nome: "Sala E4",
               x: 189,
               y: 292,
@@ -486,7 +486,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 41,
+              id: 40,
               nome: "Sala E3",
               x: 211,
               y: 292,
@@ -500,7 +500,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 42,
+              id: 41,
               nome: "Sala E2",
               x: 250,
               y: 292,
@@ -514,7 +514,7 @@ createApp({
               tipo: "laboratorio"
             },
             {
-              id: 43,
+              id: 42,
               nome: "Sala E2",
               x: 271,
               y: 292,
@@ -524,7 +524,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 44,
+              id: 43,
               nome: "Sala E1",
               x: 286,
               y: 292,
@@ -539,7 +539,7 @@ createApp({
           nome: "Bloco F",
           salas: [
             {
-              id: 99,
+              id: 44,
               nome: "Sala F6",
               x: 163,
               y: 347,
@@ -549,7 +549,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 22,
+              id: 45,
               nome: "Sala F5",
               x: 181,
               y: 339,
@@ -559,7 +559,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 45,
+              id: 46,
               nome: "Sala F4",
               x: 191,
               y: 339,
@@ -569,7 +569,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 3,
+              id: 47,
               nome: "Sala F3",
               x: 268,
               y: 339,
@@ -583,7 +583,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 46,
+              id: 48,
               nome: "Sala F2",
               x: 281,
               y: 339,
@@ -597,7 +597,7 @@ createApp({
               tipo: "laboratorio"
             },
             {
-              id: 98,
+              id: 49,
               nome: "Sala F1",
               x: 305,
               y: 347,
@@ -616,7 +616,7 @@ createApp({
           nome: "Bloco G",
           salas: [
             {
-              id: 80,
+              id: 50,
               nome: "Sala G6",
               x: 163,
               y: 387,
@@ -625,7 +625,7 @@ createApp({
               tipo: "laboratorio"
             },
             {
-              id: 47,
+              id: 51,
               nome: "Sala G5",
               x: 196,
               y: 379,
@@ -634,7 +634,7 @@ createApp({
               tipo: "administracao"
             },
             {
-              id: 60,
+              id: 52,
               nome: "Sala G4 - Mambee",
               x: 211,
               y: 379,
@@ -643,7 +643,7 @@ createApp({
               tipo: "laboratorio"
             },
             {
-              id: 48,
+              id: 53,
               nome: "Sala G3",
               x: 254,
               y: 379,
@@ -653,7 +653,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 49,
+              id: 54,
               nome: "Sala G2",
               x: 281,
               y: 379,
@@ -663,7 +663,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 50,
+              id: 55,
               nome: "Sala G1",
               x: 291,
               y: 379,
@@ -678,7 +678,7 @@ createApp({
           nome: "Bloco H",
           salas: [
             {
-              id: 51,
+              id: 56,
               nome: "Sala H6",
               x: 191,
               y: 421,
@@ -688,7 +688,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 52,
+              id: 57,
               nome: "Sala H5",
               x: 201,
               y: 421,
@@ -702,7 +702,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 53,
+              id: 58,
               nome: "Sala H4 Liara",
               x: 226,
               y: 421,
@@ -711,7 +711,7 @@ createApp({
               tipo: "laboratorio"
             },
             {
-              id: 54,
+              id: 59,
               nome: "Coordenação do Ensino Superior",
               x: 256,
               y: 421,
@@ -720,7 +720,7 @@ createApp({
               tipo: "administracao"
             },
             {
-              id: 55,
+              id: 60,
               nome: "Sala H2",
               x: 279,
               y: 421,
@@ -730,7 +730,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 56,
+              id: 61,
               nome: "Sala H1",
               x: 289,
               y: 421,
@@ -745,7 +745,7 @@ createApp({
           nome: "Bloco I",
           salas: [
             {
-              id: 57,
+              id: 62,
               nome: "Banheiro",
               x: 251,
               y: 472,
@@ -755,7 +755,7 @@ createApp({
               tipo: "banheiro"
             },
             {
-              id: 58,
+              id: 63,
               nome: "Banheiro PCD",
               x: 251,
               y: 481,
@@ -765,7 +765,7 @@ createApp({
               tipo: "banheiro"
             },
             {
-              id: 59,
+              id: 64,
               nome: "Sala Mambee",
               x: 171,
               y: 484,
@@ -775,7 +775,7 @@ createApp({
               tipo: "laboratorio"
             },
             {
-              id: 61,
+              id: 65,
               nome: "Sala I6",
               x: 196,
               y: 484,
@@ -785,7 +785,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 62,
+              id: 66,
               nome: "Sala I5",
               x: 211,
               y: 484,
@@ -795,7 +795,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 63,
+              id: 67,
               nome: "Sala I4",
               x: 231,
               y: 484,
@@ -809,7 +809,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 64,
+              id: 68,
               nome: "Sala I3",
               x: 265,
               y: 484,
@@ -823,7 +823,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 65,
+              id: 69,
               nome: "Sala I2",
               x: 275,
               y: 484,
@@ -837,7 +837,7 @@ createApp({
               tipo: "sala"
             },
             {
-              id: 66,
+              id: 70,
               nome: "Sala I1",
               x: 288,
               y: 484,
@@ -851,7 +851,7 @@ createApp({
               tipo: "laboratorio"
             },
             {
-              id: 97,
+              id: 71,
               nome: "Refeitório",
               x: 295,
               y: 530,
@@ -860,7 +860,7 @@ createApp({
               tipo: "refeitorio"
             },
             {
-              id: 96,
+              id: 72,
               nome: "Refeitório",
               x: 295,
               y: 580,
@@ -869,7 +869,7 @@ createApp({
               tipo: "refeitorio"
             },
             {
-              id: 96,
+              id: 73,
               nome: "Administraçã do Refeitório",
               x: 252,
               y: 583,
@@ -878,7 +878,7 @@ createApp({
               tipo: "administracao"
             },
             {
-              id: 100,
+              id: 74,
               nome: "Banheiro Servidores",
               x: 232,
               y: 512,
