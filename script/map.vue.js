@@ -33,7 +33,7 @@ createApp({
               nome: "Gabinete de Diretoria Geral",
               x: 208,
               y: 72,
-              capacidade: 40,
+              capacidade: 10,
               disponibilidade: "indisponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "administracao"
@@ -43,7 +43,7 @@ createApp({
               nome: "Coordenação - Almoxarifado - Pat",
               x: 129,
               y: 73,
-              capacidade: 40,
+              capacidade: 10,
               disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "administracao"
@@ -53,7 +53,7 @@ createApp({
               nome: "Coordenação Compras/SCDP",
               x: 139,
               y: 73,
-              capacidade: 40,
+              capacidade: 10,
               disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "administracao"
@@ -63,7 +63,7 @@ createApp({
               nome: "Depc. planejamento / Coordenação de Orçamento",
               x: 171,
               y: 73,
-              capacidade: 40,
+              capacidade: 10,
               disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "administracao"
@@ -73,7 +73,7 @@ createApp({
               nome: "Controle Pedagógico",
               x: 180,
               y: 73,
-              capacidade: 40,
+              capacidade: 10,
               disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "administracao"
@@ -83,7 +83,7 @@ createApp({
               nome: "Coordenação Pedagógico",
               x: 261,
               y: 73,
-              capacidade: 40,
+              capacidade: 10,
               disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "administracao"
@@ -128,7 +128,7 @@ createApp({
               nome: "Auditório",
               x: 194,
               y: 96,
-              capacidade: 40,
+              capacidade: 100,
               disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "auditorio"
@@ -138,7 +138,7 @@ createApp({
               nome: "Auditório",
               x: 194,
               y: 136,
-              capacidade: 40,
+              capacidade: 100,
               disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "auditorio"
@@ -173,9 +173,8 @@ createApp({
               nome: "Banheiro",
               x: 270,
               y: 112,
-              capacidade: 40,
+              capacidade: 7,
               disponibilidade: "disponível",
-              horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "banheiro"
             },
             {
@@ -183,7 +182,7 @@ createApp({
               nome: "Sala de Professores / Reuniões",
               x: 270,
               y: 126,
-              capacidade: 40,
+              capacidade: 20,
               disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "administracao"
@@ -228,9 +227,8 @@ createApp({
               nome: "Banheiro Servidores",
               x: 136,
               y: 161,
-              capacidade: 40,
+              capacidade: 7,
               disponibilidade: "disponível",
-              horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "banheiro"
             },
             {
@@ -238,7 +236,7 @@ createApp({
               nome: "CPD / CTI / Coord. - Cont. - Acad.",
               x: 146,
               y: 161,
-              capacidade: 40,
+              capacidade: 10,
               disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "administracao"
@@ -248,7 +246,7 @@ createApp({
               nome: "Coordenação Estudantil",
               x: 166,
               y: 161,
-              capacidade: 40,
+              capacidade: 10,
               disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "administracao"
@@ -258,7 +256,7 @@ createApp({
               nome: "Serviços Sociais",
               x: 183,
               y: 161,
-              capacidade: 40,
+              capacidade: 10,
               disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "administracao"
@@ -268,7 +266,7 @@ createApp({
               nome: "Audiovisual",
               x: 202,
               y: 161,
-              capacidade: 40,
+              capacidade: 10,
               disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "administracao"
@@ -283,7 +281,7 @@ createApp({
               nome: "Sala de Professores 02",
               x: 262,
               y: 161,
-              capacidade: 40,
+              capacidade: 15,
               disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "administracao"
@@ -329,28 +327,35 @@ createApp({
           ]
         },
         {
-          nome: "Quadra",
+          nome: "Banheiro",
           salas: [
             {
               id: 30,
-              nome: "Sala C3",
+              nome: "Banheiro Quadra",
               x: 41,
               y: 214,
-              capacidade: 40,
+              capacidade: 7,
               disponibilidade: "disponível",
-              horarios: { manha: "###", tarde: "###", noite: "###" },
-              tipo: "quadra"
+              tipo: "banheiro"
             },
             {
               id: 31,
-              nome: "Sala D5",
+              nome: "Banheiro Quadra",
               x: 56,
               y: 214,
-              capacidade: 40,
+              capacidade: 7,
               disponibilidade: "disponível",
-              horarios: { manha: "###", tarde: "###", noite: "###" },
-              tipo: "quadra"
-            }
+              tipo: "banheiro"
+            },
+            {
+              id: 101,
+              nome: "Quadra",
+              x: 48,
+              y: 233,
+              capacidade: 100,
+              disponibilidade: "disponível",
+              tipo: "sala"
+            },
           ]
         },
         {
@@ -403,7 +408,7 @@ createApp({
               nome: "Controle Acadêmico",
               x: 251,
               y: 232,
-              capacidade: 40,
+              capacidade: 10,
               disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "administracao"
@@ -534,8 +539,18 @@ createApp({
           nome: "Bloco F",
           salas: [
             {
+              id: 99,
+              nome: "Sala F6",
+              x: 163,
+              y: 347,
+              capacidade: 40,
+              disponibilidade: "em manutenção",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "sala"
+            },
+            {
               id: 22,
-              nome: "Sala F4",
+              nome: "Sala F5",
               x: 181,
               y: 339,
               capacidade: 40,
@@ -545,7 +560,7 @@ createApp({
             },
             {
               id: 45,
-              nome: "Sala F6",
+              nome: "Sala F4",
               x: 191,
               y: 339,
               capacidade: 40,
@@ -580,18 +595,13 @@ createApp({
                 noite: "Laboratório de Administração"
               },
               tipo: "laboratorio"
-            }
-          ]
-        },
-        {
-          nome: "Bloco G",
-          salas: [
+            },
             {
-              id: 47,
+              id: 98,
               nome: "Sala F1",
-              x: 196,
-              y: 380,
-              capacidade: 40,
+              x: 305,
+              y: 347,
+              capacidade: 20,
               disponibilidade: "disponível",
               horarios: {
                 manha: "Setor de Saúde",
@@ -599,20 +609,42 @@ createApp({
                 noite: "Setor de Saúde"
               },
               tipo: "saude"
+            }
+          ]
+        },
+        {
+          nome: "Bloco G",
+          salas: [
+            {
+              id: 80,
+              nome: "Sala G6",
+              x: 163,
+              y: 387,
+              capacidade: 20,
+              disponibilidade: "disponível",
+              tipo: "laboratorio"
             },
             {
-              id: 60,
-              nome: "Banheiro",
-              x: 211,
+              id: 47,
+              nome: "Sala G5",
+              x: 196,
               y: 379,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "###", tarde: "###", noite: "###" },
-              tipo: "banheiro"
+              tipo: "administracao"
+            },
+            {
+              id: 60,
+              nome: "Sala G4 - Mambee",
+              x: 211,
+              y: 379,
+              capacidade: 20,
+              disponibilidade: "disponível",
+              tipo: "laboratorio"
             },
             {
               id: 48,
-              nome: "Sala G6",
+              nome: "Sala G3",
               x: 254,
               y: 379,
               capacidade: 40,
@@ -622,7 +654,7 @@ createApp({
             },
             {
               id: 49,
-              nome: "Sala G5",
+              nome: "Sala G2",
               x: 281,
               y: 379,
               capacidade: 40,
@@ -632,7 +664,7 @@ createApp({
             },
             {
               id: 50,
-              nome: "Sala G4",
+              nome: "Sala G1",
               x: 291,
               y: 379,
               capacidade: 40,
@@ -651,8 +683,8 @@ createApp({
               x: 191,
               y: 421,
               capacidade: 40,
-              disponibilidade: "em manutenção",
-              horarios: { manha: "###", tarde: "###", noite: "###" },
+              disponibilidade: "disponível",
+              horarios: { manha: "Sala de Musica", tarde: "Sala de Musica", noite: "Sala de Musica" },
               tipo: "sala"
             },
             {
@@ -661,7 +693,7 @@ createApp({
               x: 201,
               y: 421,
               capacidade: 40,
-              disponibilidade: "em manutenção",
+              disponibilidade: "disponível",
               horarios: {
                 manha: "EMIT Informática 3º Ano",
                 tarde: "Licenciatura em Química Módulo I",
@@ -671,27 +703,21 @@ createApp({
             },
             {
               id: 53,
-              nome: "Sala H4",
+              nome: "Sala H4 Liara",
               x: 226,
               y: 421,
-              capacidade: 40,
-              disponibilidade: "em manutenção",
-              horarios: { manha: "###", tarde: "###", noite: "###" },
-              tipo: "sala"
+              capacidade: 20,
+              disponibilidade: "disponível",
+              tipo: "laboratorio"
             },
             {
               id: 54,
-              nome: "Sala H3",
+              nome: "Coordenação do Ensino Superior",
               x: 256,
               y: 421,
-              capacidade: 40,
+              capacidade: 20,
               disponibilidade: "disponível",
-              horarios: {
-                manha: "Sala de Música",
-                tarde: "Sala de Música",
-                noite: "Sala de Música"
-              },
-              tipo: "sala"
+              tipo: "administracao"
             },
             {
               id: 55,
@@ -720,7 +746,7 @@ createApp({
           salas: [
             {
               id: 57,
-              nome: "Sala H3",
+              nome: "Banheiro",
               x: 251,
               y: 472,
               capacidade: 40,
@@ -730,7 +756,7 @@ createApp({
             },
             {
               id: 58,
-              nome: "Sala H2",
+              nome: "Banheiro PCD",
               x: 251,
               y: 481,
               capacidade: 40,
@@ -740,17 +766,17 @@ createApp({
             },
             {
               id: 59,
-              nome: "Sala I6",
+              nome: "Sala Mambee",
               x: 171,
               y: 484,
               capacidade: 40,
               disponibilidade: "em manutenção",
               horarios: { manha: "###", tarde: "###", noite: "###" },
-              tipo: "sala"
+              tipo: "laboratorio"
             },
             {
               id: 61,
-              nome: "Sala I5",
+              nome: "Sala I6",
               x: 196,
               y: 484,
               capacidade: 40,
@@ -760,7 +786,7 @@ createApp({
             },
             {
               id: 62,
-              nome: "Sala I4",
+              nome: "Sala I5",
               x: 211,
               y: 484,
               capacidade: 40,
@@ -770,7 +796,7 @@ createApp({
             },
             {
               id: 63,
-              nome: "Sala I3",
+              nome: "Sala I4",
               x: 231,
               y: 484,
               capacidade: 40,
@@ -784,7 +810,7 @@ createApp({
             },
             {
               id: 64,
-              nome: "Sala I2",
+              nome: "Sala I3",
               x: 265,
               y: 484,
               capacidade: 40,
@@ -798,7 +824,7 @@ createApp({
             },
             {
               id: 65,
-              nome: "Sala I1",
+              nome: "Sala I2",
               x: 275,
               y: 484,
               capacidade: 40,
@@ -812,7 +838,7 @@ createApp({
             },
             {
               id: 66,
-              nome: "Sala I2",
+              nome: "Sala I1",
               x: 288,
               y: 484,
               capacidade: 40,
@@ -823,7 +849,44 @@ createApp({
                 noite: "Laboratório de Matemática"
               },
               tipo: "laboratorio"
-            }
+            },
+            {
+              id: 97,
+              nome: "Refeitório",
+              x: 295,
+              y: 530,
+              capacidade: 40,
+              disponibilidade: "disponível",
+              tipo: "refeitorio"
+            },
+            {
+              id: 96,
+              nome: "Refeitório",
+              x: 295,
+              y: 580,
+              capacidade: 40,
+              disponibilidade: "disponível",
+              tipo: "refeitorio"
+            },
+            {
+              id: 96,
+              nome: "Administraçã do Refeitório",
+              x: 252,
+              y: 583,
+              capacidade: 40,
+              disponibilidade: "disponível",
+              tipo: "administracao"
+            },
+            {
+              id: 100,
+              nome: "Banheiro Servidores",
+              x: 232,
+              y: 512,
+              capacidade: 40,
+              disponibilidade: "em manutenção",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "banheiro"
+            },
           ]
         }
       ],

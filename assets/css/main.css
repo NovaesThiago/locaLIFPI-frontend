@@ -4,13 +4,13 @@
   --cor1: #19882c;
   --cor2: #025310;
   --cor3: #00420c;
-  --cor4: #003300;
+  --cor4: #007000;
   --cor5: #2e5d2ef2;
   --cor6: #fff5ec;
   --cor7: #a4a2a4;
   --cor8: #0f0028;
   --cor9: #ff4d00;
-  --cor10: #000661;
+  --cor10: #000a91;
   --cor11: #f3e412;
   --cor12: #2ce238;
   --cor13: #34495e;
@@ -152,7 +152,7 @@ header {
 }
 
 .marker-quadra {
-  background-color: gray;
+  background-color: rgb(122, 3, 233);
 }
 
 .marker-refeitorio {
@@ -168,7 +168,7 @@ header {
 }
 
 .marker-banheiro {
-  background-color: khaki;
+  background-color: rgb(122, 3, 233);
 }
 
 .marker-laboratorio {
@@ -530,6 +530,19 @@ main {
 
 .elemento-96 { width: 3px; height: 6px; left: 304px; top: 485px; }
 
+.elemento-97 { width: 3px; height: 6px; left: 304px; top: 485px; }
+
+.elemento-98 { width: 6px; height: 3px; left: 328px; top: 530px; }
+
+.elemento-99 { width: 6px; height: 3px; left: 328px; top: 580px; }
+
+.elemento-100 { width: 75px; height:5px; left: 272px; top: 590px; }
+
+.elemento-101 { width: 6px; height: 3px; left: 266px; top: 510px;}
+
+.elemento-102 {  width: 3px; height: 6px; left: 280px; top: 585px;}
+
+.elemento-103 { width: 3px; height: 6px; left: 77px; top: 224px;}
 /* SALAS */
 
 .sala-info {
