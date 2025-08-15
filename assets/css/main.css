@@ -132,10 +132,9 @@ header {
 .map-container {
   position: relative;
   width: 100%;
-  min-height: 600px;
-  height: auto;
+  height: 604px;
   overflow: hidden;
-  border: 2px solid #ddd;
+  border: 2px solid #ff0000;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -361,7 +360,7 @@ main {
 }
 
 .elemento {
-  background-color: red;
+  background-color: rgb(72, 72, 72);
   position: absolute;
   margin: 0;
 }
