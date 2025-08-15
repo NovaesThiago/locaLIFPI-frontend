@@ -749,7 +749,7 @@ createApp({
               nome: "Banheiro",
               x: 251,
               y: 472,
-              capacidade: 40,
+              capacidade: 7,
               disponibilidade: "em manutenção",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "banheiro"
@@ -759,7 +759,7 @@ createApp({
               nome: "Banheiro PCD",
               x: 251,
               y: 481,
-              capacidade: 40,
+              capacidade: 2,
               disponibilidade: "em manutenção",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "banheiro"
@@ -769,7 +769,7 @@ createApp({
               nome: "Sala Mambee",
               x: 171,
               y: 484,
-              capacidade: 40,
+              capacidade: 20,
               disponibilidade: "em manutenção",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "laboratorio"
@@ -855,7 +855,7 @@ createApp({
               nome: "Refeitório",
               x: 295,
               y: 530,
-              capacidade: 40,
+              capacidade: 70,
               disponibilidade: "disponível",
               tipo: "refeitorio"
             },
@@ -864,7 +864,7 @@ createApp({
               nome: "Refeitório",
               x: 295,
               y: 580,
-              capacidade: 40,
+              capacidade: 70,
               disponibilidade: "disponível",
               tipo: "refeitorio"
             },
@@ -873,7 +873,7 @@ createApp({
               nome: "Administraçã do Refeitório",
               x: 252,
               y: 583,
-              capacidade: 40,
+              capacidade: 10,
               disponibilidade: "disponível",
               tipo: "administracao"
             },
@@ -882,7 +882,7 @@ createApp({
               nome: "Banheiro Servidores",
               x: 232,
               y: 512,
-              capacidade: 40,
+              capacidade: 7,
               disponibilidade: "em manutenção",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "banheiro"
