@@ -35,8 +35,8 @@ createApp({
               y: 72,
               capacidade: 40,
               disponibilidade: "indisponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "administracao",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "administracao"
             },
             {
               id: 4,
@@ -45,8 +45,8 @@ createApp({
               y: 73,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "administracao",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "administracao"
             },
             {
               id: 5,
@@ -55,8 +55,8 @@ createApp({
               y: 73,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "administracao",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "administracao"
             },
             {
               id: 6,
@@ -65,8 +65,8 @@ createApp({
               y: 73,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "administracao",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "administracao"
             },
             {
               id: 7,
@@ -75,49 +75,51 @@ createApp({
               y: 73,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "administracao",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "administracao"
             },
-
             {
               id: 8,
-              nome: "Laboratório de Informática I",
+              nome: "Coordenação Pedagógico",
               x: 261,
               y: 73,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "administracao",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "administracao"
             },
             {
               id: 9,
-              nome: "Laboratório de Informática II",
+              nome: "Laboratório de Informática I",
               x: 271,
               y: 73,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "laboratorio",
+              horarios: { manha: "Laboratório de Informática 01", tarde: "Laboratório de Informática 01", noite: "Laboratório de Informática 01" },
+              tipo: "laboratorio"
             },
             {
               id: 10,
-              nome: "Laboratório de Informática III",
+              nome: "Laboratório de Informática II",
               x: 311,
               y: 73,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "laboratorio",
+              horarios: { manha: "Laboratório de Informática 03", tarde: "Laboratório de Informática 03", noite: "Laboratório de Informática 03" },
+              tipo: "laboratorio"
             },
             {
               id: 11,
-              nome: "Biblioteca",
+              nome: "Laboratório de Informática III",
               x: 321,
               y: 73,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "laboratorio",
-            },
-          ],
+              horarios: { manha: "Laboratório de Informática 03", tarde: "Laboratório de Informática 03", noite: "Laboratório de Informática 03" },
+              tipo: "laboratorio"
+            }
+          ]
         },
-
         {
           nome: "Bloco B1",
           salas: [
@@ -128,7 +130,8 @@ createApp({
               y: 96,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "auditorio",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "auditorio"
             },
             {
               id: 13,
@@ -137,60 +140,63 @@ createApp({
               y: 136,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "auditorio",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "auditorio"
             },
             {
               id: 14,
-              nome: "Coordenação Ensino Médio",
+              nome: "Biblioteca",
               x: 150,
               y: 136,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "biblioteca",
-            },
-          ],
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "biblioteca"
+            }
+          ]
         },
-
         {
           nome: "Bloco B2",
           salas: [
             {
               id: 15,
-              nome: "Banheiro",
+              nome: "Coordenação Ensino Médio",
               x: 270,
               y: 96,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "administracao",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "administracao"
             },
             {
               id: 16,
-              nome: "Sala de Professores / Reuniões",
+              nome: "Banheiro",
               x: 270,
               y: 112,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "banheiro",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "banheiro"
             },
             {
-              id: 17,
-              nome: "Laboratório de Eletrotécnica III",
+              id: 67,
+              nome: "Sala de Professores / Reuniões",
               x: 270,
               y: 126,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "administracao",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "administracao"
             },
             {
               id: 17,
               nome: "Laboratório de Eletrotécnica III",
               x: 313,
-              y: 96,
+              y: 97,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "laboratorio",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "laboratorio"
             },
             {
               id: 18,
@@ -199,7 +205,8 @@ createApp({
               y: 112,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "laboratorio",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "laboratorio"
             },
             {
               id: 19,
@@ -208,11 +215,11 @@ createApp({
               y: 126,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "laboratorio",
-            },
-          ],
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "laboratorio"
+            }
+          ]
         },
-
         {
           nome: "Bloco B3",
           salas: [
@@ -223,7 +230,8 @@ createApp({
               y: 161,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "banheiro",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "banheiro"
             },
             {
               id: 21,
@@ -232,8 +240,8 @@ createApp({
               y: 161,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "administracao",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "administracao"
             },
             {
               id: 23,
@@ -242,18 +250,18 @@ createApp({
               y: 161,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "administracao",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "administracao"
             },
             {
               id: 24,
-              nome: "Serviços",
+              nome: "Serviços Sociais",
               x: 183,
               y: 161,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "administracao",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "administracao"
             },
             {
               id: 25,
@@ -262,12 +270,11 @@ createApp({
               y: 161,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "administracao",
-            },
-          ],
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "administracao"
+            }
+          ]
         },
-
         {
           nome: "Bloco B4",
           salas: [
@@ -278,7 +285,8 @@ createApp({
               y: 161,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "administracao",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "administracao"
             },
             {
               id: 27,
@@ -287,8 +295,8 @@ createApp({
               y: 161,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "sala",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "sala"
             },
             {
               id: 28,
@@ -300,9 +308,9 @@ createApp({
               horarios: {
                 manha: "EMIT Informática 1º Ano A",
                 tarde: "Contra turno Ensino Médio",
-                noite: "Técnico Eletrotécnica Módulo I",
+                noite: "Técnico Eletrotécnica Módulo I"
               },
-              tipo: "sala",
+              tipo: "sala"
             },
             {
               id: 29,
@@ -314,13 +322,12 @@ createApp({
               horarios: {
                 manha: "EMIT Informática 1º Ano B",
                 tarde: "Contra turno Ensino Médio",
-                noite: "Téc. Energia Renovável Módulo III",
+                noite: "Téc. Energia Renovável Módulo III"
               },
-              tipo: "sala",
-            },
-          ],
+              tipo: "sala"
+            }
+          ]
         },
-
         {
           nome: "Quadra",
           salas: [
@@ -331,7 +338,8 @@ createApp({
               y: 214,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "quadra",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "quadra"
             },
             {
               id: 31,
@@ -340,11 +348,11 @@ createApp({
               y: 214,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "quadra",
-            },
-          ],
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "quadra"
+            }
+          ]
         },
-
         {
           nome: "Bloco D",
           salas: [
@@ -358,9 +366,9 @@ createApp({
               horarios: {
                 manha: "EMIT Informática 2º Ano B",
                 tarde: "Licenciatura em Química Módulo III",
-                noite: " ADS Módulo II",
+                noite: "ADS Módulo II"
               },
-              tipo: "sala",
+              tipo: "sala"
             },
             {
               id: 33,
@@ -372,33 +380,33 @@ createApp({
               horarios: {
                 manha: "EMIT Informática 2º Ano A",
                 tarde: "Contra turno Ensino Médio",
-                noite: "Téc. Desenvolvimento de Sistemas Módulo III",
+                noite: "Téc. Desenvolvimento de Sistemas Módulo III"
               },
-              tipo: "sala",
+              tipo: "sala"
             },
             {
               id: 34,
-              nome: "D3",
-              x: 211,
-              y: 232,
-              capacidade: 40,
-              disponibilidade: "disponível",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "sala",
-            },
-            {
-              id: 35,
               nome: "Sala D3",
-              x: 251,
+              x: 211,
               y: 232,
               capacidade: 40,
               disponibilidade: "disponível",
               horarios: {
                 manha: "EMIT Administração 2º Ano",
                 tarde: "Partiu IF",
-                noite: "Proeja Técnico Administração Módulo II",
+                noite: "Proeja Técnico Administração Módulo II"
               },
-              tipo: "administracao",
+              tipo: "sala"
+            },
+            {
+              id: 35,
+              nome: "Controle Acadêmico",
+              x: 251,
+              y: 232,
+              capacidade: 40,
+              disponibilidade: "disponível",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "administracao"
             },
             {
               id: 36,
@@ -410,37 +418,37 @@ createApp({
               horarios: {
                 manha: "EMIT Administração 1º Ano",
                 tarde: "Contra turno Ensino Médio",
-                noite: "Proeja Técnico Comércio Módulo IV",
+                noite: "Proeja Técnico Comércio Módulo IV"
               },
-              tipo: "sala",
+              tipo: "sala"
             },
             {
               id: 37,
-              nome: "D1",
+              nome: "Sala D1",
               x: 281,
               y: 232,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "sala",
-            },
-          ],
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "sala"
+            }
+          ]
         },
-
         {
           nome: "Cantina",
           salas: [
             {
               id: 38,
-              nome: "Banheiro",
+              nome: "Cantina",
               x: 322,
               y: 256,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "cantina",
-            },
-          ],
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "cantina"
+            }
+          ]
         },
-
         {
           nome: "Bloco E",
           salas: [
@@ -454,9 +462,9 @@ createApp({
               horarios: {
                 manha: "EMIT Eletrotécnica 3º Ano",
                 tarde: "ADS Módulo V",
-                noite: "Licenciatura em Física Módulo IX",
+                noite: "Licenciatura em Física Módulo IX"
               },
-              tipo: "sala",
+              tipo: "sala"
             },
             {
               id: 40,
@@ -467,10 +475,10 @@ createApp({
               disponibilidade: "disponível",
               horarios: {
                 manha: "EMIT Administração 3º Ano B",
-                tarde: " ADS Módulo III",
-                noite: "Licenciatura em Física Módulo VII",
+                tarde: "ADS Módulo III",
+                noite: "Licenciatura em Física Módulo VII"
               },
-              tipo: "sala",
+              tipo: "sala"
             },
             {
               id: 41,
@@ -481,10 +489,10 @@ createApp({
               disponibilidade: "disponível",
               horarios: {
                 manha: "EMIT Administração 3º Ano A",
-                tarde: " ADS Módulo I",
-                noite: "Licenciatura em Física Módulo V",
+                tarde: "ADS Módulo I",
+                noite: "Licenciatura em Física Módulo V"
               },
-              tipo: "sala",
+              tipo: "sala"
             },
             {
               id: 42,
@@ -496,9 +504,9 @@ createApp({
               horarios: {
                 manha: "Laboratório de Linguagens",
                 tarde: "Laboratório de Linguagens",
-                noite: "Laboratório de Linguagens",
+                noite: "Laboratório de Linguagens"
               },
-              tipo: "banheiro",
+              tipo: "laboratorio"
             },
             {
               id: 43,
@@ -507,8 +515,8 @@ createApp({
               y: 292,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "sala",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "sala"
             },
             {
               id: 44,
@@ -517,12 +525,11 @@ createApp({
               y: 292,
               capacidade: 40,
               disponibilidade: "indisponível",
-              horarios: {},
-              tipo: "sala",
-            },
-          ],
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "sala"
+            }
+          ]
         },
-
         {
           nome: "Bloco F",
           salas: [
@@ -533,8 +540,8 @@ createApp({
               y: 339,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "sala",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "sala"
             },
             {
               id: 45,
@@ -543,12 +550,8 @@ createApp({
               y: 339,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: {
-                manha: "Em Manutenção",
-                tarde: "Em Manutenção",
-                noite: "Em Manutenção",
-              },
-              tipo: "sala",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "sala"
             },
             {
               id: 3,
@@ -557,8 +560,12 @@ createApp({
               y: 339,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "sala",
+              horarios: {
+                manha: "Academia",
+                tarde: "Academia",
+                noite: "Academia"
+              },
+              tipo: "sala"
             },
             {
               id: 46,
@@ -570,13 +577,12 @@ createApp({
               horarios: {
                 manha: "Laboratório de Administração",
                 tarde: "Laboratório de Administração",
-                noite: "Laboratório de Administração",
+                noite: "Laboratório de Administração"
               },
-              tipo: "sala",
-            },
-          ],
+              tipo: "laboratorio"
+            }
+          ]
         },
-
         {
           nome: "Bloco G",
           salas: [
@@ -590,9 +596,9 @@ createApp({
               horarios: {
                 manha: "Setor de Saúde",
                 tarde: "Setor de Saúde",
-                noite: "Setor de Saúde",
+                noite: "Setor de Saúde"
               },
-              tipo: "sala",
+              tipo: "saude"
             },
             {
               id: 60,
@@ -601,7 +607,8 @@ createApp({
               y: 379,
               capacidade: 40,
               disponibilidade: "disponível",
-              tipo: "banheiro",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "banheiro"
             },
             {
               id: 48,
@@ -610,12 +617,8 @@ createApp({
               y: 379,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: {
-                manha: "Em Manutenção",
-                tarde: "Em Manutenção",
-                noite: "Em Manutenção",
-              },
-              tipo: "sala",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "sala"
             },
             {
               id: 49,
@@ -624,12 +627,8 @@ createApp({
               y: 379,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: {
-                manha: "Em Manutenção",
-                tarde: "Em Manutenção",
-                noite: "Em Manutenção",
-              },
-              tipo: "sala",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "sala"
             },
             {
               id: 50,
@@ -638,12 +637,11 @@ createApp({
               y: 379,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "sala",
-            },
-          ],
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "sala"
+            }
+          ]
         },
-
         {
           nome: "Bloco H",
           salas: [
@@ -654,8 +652,8 @@ createApp({
               y: 421,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: {},
-              tipo: "sala",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "sala"
             },
             {
               id: 52,
@@ -664,8 +662,12 @@ createApp({
               y: 421,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "sala",
+              horarios: {
+                manha: "EMIT Informática 3º Ano",
+                tarde: "Licenciatura em Química Módulo I",
+                noite: "###"
+              },
+              tipo: "sala"
             },
             {
               id: 53,
@@ -674,8 +676,8 @@ createApp({
               y: 421,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "sala",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "sala"
             },
             {
               id: 54,
@@ -687,9 +689,9 @@ createApp({
               horarios: {
                 manha: "Sala de Música",
                 tarde: "Sala de Música",
-                noite: "Sala de Música",
+                noite: "Sala de Música"
               },
-              tipo: "sala",
+              tipo: "sala"
             },
             {
               id: 55,
@@ -698,12 +700,8 @@ createApp({
               y: 421,
               capacidade: 40,
               disponibilidade: "disponível",
-              horarios: {
-                manha: "EMIT Informática 3º Ano",
-                tarde: "Licenciatura em Química Módulo I",
-                noite: "#####",
-              },
-              tipo: "sala",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "sala"
             },
             {
               id: 56,
@@ -712,12 +710,11 @@ createApp({
               y: 421,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "sala",
-            },
-          ],
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "sala"
+            }
+          ]
         },
-
         {
           nome: "Bloco I",
           salas: [
@@ -728,8 +725,8 @@ createApp({
               y: 472,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: { manha: "#####", tarde: "#####", noite: "#####" },
-              tipo: "banheiro",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "banheiro"
             },
             {
               id: 58,
@@ -738,12 +735,8 @@ createApp({
               y: 481,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: {
-                manha: "Sala de Musica",
-                tarde: "Sala de Musica",
-                noite: "Sala de Musica",
-              },
-              tipo: "banheiro",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "banheiro"
             },
             {
               id: 59,
@@ -752,12 +745,8 @@ createApp({
               y: 484,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: {
-                manha: "Em Manutenção",
-                tarde: "Em Manutenção",
-                noite: "Em Manutenção",
-              },
-              tipo: "sala",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "sala"
             },
             {
               id: 61,
@@ -766,7 +755,8 @@ createApp({
               y: 484,
               capacidade: 40,
               disponibilidade: "indisponível",
-              tipo: "sala",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "sala"
             },
             {
               id: 62,
@@ -775,12 +765,8 @@ createApp({
               y: 484,
               capacidade: 40,
               disponibilidade: "em manutenção",
-              horarios: {
-                manha: "Em Manutenção",
-                tarde: "Em Manutenção",
-                noite: "Em Manutenção",
-              },
-              tipo: "sala",
+              horarios: { manha: "###", tarde: "###", noite: "###" },
+              tipo: "sala"
             },
             {
               id: 63,
@@ -790,11 +776,11 @@ createApp({
               capacidade: 40,
               disponibilidade: "em manutenção",
               horarios: {
-                manha: "Em Manutenção",
-                tarde: "Em Manutenção",
-                noite: "Em Manutenção",
+                manha: "Licenciatura em Química Módulo VII",
+                tarde: "###",
+                noite: "###"
               },
-              tipo: "sala",
+              tipo: "sala"
             },
             {
               id: 64,
@@ -804,11 +790,11 @@ createApp({
               capacidade: 40,
               disponibilidade: "disponível",
               horarios: {
-                manha: "Mnpef polo 65",
-                tarde: "Mnpef polo 65",
-                noite: "Licenciatura em Quimica Módulo IX",
+                manha: "MNPEF Polo 65 (20 alunos)",
+                tarde: "MNPEF Polo 65 (20 alunos)",
+                noite: "Licenciatura em Química Módulo IX"
               },
-              tipo: "sala",
+              tipo: "sala"
             },
             {
               id: 65,
@@ -818,11 +804,11 @@ createApp({
               capacidade: 40,
               disponibilidade: "disponível",
               horarios: {
-                manha: "Licenciatura em Química Módulo VII",
-                tarde: "###",
-                noite: "###",
+                manha: "MNPEF Polo 65 (40 alunos)",
+                tarde: "MNPEF Polo 65 (40 alunos)",
+                noite: "Licenciatura em Química Módulo V"
               },
-              tipo: "sala",
+              tipo: "sala"
             },
             {
               id: 66,
@@ -832,14 +818,14 @@ createApp({
               capacidade: 40,
               disponibilidade: "disponível",
               horarios: {
-                manha: "Mnpef polo 65",
-                tarde: "Mnpef polo 65",
-                noite: "Licenciatura em Quimica Módulo V",
+                manha: "Laboratório de Matemática",
+                tarde: "Laboratório de Matemática",
+                noite: "Laboratório de Matemática"
               },
-              tipo: "refeitorio",
-            },
-          ],
-        },
+              tipo: "laboratorio"
+            }
+          ]
+        }
       ],
       // Controles de navegação melhorados
       scale: 1,
