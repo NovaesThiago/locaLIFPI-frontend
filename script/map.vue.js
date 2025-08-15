@@ -34,7 +34,7 @@ createApp({
               x: 208,
               y: 72,
               capacidade: 10,
-              disponibilidade: "indisponível",
+              disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "administracao"
             },
@@ -327,7 +327,7 @@ createApp({
           ]
         },
         {
-          nome: "Banheiro",
+          nome: "Quadra",
           salas: [
             {
               id: 28,
@@ -354,7 +354,7 @@ createApp({
               y: 233,
               capacidade: 100,
               disponibilidade: "disponível",
-              tipo: "sala"
+              tipo: "quadra"
             },
           ]
         },
@@ -750,7 +750,7 @@ createApp({
               x: 251,
               y: 472,
               capacidade: 7,
-              disponibilidade: "em manutenção",
+              disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "banheiro"
             },
@@ -760,7 +760,7 @@ createApp({
               x: 251,
               y: 481,
               capacidade: 2,
-              disponibilidade: "em manutenção",
+              disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "banheiro"
             },
@@ -800,7 +800,7 @@ createApp({
               x: 231,
               y: 484,
               capacidade: 40,
-              disponibilidade: "em manutenção",
+              disponibilidade: "disponível",
               horarios: {
                 manha: "Licenciatura em Química Módulo VII",
                 tarde: "###",
@@ -883,8 +883,7 @@ createApp({
               x: 232,
               y: 512,
               capacidade: 7,
-              disponibilidade: "em manutenção",
-              horarios: { manha: "###", tarde: "###", noite: "###" },
+              disponibilidade: "indisponível",
               tipo: "banheiro"
             },
           ]

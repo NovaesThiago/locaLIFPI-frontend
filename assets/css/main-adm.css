@@ -3,7 +3,7 @@
 :root {
   --cor0: #fff5ec;
   --cor1: #025310;
-  --cor2: #00420c;
+  --cor2: #007000;
   --cor3: #051945;
   --cor4: #000333;
   --cor5: #0032a0;
@@ -141,7 +141,7 @@ header {
 }
 
 .marker-quadra {
-  background-color: gray;
+  background-color: rgb(0, 255, 191);
 }
 
 .marker-refeitorio {
@@ -156,7 +156,7 @@ header {
 }
 
 .marker-banheiro {
-  background-color: khaki;
+  background-color: rgb(122, 3, 233);
 }
 
 .marker-laboratorio {
@@ -234,13 +234,13 @@ main {
   transition: transform 0.1s ease-out;
   /* background-image: url("/assets/images/mapa.jpg"); */
   background-color: rgb(255, 244, 224);
-  border: 1px solid black;
+  border: 0px solid black;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .elemento {
-  background-color: rgb(72, 72, 72);
+  background-color: rgb(160, 159, 159);
   position: absolute;
   margin: 0;
 }
@@ -437,6 +437,20 @@ main {
 
 .elemento-96 { width: 3px; height: 6px; left: 304px; top: 485px; }
 
+.elemento-97 { width: 3px; height: 6px; left: 304px; top: 485px; }
+
+.elemento-98 { width: 6px; height: 3px; left: 328px; top: 530px; }
+
+.elemento-99 { width: 6px; height: 3px; left: 328px; top: 580px; }
+
+.elemento-100 { width: 75px; height:5px; left: 272px; top: 590px; }
+
+.elemento-101 { width: 6px; height: 3px; left: 266px; top: 510px;}
+
+.elemento-102 {  width: 3px; height: 6px; left: 280px; top: 585px;}
+
+.elemento-103 { width: 3px; height: 6px; left: 77px; top: 224px;}
+
 /* POP-UPS */
 
 .sala-info {
@@ -506,6 +520,14 @@ main {
   background: linear-gradient(90deg, #00cc1b 0%, #015a17 100%);
 }
 
+.sala-info .card .header.saude {
+  background: linear-gradient(90deg, #ff0000 0%, #8a0000 100%);
+}
+
+.sala-info .card .header.quadra {
+  background: linear-gradient(90deg, #00f7ff 0%, #00578a 100%);
+}
+
 .sala-info .card .header.cantina {
   background: linear-gradient(90deg, #faff6e 0%, #fff200 100%);
   color: black;
@@ -534,8 +556,8 @@ main {
 }
 
 .sala-info .card .header.banheiro {
-  background: linear-gradient(90deg, #d4c5ba 0%, #f89a6f 100%);
-  color: black;
+  background: linear-gradient(90deg, #ec00a5 0%, #0011ff 100%);
+  color: rgb(255, 255, 255);
 }
 
 .sala-info .card .header.refeitorio {
