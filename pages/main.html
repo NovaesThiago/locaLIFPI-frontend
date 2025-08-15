@@ -39,8 +39,8 @@
         <button class="reset-btn" @click="resetMap">Resetar</button>
         
           <button class="control-btn" @click="centerMap">Centralizar</button>
-          <!-- <button class="control-btn" @click="rotateMap(90)">↻ Girar 90°</button>
-          <button class="control-btn" @click="rotateMap(-90)">↺ Girar -90°</button> -->
+          <button class="control-btn" @click="rotateMap(90)">↻ Girar 90°</button>
+          <button class="control-btn" @click="rotateMap(-90)">↺ Girar -90°</button>
           <button class="control-btn" @click="zoomIn">Zoom +</button>
           <button class="control-btn" @click="zoomOut">Zoom -</button>
       </div>
@@ -153,12 +153,12 @@
           <!-- ... resto dos elementos fixos ... -->
 
           <!-- Marcadores -->
-          <!-- <div v-for="bloco in blocosFiltrados" :key="bloco.nome + '-marcadores'">
+          <div v-for="bloco in blocosFiltrados" :key="bloco.nome + '-marcadores'">
             <div v-for="sala in bloco.salas" :key="sala.id" class="marker" :class="'marker-' + (sala.tipo || 'padrao')"
               :style="{ left: sala.x + 'px', top: sala.y + 'px'}" @click.stop="mostrarSala(sala)" :title="sala.nome">
             </div>
           </div>
-        </div> -->
+        </div>
 
       </div>
 
