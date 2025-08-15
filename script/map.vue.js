@@ -440,8 +440,8 @@ createApp({
             {
               id: 38,
               nome: "Cantina",
-              x: 322,
-              y: 256,
+              x: 317,
+              y: 245,
               capacidade: 40,
               disponibilidade: "disponível",
               horarios: { manha: "###", tarde: "###", noite: "###" },

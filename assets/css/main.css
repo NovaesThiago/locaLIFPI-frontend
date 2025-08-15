@@ -7,7 +7,7 @@
   --cor4: #003300;
   --cor5: #2e5d2ef2;
   --cor6: #fff5ec;
-  --cor7: #a4a2a2;
+  --cor7: #a4a2a4;
   --cor8: #0f0028;
   --cor9: #ff4d00;
   --cor10: #000661;
@@ -333,7 +333,7 @@ main {
 }
 
 .elemento {
-  background-color: rgb(72, 72, 72);
+  background-color: rgb(160, 159, 159);
   position: absolute;
   margin: 0;
 }
@@ -612,8 +612,8 @@ main {
 }
 
 .sala-info .card .header.banheiro {
-  background: linear-gradient(90deg, #d4c5ba 0%, #f89a6f 100%);
-  color: black;
+  background: linear-gradient(90deg, #ec00a5 0%, #0011ff 100%);
+  color: rgb(255, 255, 255);
 }
 
 .sala-info .card .header.banheiro .close-btn {
