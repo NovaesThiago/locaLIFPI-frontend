@@ -46,11 +46,28 @@
       </div>
 
       <main>
-        <div class="map-container">
-          <div class="container">
+        <div class="controls">
+        <button class="reset-btn" @click="resetMap">Resetar</button>
+        
+          <button class="control-btn" @click="centerMap">Centralizar</button>
+          <button class="control-btn" @click="zoomIn">Zoom +</button>
+          <button class="control-btn" @click="zoomOut">Zoom -</button>
+          <button class="control-btn" @click="rotateMap(90)">↻ Girar 90°</button>
+          <button class="control-btn" @click="rotateMap(-90)">↺ Girar -90°</button>
+          
+      </div>
+
+      <div class="map-container">
+        <div id="mapTransform" class="container" 
+              @mousedown="startRotate($event)" 
+              @touchstart="startTouch($event)" 
+              @touchmove="doTouch($event)" 
+              @touchend="stopTouch">
+
+          <div class="elementos">
             <div class="elemento elemento-1"></div>
             <div class="elemento elemento-2"></div>
-            <div class="elemento elemento-3 marker-quadra"></div>
+            <div class="elemento elemento-3"></div>
             <div class="elemento elemento-4"></div>
             <div class="elemento elemento-5"></div>
             <div class="elemento elemento-6"></div>
@@ -142,6 +159,8 @@
             <div class="elemento elemento-92"></div>
             <div class="elemento elemento-93"></div>
             <div class="elemento elemento-94"></div>
+            <div class="elemento elemento-95"></div>
+            <div class="elemento elemento-96"></div>
           </div>
 
           <div
