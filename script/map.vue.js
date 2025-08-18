@@ -224,7 +224,7 @@ createApp({
           salas: [
             {
               id: 19,
-              nome: "Banheiro Servidores",
+              nome: "Banheiro Servidores M/F",
               x: 136,
               y: 161,
               capacidade: 7,
@@ -331,7 +331,7 @@ createApp({
           salas: [
             {
               id: 28,
-              nome: "Banheiro Quadra",
+              nome: "Banheiro Quadra M",
               x: 41,
               y: 214,
               capacidade: 7,
@@ -340,7 +340,7 @@ createApp({
             },
             {
               id: 29,
-              nome: "Banheiro Quadra",
+              nome: "Banheiro Quadra F",
               x: 56,
               y: 214,
               capacidade: 7,
@@ -501,8 +501,17 @@ createApp({
             },
             {
               id: 41,
-              nome: "Sala E2",
+              nome: "Banheiros M/F",
               x: 250,
+              y: 292,
+              capacidade: 7,
+              disponibilidade: "disponível",
+              tipo: "banheiro"
+            },
+            {
+              id: 42,
+              nome: "Sala E2",
+              x: 271,
               y: 292,
               capacidade: 40,
               disponibilidade: "disponível",
@@ -512,16 +521,6 @@ createApp({
                 noite: "Laboratório de Linguagens"
               },
               tipo: "laboratorio"
-            },
-            {
-              id: 42,
-              nome: "Sala E2",
-              x: 271,
-              y: 292,
-              capacidade: 40,
-              disponibilidade: "em manutenção",
-              horarios: { manha: "###", tarde: "###", noite: "###" },
-              tipo: "sala"
             },
             {
               id: 43,
@@ -746,12 +745,11 @@ createApp({
           salas: [
             {
               id: 62,
-              nome: "Banheiro",
+              nome: "Banheiro M/F",
               x: 251,
               y: 472,
               capacidade: 7,
               disponibilidade: "disponível",
-              horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "banheiro"
             },
             {
@@ -761,7 +759,6 @@ createApp({
               y: 481,
               capacidade: 2,
               disponibilidade: "disponível",
-              horarios: { manha: "###", tarde: "###", noite: "###" },
               tipo: "banheiro"
             },
             {
@@ -879,7 +876,7 @@ createApp({
             },
             {
               id: 74,
-              nome: "Banheiro Servidores",
+              nome: "Banheiro Servidores W/F",
               x: 232,
               y: 512,
               capacidade: 7,
